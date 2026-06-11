@@ -68,27 +68,23 @@
 
 ### 📊 $ github_stats
 
-<div align="center">
+<p align="center">
   <!-- General Stats Card -->
-  <img src="https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&theme=cyberpunk_thiago&include_all_commits=true&count_private=true" alt="GitHub Stats" width="49.5%" />
-  
+  <img src="https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&theme=cyberpunk_thiago&include_all_commits=true&count_private=true&v=3" alt="GitHub Stats" height="195" />
+  &nbsp;&nbsp;
   <!-- Most Used Languages Card -->
-  <img src="https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&layout=compact&theme=cyberpunk_thiago&langs_count=8&card_width=490" alt="Top Languages" width="49.5%" />
-</div>
+  <img src="https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&layout=compact&theme=cyberpunk_thiago&langs_count=8&card_width=490&v=3" alt="Top Languages" height="195" />
+</p>
 
-<br/>
-
-<div align="center">
+<p align="center">
   <!-- Streak Stats Card -->
-  <img src="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&theme=cyberpunk-thiago" alt="GitHub Streak" width="100%" />
-</div>
+  <img src="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&theme=cyberpunk-thiago&v=3" alt="GitHub Streak" width="100%" />
+</p>
 
-<br/>
-
-<div align="center">
+<p align="center">
   <!-- Activity Graph Card -->
-  <img src="https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&theme=cyberpunk_thiago" alt="Activity Graph" width="100%" />
-</div>
+  <img src="https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&theme=cyberpunk_thiago&v=3" alt="Activity Graph" width="100%" />
+</p>
 
 ---
 
