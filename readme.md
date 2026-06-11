@@ -87,7 +87,7 @@
 
 <div align="center">
   <!-- Activity Graph Card -->
-  <img src="https://github-readme-streak-stats-6rgx.vercel.app/graph?username=thisux1&theme=cyberpunk_thiago" alt="Activity Graph" width="100%" />
+  <img src="https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&theme=cyberpunk_thiago" alt="Activity Graph" width="100%" />
 </div>
 
 ---
