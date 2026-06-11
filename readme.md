@@ -9,30 +9,22 @@
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
-      
-```bash
-$ thiago / technical_profile
+      <pre lang="bash"><code>$ thiago / technical_profile
 ------------------------------------------------
 • Frontend : React 19, TypeScript, Tailwind, Zustand
 • Backend  : Node.js, Express 5, JWT, Zod, Hono
 • Databases: PostgreSQL, MongoDB, Prisma, Drizzle
 • DevOps   : Docker, Vercel, GitHub Actions (CI/CD)
-• Integrations: Stripe, Mercado Pago (Webhooks & Pix)
-```
-
+• Integrations: Stripe, Mercado Pago (Webhooks &amp; Pix)</code></pre>
     </td>
     <td width="50%" valign="top">
-
-```python
-class SoftwareEngineer:
+      <pre lang="python"><code>class SoftwareEngineer:
     def __init__(self):
         self.name = "Thiago Araújo"
         self.location = "Osasco, SP, Brazil"
-        self.focus = "Full-Stack Web & Systems Architect"
+        self.focus = "Full-Stack Web &amp; Systems Architect"
         self.education = "B.S. Software Engineering (UNISA '30)"
-        self.languages = ["English (Fluent)", "Portuguese (Native)"]
-```
-
+        self.languages = ["English (Fluent)", "Portuguese (Native)"]</code></pre>
     </td>
   </tr>
 </table>
