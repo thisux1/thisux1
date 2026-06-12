@@ -98,9 +98,9 @@
 
 <div align="center">
   <!-- General Stats Card -->
-  <img src="https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&theme=cyberpunk_thiago&include_all_commits=true&count_private=true&v=7" alt="GitHub Stats" width="48%" />
+  <img src="https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&theme=cyberpunk_thiago&include_all_commits=true&count_private=true&card_width=495&v=7" alt="GitHub Stats" width="49.5%" />
   <!-- Most Used Languages Card -->
-  <img src="https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&layout=compact&theme=cyberpunk_thiago&langs_count=8&card_width=490&v=7" alt="Top Languages" width="48%" />
+  <img src="https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&layout=compact&theme=cyberpunk_thiago&langs_count=8&card_width=495&v=7" alt="Top Languages" width="49.5%" />
 </div>
 
 <p align="center">
