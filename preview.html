@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thiago Araújo - README Preview</title>
+  <!-- GitHub Markdown CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
+  <!-- Marked.js parser -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    body {
+      background-color: #010409;
+      color: #c9d1d9;
+      padding: 2rem;
+      margin: 0;
+    }
+    .container {
+      max-w: 880px;
+      margin: 0 auto;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      background-color: #0d1117;
+      padding: 32px;
+    }
+    .markdown-body {
+      background-color: transparent !important;
+      color: #c9d1d9 !important;
+    }
+    .markdown-body pre {
+      background-color: #161b22 !important;
+      border: 1px solid #30363d !important;
+    }
+    .markdown-body td, .markdown-body th {
+      border: 1px solid #30363d !important;
+      background-color: transparent !important;
+    }
+    .markdown-body h3 {
+      border-bottom: 1px solid #21262d !important;
+    }
+    .markdown-body hr {
+      background-color: #21262d !important;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="content" class="markdown-body">Carregando preview...</div>
+  </div>
+
+  <script>
+    // Configura o Marked para permitir HTML inline (como as tags div e table do readme)
+    marked.setOptions({
+      html: true,
+      breaks: true
+    });
+
+    fetch('./readme.md')
+      .then(response => response.text())
+      .then(text => {
+        document.getElementById('content').innerHTML = marked.parse(text);
+      })
+      .catch(err => {
+        document.getElementById('content').innerText = "Erro ao carregar o README: " + err;
+      });
+  </script>
+</body>
+</html>
