@@ -23,7 +23,7 @@
         self.name = "Thiago Araújo"
         self.location = "Osasco, SP, Brazil"
         self.focus = "Full-Stack Web &amp; Systems Architect"
-        self.education = "B.S. Software Engineering (UNISA '30)"
+        self.education = "B.S. Software Engineering (UNIVESP '31)"
         self.languages = ["English (Fluent)", "Portuguese (Native)"]</code></pre>
     </td>
   </tr>
@@ -57,7 +57,7 @@
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
-      <h4>Correio Elegante 3 | <small>Full-Stack Web & Payments</small></h4>
+      <h4>Correio Elegante | <small>Full-Stack Web & Payments</small></h4>
       <p>Secure message delivery platform with JWT authentication via httpOnly cookies and strict validation with Zod.</p>
       <ul>
         <li><b>Integrations:</b> Stripe & Mercado Pago (Pix & Cards) with automatic webhook handling.</li>
@@ -122,11 +122,8 @@
     <img src="https://img.shields.io/badge/LinkedIn-0D1117?style=for-the-badge&logo=linkedin&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="LinkedIn" />
   </a>
   &nbsp;
-  <a href="mailto:thicosta1432@gmail.com">
+  <a href="mailto:thisux94@gmail.com">
     <img src="https://img.shields.io/badge/Email-0D1117?style=for-the-badge&logo=gmail&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="Email" />
   </a>
   &nbsp;
-  <a href="https://github.com/thisux1">
-    <img src="https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="GitHub" />
-  </a>
 </div>
