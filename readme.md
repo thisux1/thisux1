@@ -33,7 +33,7 @@
 
 ### ❯ whoami
 
-> Desenvolvedor Full-Stack focado no ecossistema moderno de JavaScript/TypeScript. Experiência sólida na construção de aplicações web completas, desde a modelagem de bancos de dados (SQL e NoSQL) e APIs RESTful seguras, até interfaces responsivas, testes automatizados e integrações com gateways de pagamento em nuvem.
+> Full-Stack Developer focused on the modern JavaScript/TypeScript ecosystem. Solid experience in building complete web applications, from database modeling (SQL & NoSQL) and secure RESTful APIs, to responsive interfaces, automated testing, and cloud payment gateway integrations.
 
 <p align="left">
   <img src="https://img.shields.io/badge/TypeScript-0D1117?style=flat-square&logo=typescript&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="TypeScript" />
@@ -57,11 +57,11 @@
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
-      <h4>Correio Elegante 3 | <small>Full-Stack Web & Pagamentos</small></h4>
-      <p>Plataforma segura de envio de mensagens com autenticação JWT via httpOnly cookies e validações rígidas com Zod.</p>
+      <h4>Correio Elegante 3 | <small>Full-Stack Web & Payments</small></h4>
+      <p>Secure message delivery platform with JWT authentication via httpOnly cookies and strict validation with Zod.</p>
       <ul>
-        <li><b>Integrações:</b> Stripe & Mercado Pago (Pix e Cartões) com tratamento automático de webhooks.</li>
-        <li><b>Testes:</b> Testes automatizados unitários e de integração de API via Vitest e Supertest.</li>
+        <li><b>Integrations:</b> Stripe & Mercado Pago (Pix & Cards) with automatic webhook handling.</li>
+        <li><b>Testing:</b> Automated unit and API integration tests via Vitest and Supertest.</li>
       </ul>
       <p>
         <img src="https://img.shields.io/badge/React_19-0D1117?style=flat-square&logo=react&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="React 19" />
@@ -73,11 +73,11 @@
       </p>
     </td>
     <td width="50%" valign="top">
-      <h4>Singular | <small>Plataforma Educacional</small></h4>
-      <p>Plataforma de quiz com processamento assíncrono distribuído em filas e interface progressiva (PWA).</p>
+      <h4>Singular | <small>Educational Platform</small></h4>
+      <p>Quiz platform featuring distributed asynchronous queue processing and a progressive web app (PWA) interface.</p>
       <ul>
-        <li><b>Arquitetura:</b> Filas de processamento em segundo plano robustas com BullMQ e Redis.</li>
-        <li><b>Bancos de dados:</b> Modelagem relacional performática usando PostgreSQL e Drizzle ORM.</li>
+        <li><b>Architecture:</b> Robust background processing queues using BullMQ and Redis.</li>
+        <li><b>Databases:</b> Performant relational modeling using PostgreSQL and Drizzle ORM.</li>
       </ul>
       <p>
         <img src="https://img.shields.io/badge/React-0D1117?style=flat-square&logo=react&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="React" />
