@@ -19,6 +19,11 @@
       <stop offset="0%" stop-color="#ff2a5f" />
       <stop offset="100%" stop-color="#800c2a" />
     </linearGradient>
+    <clipPath id="clip-prompt">
+      <rect x="0" y="100" height="40" width="0">
+        <animate attributeName="width" from="0" to="350" dur="2s" begin="4.3s" fill="freeze" />
+      </rect>
+    </clipPath>
   </defs>
 
   <style>
@@ -56,6 +61,22 @@
     }
     .term-string {
       fill: #f1fa8c;
+    }
+    .cursor-blink {
+      animation: blink 1.2s infinite;
+    }
+    @keyframes blink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+    .line-1 { animation: fadeIn 0.3s ease-in-out forwards; opacity: 0; animation-delay: 0.5s; }
+    .line-2 { animation: fadeIn 0.3s ease-in-out forwards; opacity: 0; animation-delay: 1.2s; }
+    .line-3 { animation: fadeIn 0.3s ease-in-out forwards; opacity: 0; animation-delay: 1.9s; }
+    .line-4 { animation: fadeIn 0.3s ease-in-out forwards; opacity: 0; animation-delay: 2.6s; }
+    .line-5 { animation: fadeIn 0.3s ease-in-out forwards; opacity: 0; animation-delay: 3.3s; }
+    .line-prompt { animation: fadeIn 0.3s ease-in-out forwards; opacity: 0; animation-delay: 4.0s; }
+    @keyframes fadeIn {
+      to { opacity: 1; }
     }
   </style>
 
@@ -129,19 +150,16 @@
     <!-- Status & Details -->
     <g transform="translate(0, 45)">
       <!-- System Loading Status -->
-      <text x="0" y="10" class="term-text term-accent">> INITIALIZING SECURE MAIN_FRAME...</text>
+      <text x="0" y="10" class="term-text term-accent line-1">> INITIALIZING SECURE MAIN_FRAME...</text>
       
       <!-- Details -->
-      <text x="0" y="32" class="term-text"><tspan class="term-dim">sys.status</tspan> = <tspan class="term-string">"ACTIVE"</tspan></text>
-      <text x="0" y="54" class="term-text"><tspan class="term-dim">sys.core  </tspan> = [<tspan class="term-accent">"React"</tspan>, <tspan class="term-accent">"Node.js"</tspan>, <tspan class="term-accent">"TypeScript"</tspan>, <tspan class="term-accent">"Python"</tspan>]</text>
-      <text x="0" y="76" class="term-text"><tspan class="term-dim">sys.focus </tspan> = <tspan class="term-keyword">const</tspan> { <tspan class="term-accent">Scale</tspan>, <tspan class="term-accent">Performance</tspan>, <tspan class="term-accent">UX</tspan> }</text>
-      <text x="0" y="98" class="term-text"><tspan class="term-dim">sys.locate</tspan> = <tspan class="term-string">"Brazil/SP"</tspan></text>
+      <text x="0" y="32" class="term-text line-2"><tspan class="term-dim">sys.status</tspan> = <tspan class="term-string">"ACTIVE"</tspan></text>
+      <text x="0" y="54" class="term-text line-3"><tspan class="term-dim">sys.core  </tspan> = [<tspan class="term-accent">"React"</tspan>, <tspan class="term-accent">"Node.js"</tspan>, <tspan class="term-accent">"TypeScript"</tspan>, <tspan class="term-accent">"Python"</tspan>]</text>
+      <text x="0" y="76" class="term-text line-4"><tspan class="term-dim">sys.focus </tspan> = <tspan class="term-keyword">const</tspan> { <tspan class="term-accent">Scale</tspan>, <tspan class="term-accent">Performance</tspan>, <tspan class="term-accent">UX</tspan> }</text>
+      <text x="0" y="98" class="term-text line-5"><tspan class="term-dim">sys.locate</tspan> = <tspan class="term-string">"Brazil/SP"</tspan></text>
       
       <!-- Command Prompt with Blinking Cursor -->
-      <text x="0" y="125" class="term-text" font-weight="bold">thiago@mainframe:~$ <tspan class="term-dim">run --profile</tspan></text>
-      <rect x="238" y="112" width="8" height="15" fill="#ff2a5f">
-        <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite" />
-      </rect>
+      <text x="0" y="125" class="term-text line-prompt" font-weight="bold" clip-path="url(#clip-prompt)">thiago@mainframe:~$ <tspan class="term-dim">run --profile</tspan><tspan class="cursor-blink" fill="#ff2a5f">█</tspan></text>
     </g>
   </g>
 </svg>
