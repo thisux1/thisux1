@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="100%" height="220">
+  <defs>
+    <filter id="glow-fs" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="sg-fs" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <clipPath id="clip-fs">
+      <rect x="0" y="100" height="40" width="0">
+        <animate attributeName="width" from="0" to="260" dur="1.5s" begin="3.8s" fill="freeze" />
+      </rect>
+    </clipPath>
+  </defs>
+
+  <style>
+    .t-fs { font-family: 'Fira Code','JetBrains Mono','Courier New',monospace; font-size: 11px; fill: #e2e8f0; }
+    .tt-fs { font-family: 'Fira Code','JetBrains Mono','Courier New',monospace; font-size: 13px; font-weight: bold; fill: #00f0ff; filter: url(#sg-fs); letter-spacing: 1px; }
+    .d-fs { fill: #6272a4; }
+    .a-fs { fill: #00f0ff; }
+    .k-fs { fill: #ff79c6; }
+    .s-fs { fill: #f1fa8c; }
+    .gl-fs { stroke: #00f0ff; stroke-width: 0.5px; opacity: 0.08; }
+    .cb-fs { animation: b-fs 1.2s infinite; }
+    @keyframes b-fs { 0%,49%{opacity:1} 50%,100%{opacity:0} }
+    .lfs1{animation:fi-fs .3s ease forwards;opacity:0;animation-delay:.5s}
+    .lfs2{animation:fi-fs .3s ease forwards;opacity:0;animation-delay:1.1s}
+    .lfs3{animation:fi-fs .3s ease forwards;opacity:0;animation-delay:1.7s}
+    .lfs4{animation:fi-fs .3s ease forwards;opacity:0;animation-delay:2.3s}
+    .lfs5{animation:fi-fs .3s ease forwards;opacity:0;animation-delay:2.9s}
+    .lfsp{animation:fi-fs .3s ease forwards;opacity:0;animation-delay:3.5s}
+    @keyframes fi-fs { to{opacity:1} }
+  </style>
+
+  <!-- Background -->
+  <rect width="398" height="218" x="1" y="1" rx="6" fill="#090d13" stroke="#21262d" stroke-width="1" />
+  <rect width="398" height="218" x="1" y="1" rx="6" fill="none" stroke="#00f0ff" stroke-width="1.5" filter="url(#glow-fs)" opacity="0.25"/>
+  <path d="M 1,32 L 399,32" stroke="#00f0ff" stroke-width="1" opacity="0.3" />
+
+  <!-- Terminal Controls -->
+  <circle cx="15" cy="16" r="4" fill="#00f0ff" opacity="0.8" />
+  <circle cx="27" cy="16" r="4" fill="#6272a4" opacity="0.5" />
+  <circle cx="39" cy="16" r="4" fill="#6272a4" opacity="0.3" />
+  <text x="58" y="20" class="t-fs d-fs" font-size="10">thiago@mainframe:~/fullstack</text>
+
+  <!-- Grid -->
+  <g>
+    <line x1="50" y1="32" x2="50" y2="220" class="gl-fs"/><line x1="100" y1="32" x2="100" y2="220" class="gl-fs"/>
+    <line x1="150" y1="32" x2="150" y2="220" class="gl-fs"/><line x1="200" y1="32" x2="200" y2="220" class="gl-fs"/>
+    <line x1="250" y1="32" x2="250" y2="220" class="gl-fs"/><line x1="300" y1="32" x2="300" y2="220" class="gl-fs"/>
+    <line x1="350" y1="32" x2="350" y2="220" class="gl-fs"/>
+    <line x1="0" y1="65" x2="400" y2="65" class="gl-fs"/><line x1="0" y1="100" x2="400" y2="100" class="gl-fs"/>
+    <line x1="0" y1="135" x2="400" y2="135" class="gl-fs"/><line x1="0" y1="170" x2="400" y2="170" class="gl-fs"/>
+    <line x1="0" y1="205" x2="400" y2="205" class="gl-fs"/>
+  </g>
+
+  <!-- STACK LAYERS VISUAL — Horizontal bars representing Front/Back/DB -->
+  <g transform="translate(18, 68)">
+    <!-- Frontend Layer -->
+    <rect x="0" y="0" width="85" height="22" rx="3" fill="#00f0ff" fill-opacity="0.15" stroke="#00f0ff" stroke-width="0.8" stroke-opacity="0.6"/>
+    <text x="42" y="15" class="t-fs a-fs" font-size="9" text-anchor="middle">FRONTEND</text>
+
+    <!-- Arrow down -->
+    <line x1="42" y1="24" x2="42" y2="34" stroke="#00f0ff" stroke-width="0.8" opacity="0.4"/>
+    <polygon points="38,32 42,38 46,32" fill="#00f0ff" opacity="0.4"/>
+
+    <!-- Backend Layer -->
+    <rect x="0" y="40" width="85" height="22" rx="3" fill="#ff79c6" fill-opacity="0.12" stroke="#ff79c6" stroke-width="0.8" stroke-opacity="0.5"/>
+    <text x="42" y="55" class="t-fs k-fs" font-size="9" text-anchor="middle">BACKEND</text>
+
+    <!-- Arrow down -->
+    <line x1="42" y1="64" x2="42" y2="74" stroke="#ff79c6" stroke-width="0.8" opacity="0.4"/>
+    <polygon points="38,72 42,78 46,72" fill="#ff79c6" opacity="0.4"/>
+
+    <!-- Database Layer -->
+    <rect x="0" y="80" width="85" height="22" rx="3" fill="#f1fa8c" fill-opacity="0.10" stroke="#f1fa8c" stroke-width="0.8" stroke-opacity="0.4"/>
+    <text x="42" y="95" class="t-fs s-fs" font-size="9" text-anchor="middle">DATABASE</text>
+
+    <!-- Pulsing connection dots -->
+    <circle cx="0" cy="11" r="2" fill="#00f0ff">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="0" cy="51" r="2" fill="#ff79c6">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" begin="0.6s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="0" cy="91" r="2" fill="#f1fa8c">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" begin="1.2s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- Content -->
+  <g transform="translate(125, 48)">
+    <text x="0" y="15" class="tt-fs">FULL-STACK TS/REACT</text>
+
+    <g transform="translate(0, 32)">
+      <text x="0" y="10" class="t-fs a-fs lfs1">> 5 production apps deployed</text>
+
+      <text x="0" y="28" class="t-fs lfs2"><tspan class="d-fs">frontend </tspan> = <tspan class="a-fs">React 19</tspan>, <tspan class="a-fs">Zustand</tspan>, <tspan class="a-fs">Zod</tspan></text>
+      <text x="0" y="46" class="t-fs lfs3"><tspan class="d-fs">backend  </tspan> = <tspan class="a-fs">Express 5</tspan>, <tspan class="a-fs">Hono</tspan>, <tspan class="a-fs">JWT</tspan></text>
+      <text x="0" y="64" class="t-fs lfs4"><tspan class="d-fs">database </tspan> = <tspan class="a-fs">Prisma</tspan>+<tspan class="s-fs">Mongo</tspan> | <tspan class="a-fs">Drizzle</tspan>+<tspan class="s-fs">PG</tspan></text>
+      <text x="0" y="82" class="t-fs lfs5"><tspan class="d-fs">payments </tspan> = <tspan class="s-fs">Stripe</tspan>, <tspan class="s-fs">Mercado Pago (Pix)</tspan></text>
+
+      <text x="0" y="108" class="t-fs lfsp" font-weight="bold" clip-path="url(#clip-fs)">~$ <tspan class="d-fs">vitest --run &amp;&amp; deploy</tspan><tspan class="cb-fs" fill="#00f0ff">█</tspan></text>
+    </g>
+  </g>
+</svg>

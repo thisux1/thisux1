@@ -1,7 +1,7 @@
 
 
 <div align="center">
-  <a href="#root"><img src="./banner.svg" alt="Cyberpunk Banner" width="100%"/></a>
+  <a href="#root"><img src="./banner.svg?v=9" alt="Cyberpunk Banner" width="100%"/></a>
 </div>
 
 <br/>
@@ -34,6 +34,26 @@
 ### ❯ whoami
 
 > Full-Stack Developer focused on the modern JavaScript/TypeScript ecosystem. Solid experience in building complete web applications, from database modeling (SQL & NoSQL) and secure RESTful APIs, to responsive interfaces, automated testing, and cloud payment gateway integrations.
+
+<br/>
+
+### ❯ core_mainframe_stacks
+
+<table width="100%">
+  <tr>
+    <td width="33%" valign="top">
+      <img src="./stack_fullstack.svg?v=9" alt="Full-Stack TS/React" width="100%"/>
+    </td>
+    <td width="33%" valign="top">
+      <img src="./stack_python_ai.svg?v=9" alt="Python AI/ML & TUI" width="100%"/>
+    </td>
+    <td width="33%" valign="top">
+      <img src="./stack_agentic.svg?v=9" alt="Agentic Workflows" width="100%"/>
+    </td>
+  </tr>
+</table>
+
+<br/>
 
 <p align="left">
   <img src="https://img.shields.io/badge/TypeScript-0D1117?style=flat-square&logo=typescript&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="TypeScript" />
@@ -98,19 +118,19 @@
 
 <div align="center">
   <!-- General Stats Card -->
-  <img src="https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&theme=cyberpunk_thiago&include_all_commits=true&count_private=true&card_width=495&v=8" alt="GitHub Stats" width="49.5%" />
+  <img src="https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&theme=cyberpunk_thiago&include_all_commits=true&count_private=true&card_width=495&v=9" alt="GitHub Stats" width="49.5%" />
   <!-- Most Used Languages Card -->
-  <img src="https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&layout=compact&theme=cyberpunk_thiago&langs_count=8&card_width=495&v=8" alt="Top Languages" width="49.5%" />
+  <img src="https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&layout=compact&theme=cyberpunk_thiago&langs_count=8&card_width=495&v=9" alt="Top Languages" width="49.5%" />
 </div>
 
 <p align="center">
   <!-- Streak Stats Card -->
-  <img src="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&theme=cyberpunk-thiago&v=8" alt="GitHub Streak" width="100%" />
+  <img src="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&theme=cyberpunk-thiago&v=9" alt="GitHub Streak" width="100%" />
 </p>
 
 <p align="center">
   <!-- Activity Graph Card -->
-  <img src="https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&theme=cyberpunk_thiago&v=8" alt="Activity Graph" width="100%" />
+  <img src="https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&theme=cyberpunk_thiago&v=9" alt="Activity Graph" width="100%" />
 </p>
 
 ---

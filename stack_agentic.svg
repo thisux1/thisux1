@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="100%" height="220">
+  <defs>
+    <filter id="glow-ag" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="sg-ag" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <clipPath id="clip-ag">
+      <rect x="0" y="100" height="40" width="0">
+        <animate attributeName="width" from="0" to="260" dur="1.5s" begin="3.8s" fill="freeze" />
+      </rect>
+    </clipPath>
+  </defs>
+
+  <style>
+    .t-ag { font-family: 'Fira Code','JetBrains Mono','Courier New',monospace; font-size: 11px; fill: #e2e8f0; }
+    .tt-ag { font-family: 'Fira Code','JetBrains Mono','Courier New',monospace; font-size: 13px; font-weight: bold; fill: #ff2a5f; filter: url(#sg-ag); letter-spacing: 1px; }
+    .d-ag { fill: #6272a4; }
+    .a-ag { fill: #ff2a5f; }
+    .k-ag { fill: #ff79c6; }
+    .s-ag { fill: #f1fa8c; }
+    .gl-ag { stroke: #ff2a5f; stroke-width: 0.5px; opacity: 0.08; }
+    .cb-ag { animation: b-ag 1.2s infinite; }
+    @keyframes b-ag { 0%,49%{opacity:1} 50%,100%{opacity:0} }
+    .lag1{animation:fi-ag .3s ease forwards;opacity:0;animation-delay:.5s}
+    .lag2{animation:fi-ag .3s ease forwards;opacity:0;animation-delay:1.1s}
+    .lag3{animation:fi-ag .3s ease forwards;opacity:0;animation-delay:1.7s}
+    .lag4{animation:fi-ag .3s ease forwards;opacity:0;animation-delay:2.3s}
+    .lag5{animation:fi-ag .3s ease forwards;opacity:0;animation-delay:2.9s}
+    .lagp{animation:fi-ag .3s ease forwards;opacity:0;animation-delay:3.5s}
+    @keyframes fi-ag { to{opacity:1} }
+  </style>
+
+  <!-- Background -->
+  <rect width="398" height="218" x="1" y="1" rx="6" fill="#090d13" stroke="#21262d" stroke-width="1" />
+  <rect width="398" height="218" x="1" y="1" rx="6" fill="none" stroke="#ff2a5f" stroke-width="1.5" filter="url(#glow-ag)" opacity="0.25"/>
+  <path d="M 1,32 L 399,32" stroke="#ff2a5f" stroke-width="1" opacity="0.3" />
+
+  <!-- Terminal Controls -->
+  <circle cx="15" cy="16" r="4" fill="#ff2a5f" opacity="0.8" />
+  <circle cx="27" cy="16" r="4" fill="#6272a4" opacity="0.5" />
+  <circle cx="39" cy="16" r="4" fill="#6272a4" opacity="0.3" />
+  <text x="58" y="20" class="t-ag d-ag" font-size="10">thiago@mainframe:~/agents</text>
+
+  <!-- Grid -->
+  <g>
+    <line x1="50" y1="32" x2="50" y2="220" class="gl-ag"/><line x1="100" y1="32" x2="100" y2="220" class="gl-ag"/>
+    <line x1="150" y1="32" x2="150" y2="220" class="gl-ag"/><line x1="200" y1="32" x2="200" y2="220" class="gl-ag"/>
+    <line x1="250" y1="32" x2="250" y2="220" class="gl-ag"/><line x1="300" y1="32" x2="300" y2="220" class="gl-ag"/>
+    <line x1="350" y1="32" x2="350" y2="220" class="gl-ag"/>
+    <line x1="0" y1="65" x2="400" y2="65" class="gl-ag"/><line x1="0" y1="100" x2="400" y2="100" class="gl-ag"/>
+    <line x1="0" y1="135" x2="400" y2="135" class="gl-ag"/><line x1="0" y1="170" x2="400" y2="170" class="gl-ag"/>
+    <line x1="0" y1="205" x2="400" y2="205" class="gl-ag"/>
+  </g>
+
+  <!-- PIPELINE FLOW VISUAL — Connected stages with arrows -->
+  <g transform="translate(12, 68)">
+    <!-- Stage 1: PLAN -->
+    <rect x="2" y="2" width="78" height="20" rx="3" fill="#ff2a5f" opacity="0.15" stroke="#ff2a5f" stroke-width="0.8"/>
+    <text x="41" y="16" class="t-ag a-ag" font-size="8" text-anchor="middle">① PLAN</text>
+
+    <!-- Arrow -->
+    <line x1="41" y1="24" x2="41" y2="32" stroke="#ff2a5f" stroke-width="0.8" opacity="0.4"/>
+    <polygon points="37,30 41,36 45,30" fill="#ff2a5f" opacity="0.4"/>
+
+    <!-- Stage 2: EXECUTE -->
+    <rect x="2" y="38" width="78" height="20" rx="3" fill="#ff79c6" opacity="0.12" stroke="#ff79c6" stroke-width="0.8"/>
+    <text x="41" y="52" class="t-ag k-ag" font-size="8" text-anchor="middle">② EXECUTE</text>
+
+    <!-- Arrow -->
+    <line x1="41" y1="60" x2="41" y2="68" stroke="#ff79c6" stroke-width="0.8" opacity="0.4"/>
+    <polygon points="37,66 41,72 45,66" fill="#ff79c6" opacity="0.4"/>
+
+    <!-- Stage 3: VALIDATE -->
+    <rect x="2" y="74" width="78" height="20" rx="3" fill="#f1fa8c" opacity="0.10" stroke="#f1fa8c" stroke-width="0.8"/>
+    <text x="41" y="88" class="t-ag s-ag" font-size="8" text-anchor="middle">③ VALIDATE</text>
+
+    <!-- Feedback loop arrow (curved arrow back from VALIDATE to EXECUTE) -->
+    <path d="M 82,84 C 95,84 95,48 82,48" fill="none" stroke="#6272a4" stroke-width="0.6" stroke-dasharray="3 2" opacity="0.4"/>
+    <polygon points="82,46 82,50 86,48" fill="#6272a4" opacity="0.4"/>
+    <text x="100" y="68" class="t-ag d-ag" font-size="6">RETRY</text>
+
+    <!-- Running signal dot through pipeline -->
+    <circle r="2.5" fill="#ff2a5f" filter="url(#glow-ag)">
+      <animateMotion dur="3s" repeatCount="indefinite" path="M41,12 L41,48 L41,84" />
+      <animate attributeName="opacity" values="0.3;1;1;0.3" dur="3s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- Status indicator -->
+    <circle cx="6" cy="106" r="3" fill="#39ff14">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="1.5s" repeatCount="indefinite" />
+    </circle>
+    <text x="14" y="109" class="t-ag" font-size="7" fill="#39ff14">SELF-HEALING</text>
+  </g>
+
+  <!-- Content -->
+  <g transform="translate(125, 48)">
+    <text x="0" y="15" class="tt-ag">AGENTIC DEV</text>
+
+    <g transform="translate(0, 32)">
+      <text x="0" y="10" class="t-ag a-ag lag1">> AI-augmented dev pipeline</text>
+
+      <text x="0" y="28" class="t-ag lag2"><tspan class="d-ag">workflow </tspan> = <tspan class="s-ag">Plan → Execute → Review</tspan></text>
+      <text x="0" y="46" class="t-ag lag3"><tspan class="d-ag">agents   </tspan> = <tspan class="a-ag">5 specialized</tspan> (UX,API,QA..)</text>
+      <text x="0" y="64" class="t-ag lag4"><tspan class="d-ag">quality  </tspan> = <tspan class="a-ag">lint</tspan>+<tspan class="a-ag">test</tspan> on every change</text>
+      <text x="0" y="82" class="t-ag lag5"><tspan class="d-ag">context  </tspan> = <tspan class="s-ag">MCP</tspan> + live doc lookup</text>
+
+      <text x="0" y="108" class="t-ag lagp" font-weight="bold" clip-path="url(#clip-ag)">~$ <tspan class="d-ag">agent run --self-heal</tspan><tspan class="cb-ag" fill="#ff2a5f">█</tspan></text>
+    </g>
+  </g>
+</svg>

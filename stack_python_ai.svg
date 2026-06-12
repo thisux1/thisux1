@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="100%" height="220">
+  <defs>
+    <filter id="glow-py" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="sg-py" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <clipPath id="clip-py">
+      <rect x="0" y="100" height="40" width="0">
+        <animate attributeName="width" from="0" to="280" dur="1.5s" begin="3.8s" fill="freeze" />
+      </rect>
+    </clipPath>
+  </defs>
+
+  <style>
+    .t-py { font-family: 'Fira Code','JetBrains Mono','Courier New',monospace; font-size: 11px; fill: #e2e8f0; }
+    .tt-py { font-family: 'Fira Code','JetBrains Mono','Courier New',monospace; font-size: 13px; font-weight: bold; fill: #39ff14; filter: url(#sg-py); letter-spacing: 1px; }
+    .d-py { fill: #6272a4; }
+    .a-py { fill: #39ff14; }
+    .k-py { fill: #ff79c6; }
+    .s-py { fill: #f1fa8c; }
+    .gl-py { stroke: #39ff14; stroke-width: 0.5px; opacity: 0.08; }
+    .cb-py { animation: b-py 1.2s infinite; }
+    @keyframes b-py { 0%,49%{opacity:1} 50%,100%{opacity:0} }
+    .lpy1{animation:fi-py .3s ease forwards;opacity:0;animation-delay:.5s}
+    .lpy2{animation:fi-py .3s ease forwards;opacity:0;animation-delay:1.1s}
+    .lpy3{animation:fi-py .3s ease forwards;opacity:0;animation-delay:1.7s}
+    .lpy4{animation:fi-py .3s ease forwards;opacity:0;animation-delay:2.3s}
+    .lpy5{animation:fi-py .3s ease forwards;opacity:0;animation-delay:2.9s}
+    .lpyp{animation:fi-py .3s ease forwards;opacity:0;animation-delay:3.5s}
+    @keyframes fi-py { to{opacity:1} }
+  </style>
+
+  <!-- Background -->
+  <rect width="398" height="218" x="1" y="1" rx="6" fill="#090d13" stroke="#21262d" stroke-width="1" />
+  <rect width="398" height="218" x="1" y="1" rx="6" fill="none" stroke="#39ff14" stroke-width="1.5" filter="url(#glow-py)" opacity="0.25"/>
+  <path d="M 1,32 L 399,32" stroke="#39ff14" stroke-width="1" opacity="0.3" />
+
+  <!-- Terminal Controls -->
+  <circle cx="15" cy="16" r="4" fill="#39ff14" opacity="0.8" />
+  <circle cx="27" cy="16" r="4" fill="#6272a4" opacity="0.5" />
+  <circle cx="39" cy="16" r="4" fill="#6272a4" opacity="0.3" />
+  <text x="58" y="20" class="t-py d-py" font-size="10">thiago@mainframe:~/python_ai</text>
+
+  <!-- Grid -->
+  <g>
+    <line x1="50" y1="32" x2="50" y2="220" class="gl-py"/><line x1="100" y1="32" x2="100" y2="220" class="gl-py"/>
+    <line x1="150" y1="32" x2="150" y2="220" class="gl-py"/><line x1="200" y1="32" x2="200" y2="220" class="gl-py"/>
+    <line x1="250" y1="32" x2="250" y2="220" class="gl-py"/><line x1="300" y1="32" x2="300" y2="220" class="gl-py"/>
+    <line x1="350" y1="32" x2="350" y2="220" class="gl-py"/>
+    <line x1="0" y1="65" x2="400" y2="65" class="gl-py"/><line x1="0" y1="100" x2="400" y2="100" class="gl-py"/>
+    <line x1="0" y1="135" x2="400" y2="135" class="gl-py"/><line x1="0" y1="170" x2="400" y2="170" class="gl-py"/>
+    <line x1="0" y1="205" x2="400" y2="205" class="gl-py"/>
+  </g>
+
+  <!-- NEURAL NETWORK VISUAL — Nodes connected with lines -->
+  <g transform="translate(15, 65)">
+    <!-- Input layer (3 nodes) -->
+    <circle cx="10" cy="15" r="5" fill="none" stroke="#39ff14" stroke-width="0.8" opacity="0.7"/>
+    <circle cx="10" cy="15" r="2" fill="#39ff14" opacity="0.5"/>
+    <circle cx="10" cy="55" r="5" fill="none" stroke="#39ff14" stroke-width="0.8" opacity="0.7"/>
+    <circle cx="10" cy="55" r="2" fill="#39ff14" opacity="0.5"/>
+    <circle cx="10" cy="95" r="5" fill="none" stroke="#39ff14" stroke-width="0.8" opacity="0.7"/>
+    <circle cx="10" cy="95" r="2" fill="#39ff14" opacity="0.5"/>
+
+    <!-- Hidden layer (4 nodes) -->
+    <circle cx="48" cy="5" r="4" fill="none" stroke="#ff79c6" stroke-width="0.8" opacity="0.6"/>
+    <circle cx="48" cy="5" r="1.5" fill="#ff79c6" opacity="0.5"/>
+    <circle cx="48" cy="38" r="4" fill="none" stroke="#ff79c6" stroke-width="0.8" opacity="0.6"/>
+    <circle cx="48" cy="38" r="1.5" fill="#ff79c6" opacity="0.5"/>
+    <circle cx="48" cy="71" r="4" fill="none" stroke="#ff79c6" stroke-width="0.8" opacity="0.6"/>
+    <circle cx="48" cy="71" r="1.5" fill="#ff79c6" opacity="0.5"/>
+    <circle cx="48" cy="104" r="4" fill="none" stroke="#ff79c6" stroke-width="0.8" opacity="0.6"/>
+    <circle cx="48" cy="104" r="1.5" fill="#ff79c6" opacity="0.5"/>
+
+    <!-- Output layer (2 nodes) -->
+    <circle cx="86" cy="30" r="5" fill="none" stroke="#f1fa8c" stroke-width="0.8" opacity="0.7"/>
+    <circle cx="86" cy="30" r="2" fill="#f1fa8c" opacity="0.5"/>
+    <circle cx="86" cy="80" r="5" fill="none" stroke="#f1fa8c" stroke-width="0.8" opacity="0.7"/>
+    <circle cx="86" cy="80" r="2" fill="#f1fa8c" opacity="0.5"/>
+
+    <!-- Connections: input → hidden -->
+    <line x1="15" y1="15" x2="44" y2="5" stroke="#39ff14" stroke-width="0.4" opacity="0.25"/>
+    <line x1="15" y1="15" x2="44" y2="38" stroke="#39ff14" stroke-width="0.4" opacity="0.25"/>
+    <line x1="15" y1="15" x2="44" y2="71" stroke="#39ff14" stroke-width="0.4" opacity="0.15"/>
+    <line x1="15" y1="55" x2="44" y2="5" stroke="#39ff14" stroke-width="0.4" opacity="0.15"/>
+    <line x1="15" y1="55" x2="44" y2="38" stroke="#39ff14" stroke-width="0.4" opacity="0.25"/>
+    <line x1="15" y1="55" x2="44" y2="71" stroke="#39ff14" stroke-width="0.4" opacity="0.25"/>
+    <line x1="15" y1="55" x2="44" y2="104" stroke="#39ff14" stroke-width="0.4" opacity="0.15"/>
+    <line x1="15" y1="95" x2="44" y2="38" stroke="#39ff14" stroke-width="0.4" opacity="0.15"/>
+    <line x1="15" y1="95" x2="44" y2="71" stroke="#39ff14" stroke-width="0.4" opacity="0.25"/>
+    <line x1="15" y1="95" x2="44" y2="104" stroke="#39ff14" stroke-width="0.4" opacity="0.25"/>
+
+    <!-- Connections: hidden → output -->
+    <line x1="52" y1="5" x2="81" y2="30" stroke="#ff79c6" stroke-width="0.4" opacity="0.25"/>
+    <line x1="52" y1="38" x2="81" y2="30" stroke="#ff79c6" stroke-width="0.4" opacity="0.25"/>
+    <line x1="52" y1="38" x2="81" y2="80" stroke="#ff79c6" stroke-width="0.4" opacity="0.15"/>
+    <line x1="52" y1="71" x2="81" y2="30" stroke="#ff79c6" stroke-width="0.4" opacity="0.15"/>
+    <line x1="52" y1="71" x2="81" y2="80" stroke="#ff79c6" stroke-width="0.4" opacity="0.25"/>
+    <line x1="52" y1="104" x2="81" y2="80" stroke="#ff79c6" stroke-width="0.4" opacity="0.25"/>
+
+    <!-- Signal pulse traveling through network -->
+    <circle r="2" fill="#39ff14" filter="url(#glow-py)">
+      <animateMotion dur="3s" repeatCount="indefinite" path="M10,55 L48,38 L86,30" />
+      <animate attributeName="opacity" values="0;1;1;0" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <circle r="2" fill="#ff79c6" filter="url(#glow-py)">
+      <animateMotion dur="3.5s" repeatCount="indefinite" path="M10,95 L48,71 L86,80" />
+      <animate attributeName="opacity" values="0;1;1;0" dur="3.5s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- Layer labels -->
+    <text x="10" y="125" class="t-py d-py" font-size="7" text-anchor="middle">IN</text>
+    <text x="48" y="125" class="t-py d-py" font-size="7" text-anchor="middle">HIDDEN</text>
+    <text x="86" y="125" class="t-py d-py" font-size="7" text-anchor="middle">OUT</text>
+  </g>
+
+  <!-- Content -->
+  <g transform="translate(125, 48)">
+    <text x="0" y="15" class="tt-py">PYTHON AI/ML</text>
+
+    <g transform="translate(0, 32)">
+      <text x="0" y="10" class="t-py a-py lpy1">> CNN trained for CAPTCHA solving</text>
+
+      <text x="0" y="28" class="t-py lpy2"><tspan class="d-py">deep_lrn </tspan> = <tspan class="a-py">TensorFlow</tspan>, <tspan class="a-py">Keras</tspan></text>
+      <text x="0" y="46" class="t-py lpy3"><tspan class="d-py">gen_ai   </tspan> = <tspan class="a-py">Gemini API</tspan>, <tspan class="a-py">Ollama</tspan></text>
+      <text x="0" y="64" class="t-py lpy4"><tspan class="d-py">api      </tspan> = <tspan class="a-py">FastAPI</tspan> + <tspan class="s-py">WebSocket</tspan></text>
+      <text x="0" y="82" class="t-py lpy5"><tspan class="d-py">terminal </tspan> = <tspan class="a-py">Textual TUI</tspan> (<tspan class="s-py">10 themes</tspan>)</text>
+
+      <text x="0" y="108" class="t-py lpyp" font-weight="bold" clip-path="url(#clip-py)">~$ <tspan class="d-py">python -m train --epochs 50</tspan><tspan class="cb-py" fill="#39ff14">█</tspan></text>
+    </g>
+  </g>
+</svg>
