@@ -1,7 +1,7 @@
 
 
 <div align="center">
-  <a href="#root"><img src="./banner.svg?v=9" alt="Cyberpunk Banner" width="100%"/></a>
+  <a href="#root"><img src="./banner.svg?v=10" alt="Cyberpunk Banner" width="100%"/></a>
 </div>
 
 <br/>
@@ -39,19 +39,11 @@
 
 ### ❯ core_mainframe_stacks
 
-<table width="100%">
-  <tr>
-    <td width="33%" valign="top">
-      <img src="./stack_fullstack.svg?v=9" alt="Full-Stack TS/React" width="100%"/>
-    </td>
-    <td width="33%" valign="top">
-      <img src="./stack_python_ai.svg?v=9" alt="Python AI/ML & TUI" width="100%"/>
-    </td>
-    <td width="33%" valign="top">
-      <img src="./stack_agentic.svg?v=9" alt="Agentic Workflows" width="100%"/>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="./stack_fullstack.svg?v=10" alt="Full-Stack TS/React" width="260" />
+  <img src="./stack_python_ai.svg?v=10" alt="Python AI/ML & TUI" width="260" />
+  <img src="./stack_agentic.svg?v=10" alt="Agentic Workflows" width="260" />
+</p>
 
 <br/>
 
