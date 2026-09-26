@@ -1,6 +1,5 @@
-
 <div align="center">
-  <a href="#root"><img src="./banner.svg?v=10" alt="Banner Cyberpunk" width="100%"/></a>
+  <a href="#root"><img src="./banner.svg?v=11" alt="Thiago Araújo — Engenheiro de Sistemas" width="100%"/></a>
 </div>
 
 <p align="center"><sub>🇺🇸 <a href="readme.md">English version</a></sub></p>
@@ -9,164 +8,106 @@
 
 <table width="100%">
   <tr>
-    <td width="50%" valign="top">
-      <pre lang="bash"><code>$ thiago / perfil_tecnico
-------------------------------------------------
-• Frontend : React 19, TypeScript, Tailwind, Zustand
-• Backend  : Node.js, Express 5, JWT, Zod, Hono
-• Bancos   : PostgreSQL, MongoDB, Prisma, Drizzle
-• DevOps   : Docker, Vercel, GitHub Actions (CI/CD)
-• Integrações: Stripe, Mercado Pago (Webhooks &amp; Pix)</code></pre>
+    <td width="55%" valign="top">
+      <p>Dev full-stack construindo sistemas de ponta a ponta em TypeScript — fluxos de pagamento (Stripe, Mercado Pago/Pix), auth, filas em background, pipelines de OCR/IA — e indo de Python quando o problema é ML ou tooling. Gosto de ser dono do caminho inteiro: schema → API → UI → deploy.</p>
+      <p>No momento: automação agêntica e loops de controle embarcado — bots que sobrevivem a captchas, luvas que voam drones.</p>
     </td>
-    <td width="50%" valign="top">
-      <pre lang="python"><code>class EngenheiroDeSoftware:
-    def __init__(self):
-        self.nome = "Thiago Araújo"
-        self.local = "Osasco, SP, Brasil"
-        self.foco = "Arquitetura Full-Stack Web &amp; Sistemas"
-        self.formacao = "B.S. Engenharia de Software (UNIVESP '31)"
-        self.idiomas = ["Português (Nativo)", "Inglês (Fluente)"]</code></pre>
+    <td width="45%" valign="top">
+      <pre lang="yaml"><code>nome      Thiago Araújo
+base      São Paulo, BR
+estudo    B.S. Engenharia de Software — UNIVESP '31
+fala      Português (nativo) · English (fluent)
+site      thisux.tech</code></pre>
     </td>
   </tr>
 </table>
 
 <br/>
 
-### ❯ whoami
-
-> Desenvolvedor full-stack construindo sistemas ponta a ponta em TypeScript — fluxos de pagamento (Stripe, Mercado Pago/Pix), autenticação, filas em background, pipelines de OCR/IA — e partindo pro Python quando o problema é ML ou ferramental. Gosto de ser dono do caminho inteiro: schema → API → UI → deploy.
-
-<br/>
-
-### ❯ core_mainframe_stacks
+## Sistemas
 
 <p align="center">
-  <img src="./stack_fullstack.svg?v=10" alt="Full-Stack TS/React" width="260" />
-  <img src="./stack_python_ai.svg?v=10" alt="Python AI/ML & TUI" width="260" />
-  <img src="./stack_agentic.svg?v=10" alt="Workflows Agênticos" width="260" />
-</p>
-
-<br/>
-
-<p align="left">
-  <img src="https://img.shields.io/badge/TypeScript-0D1117?style=flat-square&logo=typescript&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/React-0D1117?style=flat-square&logo=react&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="React" />
-  <img src="https://img.shields.io/badge/Next.js-0D1117?style=flat-square&logo=nextdotjs&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="Next.js" />
-  <img src="https://img.shields.io/badge/Node.js-0D1117?style=flat-square&logo=nodedotjs&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="Node.js" />
-  <img src="https://img.shields.io/badge/Express-0D1117?style=flat-square&logo=express&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="Express" />
-  <img src="https://img.shields.io/badge/PostgreSQL-0D1117?style=flat-square&logo=postgresql&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/MongoDB-0D1117?style=flat-square&logo=mongodb&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="MongoDB" />
-  <img src="https://img.shields.io/badge/Redis-0D1117?style=flat-square&logo=redis&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="Redis" />
-  <img src="https://img.shields.io/badge/Docker-0D1117?style=flat-square&logo=docker&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="Docker" />
-  <img src="https://img.shields.io/badge/Vitest-0D1117?style=flat-square&logo=vitest&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="Vitest" />
-  <img src="https://img.shields.io/badge/Python-0D1117?style=flat-square&logo=python&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="Python" />
-  <img src="https://img.shields.io/badge/Git-0D1117?style=flat-square&logo=git&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="Git" />
+  <img src="./systems.svg?v=1" alt="Sistemas — produto, ML & dados, agentes & máquinas" width="100%"/>
 </p>
 
 ---
 
-### ❯ projetos_ativos
+## Trabalho selecionado
 
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
-      <h4>Correio Elegante | <small>Full-Stack Web & Pagamentos</small></h4>
-      <p>Plataforma de envio de mensagens com autenticação JWT via cookies httpOnly e validação estrita com Zod.</p>
+      <h4>Correio Elegante — <small>pagamentos & produto</small></h4>
+      <p>Plataforma de cartas digitais com temas, upload de mídia e link público liberado por pagamento.</p>
       <ul>
-        <li><b>Integrações:</b> Stripe & Mercado Pago (Pix & Cartões) com tratamento automático de webhooks.</li>
-        <li><b>Testes:</b> Testes unitários e de integração de API com Vitest e Supertest.</li>
+        <li>Stripe (cartão/boleto) + PagBank Pix com reconciliação por webhook.</li>
+        <li>SPA React 19, API Express 5, Prisma sobre MongoDB, Vitest + Supertest.</li>
       </ul>
-      <p>
-        <img src="https://img.shields.io/badge/React_19-0D1117?style=flat-square&logo=react&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="React 19" />
-        <img src="https://img.shields.io/badge/Express-0D1117?style=flat-square&logo=express&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="Express" />
-        <img src="https://img.shields.io/badge/Prisma-0D1117?style=flat-square&logo=prisma&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="Prisma" />
-        <img src="https://img.shields.io/badge/MongoDB-0D1117?style=flat-square&logo=mongodb&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="MongoDB" />
-        <img src="https://img.shields.io/badge/Stripe-0D1117?style=flat-square&logo=stripe&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="Stripe" />
-        <img src="https://img.shields.io/badge/Vitest-0D1117?style=flat-square&logo=vitest&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="Vitest" />
-      </p>
+      <p><sub>react 19 · express 5 · prisma · stripe · pagbank</sub></p>
     </td>
     <td width="50%" valign="top">
-      <h4>Singular | <small>Plataforma Educacional</small></h4>
-      <p>Plataforma de quizzes com processamento assíncrono distribuído em filas e interface progressive web app (PWA).</p>
+      <h4>Singular — <small>pipeline assíncrono de quiz</small></h4>
+      <p>Plataforma de quiz onde a ingestão de documentos é um job distribuído, não uma request.</p>
       <ul>
-        <li><b>Arquitetura:</b> Filas de processamento em background com BullMQ e Redis.</li>
-        <li><b>Bancos:</b> Modelagem relacional performática com PostgreSQL e Drizzle ORM.</li>
+        <li>Filas BullMQ + Redis, etapa de OCR em Python, Ollama gerando questões.</li>
+        <li>API Hono, PostgreSQL + Drizzle, front React PWA.</li>
       </ul>
-      <p>
-        <img src="https://img.shields.io/badge/React-0D1117?style=flat-square&logo=react&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="React" />
-        <img src="https://img.shields.io/badge/Hono-0D1117?style=flat-square&logo=hono&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="Hono" />
-        <img src="https://img.shields.io/badge/PostgreSQL-0D1117?style=flat-square&logo=postgresql&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="PostgreSQL" />
-        <img src="https://img.shields.io/badge/Drizzle_ORM-0D1117?style=flat-square&logo=drizzle&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="Drizzle ORM" />
-        <img src="https://img.shields.io/badge/Redis-0D1117?style=flat-square&logo=redis&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="Redis" />
-        <img src="https://img.shields.io/badge/BullMQ-0D1117?style=flat-square&logo=bull&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="BullMQ" />
-        <img src="https://img.shields.io/badge/Docker-0D1117?style=flat-square&logo=docker&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="Docker" />
-      </p>
+      <p><sub>hono · bullmq · drizzle · postgres · ollama</sub></p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h4>Oracle | <small>Automação & ML</small></h4>
-      <p>Companheiro de automação dirigido por máquina de estados para Epic RPG, com CNN local resolvendo captchas de verificação.</p>
+      <h4>Oracle — <small>automação & ML</small></h4>
+      <p>Companheiro de automação por máquina de estados para Epic RPG; uma CNN local resolve os captchas offline.</p>
       <ul>
-        <li><b>Visão:</b> CNN em TensorFlow Lite (modelos gray + color) para captchas, 100% offline.</li>
-        <li><b>Interfaces:</b> TUI em Textual mais dashboard web em FastAPI para controle ao vivo.</li>
+        <li>CNNs TensorFlow Lite (gray + cor), sem chamadas de nuvem.</li>
+        <li>TUI Textual + dashboard FastAPI para controle ao vivo.</li>
       </ul>
-      <p>
-        <img src="https://img.shields.io/badge/Python-0D1117?style=flat-square&logo=python&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="Python" />
-        <img src="https://img.shields.io/badge/TensorFlow_Lite-0D1117?style=flat-square&logo=tensorflow&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="TensorFlow Lite" />
-        <img src="https://img.shields.io/badge/Textual-0D1117?style=flat-square&logo=python&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="Textual" />
-        <img src="https://img.shields.io/badge/FastAPI-0D1117?style=flat-square&logo=fastapi&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="FastAPI" />
-      </p>
+      <p><sub>python · tflite · textual · fastapi · pyinstaller</sub></p>
     </td>
     <td width="50%" valign="top">
-      <h4>AeroGlove | <small>Embarcados & Firmware</small></h4>
-      <p>Luva de controle de drone por gestos: um ESP32-S3 lê a IMU, roda fusão de sensores e transmite comandos via ESP-NOW.</p>
+      <h4>AeroGlove — <small>embarcado & firmware</small></h4>
+      <p>Luva de controle de drone por gestos: um ESP32-S3 lê a IMU, funde os dados e transmite comandos.</p>
       <ul>
-        <li><b>Firmware:</b> MicroPython no ESP32-S3, Madgwick AHRS a 100Hz sobre GY-91/MPU9250.</li>
-        <li><b>Comms:</b> ESP-NOW para o link de controle, BLE (Nordic UART) para configuração.</li>
+        <li>MicroPython, Madgwick AHRS a 100 Hz numa GY-91/MPU9250.</li>
+        <li>Link de controle ESP-NOW, BLE (Nordic UART) pra configuração.</li>
       </ul>
-      <p>
-        <img src="https://img.shields.io/badge/MicroPython-0D1117?style=flat-square&logo=python&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="MicroPython" />
-        <img src="https://img.shields.io/badge/ESP32--S3-0D1117?style=flat-square&logo=espressif&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="ESP32-S3" />
-        <img src="https://img.shields.io/badge/ESP--NOW-0D1117?style=flat-square&logo=espressif&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="ESP-NOW" />
-        <img src="https://img.shields.io/badge/BLE-0D1117?style=flat-square&logo=bluetooth&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="BLE" />
-      </p>
+      <p><sub>micropython · esp32-s3 · esp-now · ble · madgwick</sub></p>
     </td>
   </tr>
 </table>
 
 ---
 
-### ❯ github_stats
+## Estatísticas
 
 <div align="center">
-  <!-- General Stats Card -->
-  <img src="https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&theme=cyberpunk_thiago&include_all_commits=true&count_private=true&card_width=495&v=9" alt="GitHub Stats" width="49.5%" />
-  <!-- Most Used Languages Card -->
-  <img src="https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&layout=compact&theme=cyberpunk_thiago&langs_count=8&card_width=495&v=9" alt="Top Languages" width="49.5%" />
+  <img src="https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&include_all_commits=true&count_private=true&card_width=495&bg_color=0b0c10&title_color=ece9df&icon_color=e5484d&text_color=a8a395&border_color=26282e&v=11" alt="GitHub Stats" width="49.5%" />
+  <img src="https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&layout=compact&langs_count=8&card_width=495&bg_color=0b0c10&title_color=ece9df&text_color=a8a395&border_color=26282e&v=11" alt="Top Languages" width="49.5%" />
 </div>
 
 <p align="center">
-  <!-- Streak Stats Card -->
-  <img src="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&theme=cyberpunk-thiago&v=9" alt="GitHub Streak" width="100%" />
+  <img src="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&background=0b0c10&border=26282e&stroke=565b63&ring=e5484d&fire=e5484d&currStreakNum=ece9df&sideNums=ece9df&currStreakLabel=a8a395&sideLabels=a8a395&dates=8a8778&v=11" alt="GitHub Streak" width="100%" />
 </p>
 
 <p align="center">
-  <!-- Activity Graph Card -->
-  <img src="https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&theme=cyberpunk_thiago&v=9" alt="Activity Graph" width="100%" />
+  <img src="https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&bg_color=0b0c10&color=a8a395&line=e5484d&point=ece9df&area=true&area_color=3d1517&hide_border=true&custom_title=contribution%20graph&v=11" alt="Activity Graph" width="100%" />
 </p>
 
 ---
 
-### ❯ contato
+## Contato
 
 <div align="center">
   <a href="https://linkedin.com/in/thisux" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0D1117?style=for-the-badge&logo=linkedin&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="LinkedIn" />
+    <img src="https://img.shields.io/badge/LinkedIn-0b0c10?style=for-the-badge&logo=linkedin&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="LinkedIn" />
   </a>
   &nbsp;
   <a href="mailto:thisux94@gmail.com">
-    <img src="https://img.shields.io/badge/Email-0D1117?style=for-the-badge&logo=gmail&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="Email" />
+    <img src="https://img.shields.io/badge/Email-0b0c10?style=for-the-badge&logo=gmail&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="Email" />
   </a>
   &nbsp;
+  <a href="https://thisux.tech" target="_blank">
+    <img src="https://img.shields.io/badge/thisux.tech-0b0c10?style=for-the-badge&logo=firefoxbrowser&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="Portfolio" />
+  </a>
 </div>
