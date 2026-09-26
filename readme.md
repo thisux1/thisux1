@@ -4,6 +4,8 @@
   <a href="#root"><img src="./banner.svg?v=10" alt="Cyberpunk Banner" width="100%"/></a>
 </div>
 
+<p align="center"><sub>🇧🇷 <a href="readme.pt-br.md">Versão em Português</a></sub></p>
+
 <br/>
 
 <table width="100%">
@@ -33,7 +35,7 @@
 
 ### ❯ whoami
 
-> Full-Stack Developer focused on the modern JavaScript/TypeScript ecosystem. Solid experience in building complete web applications, from database modeling (SQL & NoSQL) and secure RESTful APIs, to responsive interfaces, automated testing, and cloud payment gateway integrations.
+> Full-stack developer building end-to-end systems in TypeScript — payment flows (Stripe, Mercado Pago/Pix), auth, background queues, OCR/AI pipelines — and reaching for Python when the problem is ML or tooling. I like owning the whole path: schema → API → UI → deploy.
 
 <br/>
 
@@ -99,6 +101,36 @@
         <img src="https://img.shields.io/badge/Redis-0D1117?style=flat-square&logo=redis&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="Redis" />
         <img src="https://img.shields.io/badge/BullMQ-0D1117?style=flat-square&logo=bull&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="BullMQ" />
         <img src="https://img.shields.io/badge/Docker-0D1117?style=flat-square&logo=docker&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="Docker" />
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h4>Oracle | <small>Automation & ML</small></h4>
+      <p>State-machine driven automation companion for Epic RPG, with a local CNN solving verification captchas.</p>
+      <ul>
+        <li><b>Vision:</b> TensorFlow Lite CNN (gray + color models) for captcha solving, fully offline.</li>
+        <li><b>Interfaces:</b> Textual TUI plus a FastAPI browser dashboard for live control.</li>
+      </ul>
+      <p>
+        <img src="https://img.shields.io/badge/Python-0D1117?style=flat-square&logo=python&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="Python" />
+        <img src="https://img.shields.io/badge/TensorFlow_Lite-0D1117?style=flat-square&logo=tensorflow&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="TensorFlow Lite" />
+        <img src="https://img.shields.io/badge/Textual-0D1117?style=flat-square&logo=python&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="Textual" />
+        <img src="https://img.shields.io/badge/FastAPI-0D1117?style=flat-square&logo=fastapi&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="FastAPI" />
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h4>AeroGlove | <small>Embedded & Firmware</small></h4>
+      <p>Gesture-controlled drone glove: an ESP32-S3 reads an IMU, runs sensor fusion, and streams commands over ESP-NOW.</p>
+      <ul>
+        <li><b>Firmware:</b> MicroPython on ESP32-S3, Madgwick AHRS at 100Hz over a GY-91/MPU9250.</li>
+        <li><b>Comms:</b> ESP-NOW for control link, BLE (Nordic UART) for configuration.</li>
+      </ul>
+      <p>
+        <img src="https://img.shields.io/badge/MicroPython-0D1117?style=flat-square&logo=python&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="MicroPython" />
+        <img src="https://img.shields.io/badge/ESP32--S3-0D1117?style=flat-square&logo=espressif&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="ESP32-S3" />
+        <img src="https://img.shields.io/badge/ESP--NOW-0D1117?style=flat-square&logo=espressif&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="ESP-NOW" />
+        <img src="https://img.shields.io/badge/BLE-0D1117?style=flat-square&logo=bluetooth&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="BLE" />
       </p>
     </td>
   </tr>
