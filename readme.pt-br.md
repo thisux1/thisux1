@@ -1,32 +1,31 @@
 
-
 <div align="center">
-  <a href="#root"><img src="./banner.svg?v=10" alt="Cyberpunk Banner" width="100%"/></a>
+  <a href="#root"><img src="./banner.svg?v=10" alt="Banner Cyberpunk" width="100%"/></a>
 </div>
 
-<p align="center"><sub>🇧🇷 <a href="readme.pt-br.md">Versão em Português</a></sub></p>
+<p align="center"><sub>🇺🇸 <a href="readme.md">English version</a></sub></p>
 
 <br/>
 
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
-      <pre lang="bash"><code>$ thiago / technical_profile
+      <pre lang="bash"><code>$ thiago / perfil_tecnico
 ------------------------------------------------
 • Frontend : React 19, TypeScript, Tailwind, Zustand
 • Backend  : Node.js, Express 5, JWT, Zod, Hono
-• Databases: PostgreSQL, MongoDB, Prisma, Drizzle
+• Bancos   : PostgreSQL, MongoDB, Prisma, Drizzle
 • DevOps   : Docker, Vercel, GitHub Actions (CI/CD)
-• Integrations: Stripe, Mercado Pago (Webhooks &amp; Pix)</code></pre>
+• Integrações: Stripe, Mercado Pago (Webhooks &amp; Pix)</code></pre>
     </td>
     <td width="50%" valign="top">
-      <pre lang="python"><code>class SoftwareEngineer:
+      <pre lang="python"><code>class EngenheiroDeSoftware:
     def __init__(self):
-        self.name = "Thiago Araújo"
-        self.location = "Osasco, SP, Brazil"
-        self.focus = "Full-Stack Web &amp; Systems Architect"
-        self.education = "B.S. Software Engineering (UNIVESP '31)"
-        self.languages = ["English (Fluent)", "Portuguese (Native)"]</code></pre>
+        self.nome = "Thiago Araújo"
+        self.local = "Osasco, SP, Brasil"
+        self.foco = "Arquitetura Full-Stack Web &amp; Sistemas"
+        self.formacao = "B.S. Engenharia de Software (UNIVESP '31)"
+        self.idiomas = ["Português (Nativo)", "Inglês (Fluente)"]</code></pre>
     </td>
   </tr>
 </table>
@@ -35,7 +34,7 @@
 
 ### ❯ whoami
 
-> Full-stack developer building end-to-end systems in TypeScript — payment flows (Stripe, Mercado Pago/Pix), auth, background queues, OCR/AI pipelines — and reaching for Python when the problem is ML or tooling. I like owning the whole path: schema → API → UI → deploy.
+> Desenvolvedor full-stack construindo sistemas ponta a ponta em TypeScript — fluxos de pagamento (Stripe, Mercado Pago/Pix), autenticação, filas em background, pipelines de OCR/IA — e partindo pro Python quando o problema é ML ou ferramental. Gosto de ser dono do caminho inteiro: schema → API → UI → deploy.
 
 <br/>
 
@@ -44,7 +43,7 @@
 <p align="center">
   <img src="./stack_fullstack.svg?v=10" alt="Full-Stack TS/React" width="260" />
   <img src="./stack_python_ai.svg?v=10" alt="Python AI/ML & TUI" width="260" />
-  <img src="./stack_agentic.svg?v=10" alt="Agentic Workflows" width="260" />
+  <img src="./stack_agentic.svg?v=10" alt="Workflows Agênticos" width="260" />
 </p>
 
 <br/>
@@ -66,16 +65,16 @@
 
 ---
 
-### ❯ active_projects
+### ❯ projetos_ativos
 
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
-      <h4>Correio Elegante | <small>Full-Stack Web & Payments</small></h4>
-      <p>Secure message delivery platform with JWT authentication via httpOnly cookies and strict validation with Zod.</p>
+      <h4>Correio Elegante | <small>Full-Stack Web & Pagamentos</small></h4>
+      <p>Plataforma de envio de mensagens com autenticação JWT via cookies httpOnly e validação estrita com Zod.</p>
       <ul>
-        <li><b>Integrations:</b> Stripe & Mercado Pago (Pix & Cards) with automatic webhook handling.</li>
-        <li><b>Testing:</b> Automated unit and API integration tests via Vitest and Supertest.</li>
+        <li><b>Integrações:</b> Stripe & Mercado Pago (Pix & Cartões) com tratamento automático de webhooks.</li>
+        <li><b>Testes:</b> Testes unitários e de integração de API com Vitest e Supertest.</li>
       </ul>
       <p>
         <img src="https://img.shields.io/badge/React_19-0D1117?style=flat-square&logo=react&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="React 19" />
@@ -87,11 +86,11 @@
       </p>
     </td>
     <td width="50%" valign="top">
-      <h4>Singular | <small>Educational Platform</small></h4>
-      <p>Quiz platform featuring distributed asynchronous queue processing and a progressive web app (PWA) interface.</p>
+      <h4>Singular | <small>Plataforma Educacional</small></h4>
+      <p>Plataforma de quizzes com processamento assíncrono distribuído em filas e interface progressive web app (PWA).</p>
       <ul>
-        <li><b>Architecture:</b> Robust background processing queues using BullMQ and Redis.</li>
-        <li><b>Databases:</b> Performant relational modeling using PostgreSQL and Drizzle ORM.</li>
+        <li><b>Arquitetura:</b> Filas de processamento em background com BullMQ e Redis.</li>
+        <li><b>Bancos:</b> Modelagem relacional performática com PostgreSQL e Drizzle ORM.</li>
       </ul>
       <p>
         <img src="https://img.shields.io/badge/React-0D1117?style=flat-square&logo=react&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="React" />
@@ -106,11 +105,11 @@
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h4>Oracle | <small>Automation & ML</small></h4>
-      <p>State-machine driven automation companion for Epic RPG, with a local CNN solving verification captchas.</p>
+      <h4>Oracle | <small>Automação & ML</small></h4>
+      <p>Companheiro de automação dirigido por máquina de estados para Epic RPG, com CNN local resolvendo captchas de verificação.</p>
       <ul>
-        <li><b>Vision:</b> TensorFlow Lite CNN (gray + color models) for captcha solving, fully offline.</li>
-        <li><b>Interfaces:</b> Textual TUI plus a FastAPI browser dashboard for live control.</li>
+        <li><b>Visão:</b> CNN em TensorFlow Lite (modelos gray + color) para captchas, 100% offline.</li>
+        <li><b>Interfaces:</b> TUI em Textual mais dashboard web em FastAPI para controle ao vivo.</li>
       </ul>
       <p>
         <img src="https://img.shields.io/badge/Python-0D1117?style=flat-square&logo=python&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="Python" />
@@ -120,11 +119,11 @@
       </p>
     </td>
     <td width="50%" valign="top">
-      <h4>AeroGlove | <small>Embedded & Firmware</small></h4>
-      <p>Gesture-controlled drone glove: an ESP32-S3 reads an IMU, runs sensor fusion, and streams commands over ESP-NOW.</p>
+      <h4>AeroGlove | <small>Embarcados & Firmware</small></h4>
+      <p>Luva de controle de drone por gestos: um ESP32-S3 lê a IMU, roda fusão de sensores e transmite comandos via ESP-NOW.</p>
       <ul>
-        <li><b>Firmware:</b> MicroPython on ESP32-S3, Madgwick AHRS at 100Hz over a GY-91/MPU9250.</li>
-        <li><b>Comms:</b> ESP-NOW for control link, BLE (Nordic UART) for configuration.</li>
+        <li><b>Firmware:</b> MicroPython no ESP32-S3, Madgwick AHRS a 100Hz sobre GY-91/MPU9250.</li>
+        <li><b>Comms:</b> ESP-NOW para o link de controle, BLE (Nordic UART) para configuração.</li>
       </ul>
       <p>
         <img src="https://img.shields.io/badge/MicroPython-0D1117?style=flat-square&logo=python&logoColor=ff2a5f&labelColor=0D1117&color=ff2a5f" alt="MicroPython" />
@@ -159,7 +158,7 @@
 
 ---
 
-### ❯ contact
+### ❯ contato
 
 <div align="center">
   <a href="https://linkedin.com/in/thisux" target="_blank">
