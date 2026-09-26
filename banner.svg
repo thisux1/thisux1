@@ -1,5 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 880 280" width="880" height="280">
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 280" width="880" height="280">
 
   <rect width="880" height="280" fill="#0b0c10"/>
   <rect x="0.5" y="0.5" width="879" height="279" fill="none" stroke="#26282e"/>
@@ -12,18 +11,32 @@
   <!-- name -->
   <text x="54" y="154" font-family="Georgia,'Times New Roman',serif" font-size="76" fill="#ece9df">Thiago <tspan fill="#e5484d" font-style="italic">Araújo</tspan></text>
 
+  <!-- ink sweep under the red name: redraws itself -->
+  <line x1="236" y1="168" x2="404" y2="168" stroke="#e5484d" stroke-width="2" stroke-dasharray="170" stroke-dashoffset="170" stroke-linecap="round">
+    <animate attributeName="stroke-dashoffset" values="170;0;0;170" keyTimes="0;0.35;0.75;1" dur="6s" repeatCount="indefinite"/>
+  </line>
+
   <!-- sub-line -->
   <text x="56" y="198" font-family="ui-monospace,'Fira Code',monospace" font-size="14.5" fill="#a8a395">end-to-end systems — schema → api → ui → deploy</text>
+
+  <!-- scan line: thin rule sweeping the poster -->
+  <line x1="24" y1="0" x2="856" y2="0" stroke="#e5484d" stroke-width="1" stroke-opacity="0.35">
+    <animateTransform attributeName="transform" type="translate" values="0 66;0 262;0 66" keyTimes="0;0.5;1" dur="9s" repeatCount="indefinite"/>
+  </line>
 
   <!-- rotating stamp -->
   <g>
     <circle cx="762" cy="138" r="34" fill="none" stroke="#26282e" stroke-width="1"/>
     <circle cx="762" cy="138" r="58" fill="none" stroke="#a8a395" stroke-width="7" stroke-dasharray="0.5 13.4" stroke-linecap="round">
-      <animateTransform attributeName="transform" type="rotate" from="0 762 138" to="360 762 138" dur="42s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 762 138" to="360 762 138" dur="9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="762" cy="138" r="46" fill="none" stroke="#565b63" stroke-width="1" stroke-dasharray="4 10">
+      <animateTransform attributeName="transform" type="rotate" from="360 762 138" to="0 762 138" dur="14s" repeatCount="indefinite"/>
     </circle>
     <text x="762" y="214" font-family="ui-monospace,'Fira Code',monospace" font-size="9.5" letter-spacing="2" fill="#565b63" text-anchor="middle">THISUX.TECH</text>
     <g fill="#e5484d">
-      <animateTransform attributeName="transform" type="rotate" from="0 762 138" to="360 762 138" dur="60s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 762 138" to="-360 762 138" dur="16s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.55;1" dur="2.8s" repeatCount="indefinite"/>
       <path d="M 762 118 Q 767 133 782 138 Q 767 143 762 158 Q 757 143 742 138 Q 757 133 762 118 Z"/>
     </g>
   </g>
@@ -31,11 +44,17 @@
   <!-- footer -->
   <line x1="56" y1="228" x2="824" y2="228" stroke="#26282e" stroke-width="1"/>
   <g font-family="ui-monospace,'Fira Code',monospace" font-size="11" letter-spacing="2.5" fill="#8a8778">
-    <rect x="58" y="243" width="7" height="7" fill="#e5484d" transform="rotate(45 61.5 246.5)"/>
+    <rect x="58" y="243" width="7" height="7" fill="#e5484d" transform="rotate(45 61.5 246.5)">
+      <animate attributeName="opacity" values="1;0.15;1" dur="2.2s" begin="0s" repeatCount="indefinite"/>
+    </rect>
     <text x="74" y="252">PRODUCT SYSTEMS</text>
-    <rect x="328" y="243" width="7" height="7" fill="#e5484d" transform="rotate(45 331.5 246.5)"/>
+    <rect x="328" y="243" width="7" height="7" fill="#e5484d" transform="rotate(45 331.5 246.5)">
+      <animate attributeName="opacity" values="1;0.15;1" dur="2.2s" begin="0.7s" repeatCount="indefinite"/>
+    </rect>
     <text x="344" y="252">ML &amp; DATA</text>
-    <rect x="560" y="243" width="7" height="7" fill="#e5484d" transform="rotate(45 563.5 246.5)"/>
+    <rect x="560" y="243" width="7" height="7" fill="#e5484d" transform="rotate(45 563.5 246.5)">
+      <animate attributeName="opacity" values="1;0.15;1" dur="2.2s" begin="1.4s" repeatCount="indefinite"/>
+    </rect>
     <text x="576" y="252">AGENTS &amp; AUTOMATION</text>
   </g>
 </svg>

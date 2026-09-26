@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="#root"><img src="./banner.svg?v=11" alt="Thiago Araújo — Systems Engineer" width="100%"/></a>
+  <a href="#root"><img src="./banner.svg?v=12" alt="Thiago Araújo — Systems Engineer" width="100%"/></a>
 </div>
 
 <p align="center"><sub>🇧🇷 <a href="readme.pt-br.md">Versão em Português</a></sub></p>
@@ -27,7 +27,7 @@ site      thisux.tech</code></pre>
 ## Systems
 
 <p align="center">
-  <img src="./systems.svg?v=1" alt="Systems — product, ML & data, agents & machines" width="100%"/>
+  <img src="./systems.svg?v=2" alt="Systems — product, ML & data, agents & machines" width="100%"/>
 </p>
 
 ---
