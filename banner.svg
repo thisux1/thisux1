@@ -22,12 +22,9 @@
       <animateTransform attributeName="transform" type="rotate" from="0 762 138" to="360 762 138" dur="42s" repeatCount="indefinite"/>
     </circle>
     <text x="762" y="214" font-family="ui-monospace,'Fira Code',monospace" font-size="9.5" letter-spacing="2" fill="#565b63" text-anchor="middle">THISUX.TECH</text>
-    <g stroke="#e5484d" stroke-width="3" stroke-linecap="round">
-      <animateTransform attributeName="transform" type="rotate" from="360 762 138" to="0 762 138" dur="60s" repeatCount="indefinite"/>
-      <line x1="762" y1="122" x2="762" y2="154"/>
-      <line x1="746" y1="138" x2="778" y2="138"/>
-      <line x1="750.7" y1="126.7" x2="773.3" y2="149.3"/>
-      <line x1="773.3" y1="126.7" x2="750.7" y2="149.3"/>
+    <g fill="#e5484d">
+      <animateTransform attributeName="transform" type="rotate" from="0 762 138" to="360 762 138" dur="60s" repeatCount="indefinite"/>
+      <path d="M 762 118 Q 767 133 782 138 Q 767 143 762 158 Q 757 143 742 138 Q 757 133 762 118 Z"/>
     </g>
   </g>
 
