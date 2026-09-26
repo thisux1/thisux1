@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 330" width="850" height="330">
+  <rect width="850" height="330" fill="#0b0c10"/>
+  <rect x="0.5" y="0.5" width="849" height="329" fill="none" stroke="#26282e"/>
+
+  <!-- header -->
+  <text x="48" y="44" font-family="ui-monospace,'Fira Code',monospace" font-size="11.5" letter-spacing="3" fill="#8a8778">SYSTEMS — OWNED END-TO-END</text>
+  <text x="802" y="44" font-family="ui-monospace,'Fira Code',monospace" font-size="11.5" letter-spacing="3" fill="#565b63" text-anchor="end">01 — 03</text>
+  <line x1="48" y1="58" x2="802" y2="58" stroke="#26282e"/>
+
+  <!-- column separators -->
+  <line x1="300" y1="84" x2="300" y2="300" stroke="#26282e"/>
+  <line x1="558" y1="84" x2="558" y2="300" stroke="#26282e"/>
+
+  <!-- col 1: product systems -->
+  <text x="48" y="100" font-family="ui-monospace,'Fira Code',monospace" font-size="13" fill="#e5484d">01</text>
+  <g stroke="#e5484d" stroke-width="1.5" fill="none">
+    <animateTransform attributeName="transform" type="rotate" from="0 262 96" to="360 262 96" dur="24s" repeatCount="indefinite"/>
+    <rect x="252" y="86" width="20" height="20" transform="rotate(45 262 96)"/>
+  </g>
+  <text x="48" y="136" font-family="Georgia,'Times New Roman',serif" font-size="26" fill="#ece9df">Product Systems</text>
+  <line x1="48" y1="152" x2="276" y2="152" stroke="#26282e"/>
+  <g font-family="ui-monospace,'Fira Code',monospace" font-size="12.5" fill="#a8a395">
+    <text x="48" y="180">react 19 · next.js · vite</text>
+    <text x="48" y="206">node · express · hono</text>
+    <text x="48" y="232">stripe · mercado pago pix</text>
+    <text x="48" y="258">postgres · prisma · drizzle</text>
+    <text x="48" y="284">tailwind · framer motion</text>
+  </g>
+
+  <!-- col 2: ml & data -->
+  <text x="316" y="100" font-family="ui-monospace,'Fira Code',monospace" font-size="13" fill="#e5484d">02</text>
+  <g fill="none">
+    <circle cx="526" cy="96" r="11" stroke="#e5484d" stroke-width="1.5"/>
+    <circle cx="526" cy="96" r="4" fill="#e5484d">
+      <animate attributeName="opacity" values="1;0.25;1" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="526" cy="96" r="17" stroke="#e5484d" stroke-width="1" stroke-opacity="0.4">
+      <animate attributeName="r" values="12;19;12" dur="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.5;0;0.5" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <text x="316" y="136" font-family="Georgia,'Times New Roman',serif" font-size="26" fill="#ece9df">ML &amp; Data</text>
+  <line x1="316" y1="152" x2="534" y2="152" stroke="#26282e"/>
+  <g font-family="ui-monospace,'Fira Code',monospace" font-size="12.5" fill="#a8a395">
+    <text x="316" y="180">python · tensorflow lite</text>
+    <text x="316" y="206">ocr → structured data</text>
+    <text x="316" y="232">pandas · stats models</text>
+    <text x="316" y="258">supabase · data apis</text>
+    <text x="316" y="284">openai · ollama</text>
+  </g>
+
+  <!-- col 3: agents & machines -->
+  <text x="574" y="100" font-family="ui-monospace,'Fira Code',monospace" font-size="13" fill="#e5484d">03</text>
+  <g stroke="#e5484d" stroke-width="1.5" fill="none">
+    <animateTransform attributeName="transform" type="rotate" from="0 788 96" to="-360 788 96" dur="30s" repeatCount="indefinite"/>
+    <path d="M 788 85 L 799 105 L 777 105 Z"/>
+  </g>
+  <text x="574" y="136" font-family="Georgia,'Times New Roman',serif" font-size="26" fill="#ece9df">Agents &amp; Machines</text>
+  <line x1="574" y1="152" x2="798" y2="152" stroke="#26282e"/>
+  <g font-family="ui-monospace,'Fira Code',monospace" font-size="12.5" fill="#a8a395">
+    <text x="574" y="180">discord.py-self · fastapi</text>
+    <text x="574" y="206">bullmq · redis workers</text>
+    <text x="574" y="232">esp32-s3 · esp-now · ble</text>
+    <text x="574" y="258">textual tui · pyinstaller</text>
+    <text x="574" y="284">docker · github actions</text>
+  </g>
+</svg>
