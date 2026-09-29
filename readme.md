@@ -1,6 +1,6 @@
 <div align="center">
   <a href="#root">
-    <img src="./banner.svg?v=13" alt="Thiago Araújo — Software Engineer & Builder" width="100%" />
+    <img src="./banner.svg?v=14" alt="Thiago Araújo — Software Engineer & Builder" width="100%" />
   </a>
 </div>
 
