@@ -1,31 +1,58 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 280" width="880" height="280">
 
+  <defs>
+    <!-- typewriter window for the sub-line: starts closed, steps open, stays open -->
+    <clipPath id="subClip">
+      <rect x="56" y="181" width="430" height="22">
+        <animate attributeName="width" calcMode="discrete" values="0;24;48;72;96;120;144;168;192;216;240;264;288;312;336;360;384;408;430" keyTimes="0;0.2;0.244;0.288;0.332;0.376;0.421;0.465;0.509;0.553;0.597;0.641;0.685;0.729;0.773;0.817;0.862;0.906;0.95" dur="2.8s" begin="0s" repeatCount="1" fill="freeze"/>
+      </rect>
+    </clipPath>
+  </defs>
+
   <rect width="880" height="280" fill="#0b0c10"/>
   <rect x="0.5" y="0.5" width="879" height="279" fill="none" stroke="#26282e"/>
 
-  <!-- header row -->
-  <text x="56" y="46" font-family="ui-monospace,'Fira Code',monospace" font-size="11.5" letter-spacing="3" fill="#8a8778">SYSTEMS ENGINEER · B.S. SOFTWARE ENGINEERING</text>
-  <text x="824" y="46" font-family="ui-monospace,'Fira Code',monospace" font-size="11.5" letter-spacing="3" fill="#8a8778" text-anchor="end">SÃO PAULO · BR</text>
-  <line x1="56" y1="60" x2="824" y2="60" stroke="#26282e" stroke-width="1"/>
-
-  <!-- name -->
-  <text x="54" y="154" font-family="Georgia,'Times New Roman',serif" font-size="76" fill="#ece9df">Thiago <tspan fill="#e5484d" font-style="italic">Araújo</tspan></text>
-
-  <!-- ink sweep under the red name: redraws itself -->
-  <line x1="236" y1="168" x2="404" y2="168" stroke="#e5484d" stroke-width="2" stroke-dasharray="170" stroke-dashoffset="170" stroke-linecap="round">
-    <animate attributeName="stroke-dashoffset" values="170;0;0;170" keyTimes="0;0.35;0.75;1" dur="6s" repeatCount="indefinite"/>
-  </line>
-
-  <!-- sub-line -->
-  <text x="56" y="198" font-family="ui-monospace,'Fira Code',monospace" font-size="14.5" fill="#a8a395">end-to-end systems — schema → api → ui → deploy</text>
-
-  <!-- scan line: thin rule sweeping the poster -->
-  <line x1="24" y1="0" x2="856" y2="0" stroke="#e5484d" stroke-width="1" stroke-opacity="0.35">
-    <animateTransform attributeName="transform" type="translate" values="0 66;0 262;0 66" keyTimes="0;0.5;1" dur="9s" repeatCount="indefinite"/>
-  </line>
-
-  <!-- rotating stamp -->
+  <!-- header row: fades in once, rule draws itself once -->
   <g>
+    <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.02;0.3" dur="1.8s" begin="0s" repeatCount="1" fill="freeze"/>
+    <text x="56" y="46" font-family="ui-monospace,'Fira Code',monospace" font-size="11.5" letter-spacing="3" fill="#8a8778">SYSTEMS ENGINEER · B.S. SOFTWARE ENGINEERING</text>
+    <text x="824" y="46" font-family="ui-monospace,'Fira Code',monospace" font-size="11.5" letter-spacing="3" fill="#8a8778" text-anchor="end">SÃO PAULO · BR</text>
+  </g>
+  <line x1="56" y1="60" x2="824" y2="60" stroke="#26282e" stroke-width="1" stroke-dasharray="768" stroke-dashoffset="0">
+    <animate attributeName="stroke-dashoffset" values="768;768;0;0" keyTimes="0;0.02;0.3;1" dur="1.8s" begin="0s" repeatCount="1" fill="freeze"/>
+  </line>
+
+  <!-- name: rises and fades in once -->
+  <text x="54" y="154" font-family="Georgia,'Times New Roman',serif" font-size="76" fill="#ece9df">
+    <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.08;0.45" dur="1.8s" begin="0s" repeatCount="1" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" values="0 10;0 10;0 0" keyTimes="0;0.08;0.45" dur="1.8s" begin="0s" repeatCount="1" fill="freeze"/>
+    Thiago <tspan fill="#e5484d" font-style="italic">Araújo</tspan>
+  </text>
+
+  <!-- ink sweep under the red name: redraws itself, first pass delayed into the load sequence -->
+  <line x1="236" y1="168" x2="404" y2="168" stroke="#e5484d" stroke-width="2" stroke-dasharray="170" stroke-dashoffset="170" stroke-linecap="round">
+    <animate attributeName="stroke-dashoffset" values="170;170;0;0;170" keyTimes="0;0.12;0.42;0.78;1" dur="6s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- sub-line: types itself once on load, revealed through the clip window -->
+  <g clip-path="url(#subClip)">
+    <text x="56" y="198" font-family="ui-monospace,'Fira Code',monospace" font-size="14.5" fill="#a8a395">end-to-end systems — schema → api → ui → deploy</text>
+  </g>
+
+  <!-- block caret: blinks at the empty prompt, rides the reveal edge, dies when typing is done -->
+  <g>
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.88;0.94;1" dur="2.8s" begin="0s" repeatCount="1" fill="freeze"/>
+    <g>
+      <animateTransform attributeName="transform" type="translate" calcMode="discrete" values="0 0;24 0;48 0;72 0;96 0;120 0;144 0;168 0;192 0;216 0;240 0;264 0;288 0;312 0;336 0;360 0;384 0;408 0;420 0" keyTimes="0;0.2;0.244;0.288;0.332;0.376;0.421;0.465;0.509;0.553;0.597;0.641;0.685;0.729;0.773;0.817;0.862;0.906;0.95" dur="2.8s" begin="0s" repeatCount="1" fill="freeze"/>
+      <rect x="56" y="182" width="9" height="17" fill="#e5484d" opacity="0">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.51;1" calcMode="discrete" dur="0.9s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </g>
+
+  <!-- rotating stamp: fades in once, rings keep spinning -->
+  <g>
+    <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.55;0.9" dur="1.8s" begin="0s" repeatCount="1" fill="freeze"/>
     <circle cx="762" cy="138" r="34" fill="none" stroke="#26282e" stroke-width="1"/>
     <circle cx="762" cy="138" r="58" fill="none" stroke="#a8a395" stroke-width="7" stroke-dasharray="0.5 13.4" stroke-linecap="round">
       <animateTransform attributeName="transform" type="rotate" from="0 762 138" to="360 762 138" dur="9s" repeatCount="indefinite"/>
@@ -33,7 +60,7 @@
     <circle cx="762" cy="138" r="46" fill="none" stroke="#565b63" stroke-width="1" stroke-dasharray="4 10">
       <animateTransform attributeName="transform" type="rotate" from="360 762 138" to="0 762 138" dur="14s" repeatCount="indefinite"/>
     </circle>
-    <text x="762" y="214" font-family="ui-monospace,'Fira Code',monospace" font-size="9.5" letter-spacing="2" fill="#565b63" text-anchor="middle">THISUX.TECH</text>
+    <text x="762" y="214" font-family="ui-monospace,'Fira Code',monospace" font-size="11" letter-spacing="2" fill="#565b63" text-anchor="middle">THISUX.TECH</text>
     <g fill="#e5484d">
       <animateTransform attributeName="transform" type="rotate" from="0 762 138" to="-360 762 138" dur="16s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="1;0.55;1" dur="2.8s" repeatCount="indefinite"/>
@@ -41,19 +68,22 @@
     </g>
   </g>
 
-  <!-- footer -->
-  <line x1="56" y1="228" x2="824" y2="228" stroke="#26282e" stroke-width="1"/>
+  <!-- footer: rule draws once, row fades in once, diamonds keep blinking -->
+  <line x1="56" y1="228" x2="824" y2="228" stroke="#26282e" stroke-width="1" stroke-dasharray="768" stroke-dashoffset="0">
+    <animate attributeName="stroke-dashoffset" values="768;768;0;0" keyTimes="0;0.5;0.82;1" dur="1.8s" begin="0s" repeatCount="1" fill="freeze"/>
+  </line>
   <g font-family="ui-monospace,'Fira Code',monospace" font-size="11" letter-spacing="2.5" fill="#8a8778">
+    <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.58;0.88" dur="1.8s" begin="0s" repeatCount="1" fill="freeze"/>
     <rect x="58" y="243" width="7" height="7" fill="#e5484d" transform="rotate(45 61.5 246.5)">
-      <animate attributeName="opacity" values="1;0.15;1" dur="2.2s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.15;1" dur="2.2s" begin="1.6s" repeatCount="indefinite"/>
     </rect>
     <text x="74" y="252">PRODUCT SYSTEMS</text>
     <rect x="328" y="243" width="7" height="7" fill="#e5484d" transform="rotate(45 331.5 246.5)">
-      <animate attributeName="opacity" values="1;0.15;1" dur="2.2s" begin="0.7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.15;1" dur="2.2s" begin="2.25s" repeatCount="indefinite"/>
     </rect>
     <text x="344" y="252">ML &amp; DATA</text>
     <rect x="560" y="243" width="7" height="7" fill="#e5484d" transform="rotate(45 563.5 246.5)">
-      <animate attributeName="opacity" values="1;0.15;1" dur="2.2s" begin="1.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.15;1" dur="2.2s" begin="2.9s" repeatCount="indefinite"/>
     </rect>
     <text x="576" y="252">AGENTS &amp; AUTOMATION</text>
   </g>
