@@ -14,19 +14,18 @@
 • Frontend : React, Next.js, TypeScript, Tailwind
 • Backend  : Node.js, Hono, Express, FastAPI
 • Data     : PostgreSQL, MongoDB, Redis, Drizzle
-• Infra    : Docker, Vercel, GitHub Actions, CF
-• Payments : Stripe, PagBank (Pix), webhooks
+• Infra    : Docker, Vercel, GitHub Actions
 • Edge     : MCP servers, BullMQ, OCR/LLM pipes</code></pre>
     </td>
     <td width="50%" valign="top">
-      <pre lang="python"><code>class EngenheiroDeSoftware:
-    def __init__(self):
-        self.nome = "Thiago Araújo"
-        self.local = "São Paulo, Brasil"
-        self.foco = "sistemas de produto · infra agêntica"
-        self.estudo = "B.S. Eng. Software — UNIVESP '31"
-        self.idiomas = ["Português", "English"]
-        self.rabbit_holes = ["física", "música"]</code></pre>
+      <pre lang="bash"><code>$ thiago / quem_sou
+------------------------------------------------
+• nome  : Thiago Araújo
+• base  : São Paulo, Brasil
+• foco  : sistemas de produto · infra agêntica
+• estudo: B.S. Eng. Software — UNIVESP '31
+• idiomas: Português · English
+• holes : física · cosmologia · música</code></pre>
     </td>
   </tr>
 </table>
@@ -66,7 +65,7 @@ Fora do software, costumo sumir em rabbit holes sobre **física, cosmologia, psi
         <li>Vencedor do <b>NextWave Hackathon 2026 — LATAM</b>.</li>
         <li>MCP tools, SDK em TypeScript, requests assinadas RFC 8785.</li>
       </ul>
-      <p><a href="https://github.com/pedroschott/hackatonyuno">→ repo</a> · <a href="https://nextwave-hackathon-2026.vercel.app/t/H3MDSM">→ live</a></p>
+      <p><a href="https://github.com/pedroschott/hackatonyuno">repo</a> · <a href="https://nextwave-hackathon-2026.vercel.app/t/H3MDSM">live</a></p>
       <p>
         <img src="https://img.shields.io/badge/TypeScript-0b0c10?style=flat-square&logo=typescript&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="TypeScript" />
         <img src="https://img.shields.io/badge/Next.js-0b0c10?style=flat-square&logo=nextdotjs&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="Next.js" />
@@ -78,10 +77,10 @@ Fora do software, costumo sumir em rabbit holes sobre **física, cosmologia, psi
       <h4>correio elegante — <small>pagamentos & produto</small></h4>
       <p>Uma plataforma de cartas digitais construída como produto completo — cards temáticos, uploads de mídia, compartilhamento público e entrega liberada por pagamento.</p>
       <ul>
-        <li>Stripe (cartão/boleto) + PagBank Pix com reconciliação por webhook.</li>
+        <li>Stripe (cartão/boleto) + PagBank com reconciliação por webhook.</li>
         <li>SPA React 19, API Express 5, Prisma sobre MongoDB.</li>
       </ul>
-      <p><a href="https://github.com/thisux1/correioelegante3">→ repo</a></p>
+      <p><a href="https://github.com/thisux1/correioelegante3">repo</a></p>
       <p>
         <img src="https://img.shields.io/badge/React_19-0b0c10?style=flat-square&logo=react&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="React 19" />
         <img src="https://img.shields.io/badge/Express-0b0c10?style=flat-square&logo=express&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="Express" />
@@ -98,7 +97,7 @@ Fora do software, costumo sumir em rabbit holes sobre **física, cosmologia, psi
         <li>Filas BullMQ + Redis, etapa de OCR em Python, geração com Ollama.</li>
         <li>API Hono, PostgreSQL + Drizzle, front React PWA.</li>
       </ul>
-      <p><a href="https://github.com/thisux1/Singular">→ repo</a></p>
+      <p><a href="https://github.com/thisux1/Singular">repo</a></p>
       <p>
         <img src="https://img.shields.io/badge/Hono-0b0c10?style=flat-square&logo=hono&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="Hono" />
         <img src="https://img.shields.io/badge/PostgreSQL-0b0c10?style=flat-square&logo=postgresql&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="PostgreSQL" />
@@ -113,7 +112,7 @@ Fora do software, costumo sumir em rabbit holes sobre **física, cosmologia, psi
         <li>CNN resolve imagens de captcha offline — sem APIs de visão externas.</li>
         <li>TUI Textual + dashboard FastAPI pra controle ao vivo.</li>
       </ul>
-      <p><a href="https://github.com/thisux1/Oracle">→ repo</a></p>
+      <p><a href="https://github.com/thisux1/Oracle">repo</a></p>
       <p>
         <img src="https://img.shields.io/badge/Python-0b0c10?style=flat-square&logo=python&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="Python" />
         <img src="https://img.shields.io/badge/TensorFlow_Lite-0b0c10?style=flat-square&logo=tensorflow&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="TensorFlow Lite" />
@@ -130,7 +129,7 @@ Fora do software, costumo sumir em rabbit holes sobre **física, cosmologia, psi
         <li>ESP32-S3 lê dados da IMU, fusão Madgwick a 100 Hz.</li>
         <li>Link de controle ESP-NOW, BLE pra configuração.</li>
       </ul>
-      <p><a href="https://github.com/thisux1/AeroGlove">→ repo</a></p>
+      <p><a href="https://github.com/thisux1/AeroGlove">repo</a></p>
       <p>
         <img src="https://img.shields.io/badge/MicroPython-0b0c10?style=flat-square&logo=micropython&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="MicroPython" />
         <img src="https://img.shields.io/badge/ESP32--S3-0b0c10?style=flat-square&logo=espressif&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="ESP32-S3" />
@@ -142,10 +141,10 @@ Fora do software, costumo sumir em rabbit holes sobre **física, cosmologia, psi
       <h4>realiza.vc — <small>produto & ops</small></h4>
       <p>Sistema operacional de programa de mentoria — board de matching, registros por encontro, semáforo computado de saúde da dupla, fluxos de assinatura.</p>
       <ul>
-        <li>RLS do Supabase escopa cada linha por papel — coord → mentor.</li>
+        <li>RLS do Supabase escopa cada linha por papel — coordenação, supervisor, mentor.</li>
         <li>Next.js 16, 54 migrations, 156 testes, <code>/demo</code> pública.</li>
       </ul>
-      <p><a href="https://github.com/thisux1/realiza.vc">→ repo</a></p>
+      <p><a href="https://github.com/thisux1/realiza.vc">repo</a></p>
       <p>
         <img src="https://img.shields.io/badge/Next.js_16-0b0c10?style=flat-square&logo=nextdotjs&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="Next.js 16" />
         <img src="https://img.shields.io/badge/Supabase-0b0c10?style=flat-square&logo=supabase&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="Supabase" />
@@ -165,7 +164,7 @@ Fora do software, costumo sumir em rabbit holes sobre **física, cosmologia, psi
 </div>
 
 <p align="center">
-  <img src="./streak.svg?v=2" alt="Streak de contribuições" width="100%" />
+  <img src="./streak.svg?v=3" alt="Streak de contribuições" width="100%" />
 </p>
 
 <p align="center">

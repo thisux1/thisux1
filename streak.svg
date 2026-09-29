@@ -86,7 +86,7 @@
   </circle>
 
   <!-- number over the flame core -->
-  <text x="428" y="158" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="64" font-weight="700" fill="#0b0c10">0</text>
+  <text x="428" y="158" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="64" font-weight="700" fill="#0b0c10">1</text>
   <text x="428" y="216" text-anchor="middle" font-family="ui-monospace,'Fira Code',monospace" font-size="12.5" letter-spacing="1.5" fill="#a8a395">current streak · days</text>
 
   <!-- ===== zone C: ledger ===== -->
@@ -94,7 +94,7 @@
   <g font-family="ui-monospace,'Fira Code',monospace">
     <rect x="586" y="108" width="7" height="7" fill="#e5484d" transform="rotate(45 589.5 111.5)"/>
     <text x="605" y="117" font-size="14" fill="#8a8778">current</text>
-    <text x="832" y="118" font-size="15.5" fill="#ece9df" text-anchor="end">0 days</text>
+    <text x="832" y="118" font-size="15.5" fill="#ece9df" text-anchor="end">1 day</text>
     <line x1="596" y1="129" x2="832" y2="129" stroke="#26282e"/>
 
     <rect x="586" y="135" width="7" height="7" fill="#e5484d" transform="rotate(45 589.5 138.5)"/>
@@ -104,7 +104,7 @@
 
     <rect x="586" y="162" width="7" height="7" fill="#e5484d" transform="rotate(45 589.5 165.5)"/>
     <text x="605" y="171" font-size="14" fill="#8a8778">in 2026</text>
-    <text x="832" y="172" font-size="15.5" fill="#ece9df" text-anchor="end">1,089 contribs</text>
+    <text x="832" y="172" font-size="15.5" fill="#ece9df" text-anchor="end">1,096 contribs</text>
     <line x1="596" y1="183" x2="832" y2="183" stroke="#26282e"/>
 
     <rect x="586" y="189" width="7" height="7" fill="#e5484d" transform="rotate(45 589.5 192.5)"/>
