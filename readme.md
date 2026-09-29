@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="#root"><img src="./banner.svg?v=12" alt="Thiago Araújo — Systems Engineer" width="100%"/></a>
+  <a href="#root"><img src="./banner.svg?v=13" alt="Thiago Araújo — Systems Engineer" width="100%"/></a>
 </div>
 
 <p align="center"><sub>🇧🇷 <a href="readme.pt-br.md">Versão em Português</a></sub></p>
@@ -13,11 +13,15 @@
       <p>Currently into agentic automation and embedded control loops — bots that survive captchas, gloves that fly drones.</p>
     </td>
     <td width="45%" valign="top">
-      <pre lang="yaml"><code>name      Thiago Araújo
-based     São Paulo, BR
-study     B.S. Software Engineering — UNIVESP '31
-speaks    English (fluent) · Português (nativo)
-site      thisux.tech</code></pre>
+      <pre lang="yaml"><code># id_card.yml — decoded
+name       Thiago Araújo
+based      São Paulo, BR · UTC-3
+study      B.S. Software Engineering — UNIVESP '31
+speaks     English (fluent) · Português (nativo)
+site       thisux.tech
+focus      agentic automation · embedded control
+stack      typescript · python · react · hono
+currently  captcha-surviving bots · drone gloves</code></pre>
     </td>
   </tr>
 </table>
@@ -27,7 +31,7 @@ site      thisux.tech</code></pre>
 ## Systems
 
 <p align="center">
-  <img src="./systems.svg?v=2" alt="Systems — product, ML & data, agents & machines" width="100%"/>
+  <img src="./systems.svg?v=3" alt="Systems — product, ML & data, agents & machines" width="100%"/>
 </p>
 
 ---
@@ -82,12 +86,16 @@ site      thisux.tech</code></pre>
 ## Stats
 
 <div align="center">
-  <img src="https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&include_all_commits=true&count_private=true&card_width=495&bg_color=0b0c10&title_color=ece9df&icon_color=e5484d&text_color=a8a395&border_color=26282e&v=11" alt="GitHub Stats" width="49.5%" />
+  <img src="https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&include_all_commits=true&count_private=true&card_width=495&bg_color=0b0c10&title_color=ece9df&icon_color=e5484d&ring_color=e5484d&text_color=a8a395&border_color=26282e&v=11" alt="GitHub Stats" width="49.5%" />
   <img src="https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&layout=compact&langs_count=8&card_width=495&bg_color=0b0c10&title_color=ece9df&text_color=a8a395&border_color=26282e&v=11" alt="Top Languages" width="49.5%" />
 </div>
 
 <p align="center">
   <img src="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&background=0b0c10&border=26282e&stroke=565b63&ring=e5484d&fire=e5484d&currStreakNum=ece9df&sideNums=ece9df&currStreakLabel=a8a395&sideLabels=a8a395&dates=8a8778&v=11" alt="GitHub Streak" width="100%" />
+</p>
+
+<p align="center">
+  <img src="./streak.svg?v=1" alt="Streak snapshot — animated flame, longest streak 12 days" width="100%" />
 </p>
 
 <p align="center">
