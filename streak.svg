@@ -11,58 +11,46 @@
   <rect x="0.5" y="0.5" width="879" height="239" fill="none" stroke="#26282e"/>
 
   <!-- header -->
-  <text x="48" y="40" font-family="ui-monospace,'Fira Code',monospace" font-size="12" letter-spacing="3" fill="#8a8778">STREAK — SNAPSHOT</text>
-  <text x="832" y="40" font-family="ui-monospace,'Fira Code',monospace" font-size="12" letter-spacing="3" fill="#8a8778" text-anchor="end">GITHUB · @THISUX1</text>
+  <text x="48" y="40" font-family="ui-monospace,'Fira Code',monospace" font-size="12" letter-spacing="3" fill="#8a8778">STREAK</text>
   <line x1="48" y1="54" x2="832" y2="54" stroke="#26282e"/>
   <rect x="48" y="51" width="10" height="6" fill="#e5484d">
     <animateTransform attributeName="transform" type="translate" values="0 0;774 0;0 0" keyTimes="0;0.5;1" dur="11s" begin="2.5s" repeatCount="indefinite"/>
   </rect>
 
   <!-- zone separators with traveling pulses -->
-  <line x1="300" y1="72" x2="300" y2="196" stroke="#26282e"/>
-  <line x1="575" y1="72" x2="575" y2="196" stroke="#26282e"/>
+  <line x1="290" y1="72" x2="290" y2="216" stroke="#26282e"/>
+  <line x1="565" y1="72" x2="565" y2="216" stroke="#26282e"/>
   <circle r="3" fill="#e5484d" opacity="0">
-    <animateMotion dur="5s" begin="2.5s" repeatCount="indefinite" path="M 300 72 L 300 196"/>
+    <animateMotion dur="5s" begin="2.5s" repeatCount="indefinite" path="M 290 72 L 290 216"/>
     <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.85;1" dur="5s" begin="2.5s" repeatCount="indefinite"/>
   </circle>
   <circle r="3" fill="#e5484d" opacity="0">
-    <animateMotion dur="5s" begin="5s" repeatCount="indefinite" path="M 575 72 L 575 196"/>
+    <animateMotion dur="5s" begin="5s" repeatCount="indefinite" path="M 565 72 L 565 216"/>
     <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.85;1" dur="5s" begin="5s" repeatCount="indefinite"/>
   </circle>
 
-  <!-- ===== zone A: flame (height maps current streak) ===== -->
-  <!-- gauge: ambient level ticks; diamond marks current level (0d -> base) -->
-  <line x1="88" y1="56" x2="88" y2="150" stroke="#26282e"/>
-  <g stroke="#565b63">
-    <line x1="84" y1="122" x2="92" y2="122"/>
-    <line x1="84" y1="94" x2="92" y2="94"/>
-    <line x1="84" y1="66" x2="92" y2="66"/>
-  </g>
-  <!-- marker at current level: 0d -> ember band -->
-  <rect x="84.5" y="146.5" width="7" height="7" fill="#e5484d" transform="rotate(45 88 150)">
-    <animate attributeName="opacity" values="1;0.25;1" dur="2.4s" begin="2.5s" repeatCount="indefinite"/>
-  </rect>
+  <!-- ===== zone A: longest streak ===== -->
+  <text x="48" y="92" font-family="ui-monospace,'Fira Code',monospace" font-size="12" letter-spacing="3" fill="#8a8778">LONGEST STREAK</text>
+  <line x1="48" y1="102" x2="264" y2="102" stroke="#26282e"/>
+  <line x1="48" y1="102" x2="108" y2="102" stroke="#e5484d" stroke-width="1.5">
+    <animateTransform attributeName="transform" type="translate" values="0 0;156 0;0 0" keyTimes="0;0.5;1" dur="6s" begin="2.5s" repeatCount="indefinite"/>
+  </line>
+  <text x="44" y="164" font-family="Georgia,'Times New Roman',serif" font-size="80" fill="#ece9df">12<tspan font-family="ui-monospace,'Fira Code',monospace" font-size="15" fill="#a8a395" dx="14">days</tspan></text>
+  <text x="48" y="192" font-family="ui-monospace,'Fira Code',monospace" font-size="12.5" fill="#8a8778">jun 09 → jun 20 · 2026</text>
 
-  <!-- ground -->
-  <line x1="104" y1="150" x2="252" y2="150" stroke="#565b63"/>
-  <g fill="#565b63">
-    <rect x="133" y="146.8" width="6" height="6" transform="rotate(45 136 150)"/>
-    <rect x="217" y="146.8" width="6" height="6" transform="rotate(45 220 150)"/>
-  </g>
-
-  <!-- glow -->
-  <circle cx="178" cy="118" r="58" fill="url(#emberGlow)">
+  <!-- ===== zone B: current streak — flame behind the number ===== -->
+  <circle cx="428" cy="122" r="72" fill="url(#emberGlow)">
     <animate attributeName="opacity" values="0.55;1;0.55" dur="3.2s" begin="2.5s" repeatCount="indefinite"/>
   </circle>
 
-  <!-- flame: base at (178,150). current streak 0d -> smallest band (~62px) -->
-  <g transform="translate(178 150)">
+  <!-- flame: base at (428,186) -->
+  <g transform="translate(428 186)">
     <!-- outer lobe -->
     <g>
-      <animateTransform attributeName="transform" type="scale" values="1 1;1.05 0.93;0.96 1.05;1 1" keyTimes="0;0.35;0.7;1" dur="2.6s" begin="2.5s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="scale" values="1 1;1.04 0.94;0.97 1.05;1 1" keyTimes="0;0.35;0.7;1" dur="2.6s" begin="2.5s" repeatCount="indefinite"/>
       <g>
         <animateTransform attributeName="transform" type="skewX" values="0;2;-1.6;0" keyTimes="0;0.4;0.75;1" dur="3.6s" begin="2.5s" repeatCount="indefinite"/>
-        <path d="M 0 0 C -19 -2, -30 -15, -26 -32 C -22 -45, -8 -49, -3 -62 C 3 -55, 9 -51, 14 -45 C 24 -36, 27 -20, 18 -8 C 13 -2, 6 0, 0 0 Z" fill="#e5484d" opacity="0.32"/>
+        <path d="M 0 0 C -42 -4 -56 -44 -34 -78 C -20 -98 -24 -116 -13 -134 C -10 -118 0 -110 2 -126 C 13 -104 30 -98 37 -80 C 56 -56 52 -2 0 0 Z" fill="#e5484d" opacity="0.4"/>
       </g>
     </g>
     <!-- mid lobe -->
@@ -70,70 +58,57 @@
       <animateTransform attributeName="transform" type="scale" values="1 1;0.95 1.06;1.04 0.95;1 1" keyTimes="0;0.3;0.65;1" dur="2.1s" begin="2.5s" repeatCount="indefinite"/>
       <g>
         <animateTransform attributeName="transform" type="skewX" values="0;-2.4;1.8;0" keyTimes="0;0.35;0.7;1" dur="2.9s" begin="2.5s" repeatCount="indefinite"/>
-        <path d="M 0 0 C -13 -2, -20 -10, -17 -22 C -14 -31, -5 -34, -2 -45 C 2 -38, 6 -35, 9 -31 C 16 -25, 18 -14, 12 -6 C 8 -1, 4 0, 0 0 Z" fill="#e5484d" opacity="0.85"/>
+        <path d="M 0 0 C -30 -3 -40 -38 -21 -66 C -11 -80 -14 -94 -5 -108 C -1 -92 8 -88 11 -98 C 19 -80 32 -72 37 -56 C 48 -30 32 0 0 0 Z" fill="#e5484d" opacity="0.85"/>
       </g>
     </g>
-    <!-- inner core -->
+    <!-- inner core: holds the number -->
     <g>
-      <animateTransform attributeName="transform" type="scale" values="1 1;1.08 0.9;0.94 1.08;1 1" keyTimes="0;0.3;0.65;1" dur="1.7s" begin="2.5s" repeatCount="indefinite"/>
-      <path d="M 0 0 C -8 -1, -12 -6, -10 -13 C -8 -19, -3 -21, -1 -27 C 1 -23, 4 -21, 6 -18 C 10 -14, 10 -8, 7 -4 C 5 -1, 2 0, 0 0 Z" fill="#ece9df" opacity="0.9"/>
+      <animateTransform attributeName="transform" type="scale" values="1 1;1.06 0.92;0.95 1.06;1 1" keyTimes="0;0.3;0.65;1" dur="1.7s" begin="2.5s" repeatCount="indefinite"/>
+      <path d="M 0 0 C -30 -2 -34 -34 -17 -56 C -7 -68 -7 -80 0 -92 C 7 -78 16 -74 19 -58 C 28 -42 27 -12 0 0 Z" fill="#ece9df" opacity="0.95"/>
     </g>
   </g>
 
   <!-- rising embers -->
-  <circle cx="168" cy="120" r="2.4" fill="#e5484d" opacity="0">
-    <animateMotion dur="3.4s" begin="2.5s" repeatCount="indefinite" path="M 0 0 C -8 -14, 5 -28, -3 -42 C -7 -50, -4 -56, -2 -60"/>
+  <circle cx="414" cy="116" r="2.6" fill="#e5484d" opacity="0">
+    <animateMotion dur="3.4s" begin="2.5s" repeatCount="indefinite" path="M 0 0 C -8 -18, 5 -34, -3 -50 C -7 -58, -4 -64, -2 -68"/>
     <animate attributeName="opacity" values="0;1;0.8;0" keyTimes="0;0.2;0.7;1" dur="3.4s" begin="2.5s" repeatCount="indefinite"/>
-    <animate attributeName="r" values="2.4;1.1" dur="3.4s" begin="2.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="2.6;1.1" dur="3.4s" begin="2.5s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="186" cy="116" r="1.9" fill="#e5484d" opacity="0">
-    <animateMotion dur="4.2s" begin="3.3s" repeatCount="indefinite" path="M 0 0 C 7 -15, -6 -29, 4 -42 C 8 -50, 5 -55, 3 -58"/>
+  <circle cx="442" cy="112" r="2" fill="#e5484d" opacity="0">
+    <animateMotion dur="4.2s" begin="3.3s" repeatCount="indefinite" path="M 0 0 C 7 -17, -6 -33, 4 -48 C 8 -56, 5 -62, 3 -66"/>
     <animate attributeName="opacity" values="0;1;0.8;0" keyTimes="0;0.2;0.7;1" dur="4.2s" begin="3.3s" repeatCount="indefinite"/>
-    <animate attributeName="r" values="1.9;0.8" dur="4.2s" begin="3.3s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="2;0.8" dur="4.2s" begin="3.3s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="178" cy="108" r="1.6" fill="#ece9df" opacity="0">
-    <animateMotion dur="5s" begin="4.1s" repeatCount="indefinite" path="M 0 0 C -5 -16, 8 -30, -2 -44"/>
+  <circle cx="428" cy="100" r="1.7" fill="#ece9df" opacity="0">
+    <animateMotion dur="5s" begin="4.1s" repeatCount="indefinite" path="M 0 0 C -5 -18, 8 -34, -2 -50"/>
     <animate attributeName="opacity" values="0;0.9;0.7;0" keyTimes="0;0.2;0.7;1" dur="5s" begin="4.1s" repeatCount="indefinite"/>
-    <animate attributeName="r" values="1.6;0.6" dur="5s" begin="4.1s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="1.7;0.6" dur="5s" begin="4.1s" repeatCount="indefinite"/>
   </circle>
 
-  <text x="178" y="176" font-family="ui-monospace,'Fira Code',monospace" font-size="12.5" fill="#a8a395" text-anchor="middle">current · 0 days</text>
-  <text x="178" y="194" font-family="ui-monospace,'Fira Code',monospace" font-size="12" fill="#8a8778" text-anchor="middle">rekindling — last activity sep 26</text>
-
-  <!-- ===== zone B: headline ===== -->
-  <text x="332" y="92" font-family="ui-monospace,'Fira Code',monospace" font-size="12" letter-spacing="3" fill="#8a8778">LONGEST STREAK</text>
-  <line x1="332" y1="102" x2="556" y2="102" stroke="#26282e"/>
-  <line x1="332" y1="102" x2="392" y2="102" stroke="#e5484d" stroke-width="1.5">
-    <animateTransform attributeName="transform" type="translate" values="0 0;150 0;0 0" keyTimes="0;0.5;1" dur="6s" begin="2.5s" repeatCount="indefinite"/>
-  </line>
-  <text x="328" y="164" font-family="Georgia,'Times New Roman',serif" font-size="80" fill="#ece9df">12<tspan font-family="ui-monospace,'Fira Code',monospace" font-size="15" fill="#a8a395" dx="14">days</tspan></text>
-  <text x="332" y="190" font-family="ui-monospace,'Fira Code',monospace" font-size="12.5" fill="#8a8778">jun 09 → jun 20 · 2026</text>
+  <!-- number over the flame core -->
+  <text x="428" y="158" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="64" font-weight="700" fill="#0b0c10">0</text>
+  <text x="428" y="216" text-anchor="middle" font-family="ui-monospace,'Fira Code',monospace" font-size="12.5" letter-spacing="1.5" fill="#a8a395">current streak · days</text>
 
   <!-- ===== zone C: ledger ===== -->
-  <text x="606" y="92" font-family="ui-monospace,'Fira Code',monospace" font-size="12" letter-spacing="3" fill="#8a8778">LEDGER</text>
+  <text x="595" y="92" font-family="ui-monospace,'Fira Code',monospace" font-size="12" letter-spacing="3" fill="#8a8778">LEDGER</text>
   <g font-family="ui-monospace,'Fira Code',monospace">
-    <rect x="596" y="110" width="6" height="6" fill="#e5484d" transform="rotate(45 599 113)"/>
-    <text x="614" y="118" font-size="12.5" fill="#8a8778">current</text>
-    <text x="832" y="118" font-size="13" fill="#ece9df" text-anchor="end">0 days</text>
-    <line x1="606" y1="128" x2="832" y2="128" stroke="#26282e"/>
+    <rect x="586" y="108" width="7" height="7" fill="#e5484d" transform="rotate(45 589.5 111.5)"/>
+    <text x="605" y="117" font-size="14" fill="#8a8778">current</text>
+    <text x="832" y="118" font-size="15.5" fill="#ece9df" text-anchor="end">0 days</text>
+    <line x1="596" y1="129" x2="832" y2="129" stroke="#26282e"/>
 
-    <rect x="596" y="134" width="6" height="6" fill="#e5484d" transform="rotate(45 599 137)"/>
-    <text x="614" y="142" font-size="12.5" fill="#8a8778">best</text>
-    <text x="832" y="142" font-size="13" fill="#ece9df" text-anchor="end">12 days</text>
-    <line x1="606" y1="152" x2="832" y2="152" stroke="#26282e"/>
+    <rect x="586" y="135" width="7" height="7" fill="#e5484d" transform="rotate(45 589.5 138.5)"/>
+    <text x="605" y="144" font-size="14" fill="#8a8778">best</text>
+    <text x="832" y="145" font-size="15.5" fill="#ece9df" text-anchor="end">12 days</text>
+    <line x1="596" y1="156" x2="832" y2="156" stroke="#26282e"/>
 
-    <rect x="596" y="158" width="6" height="6" fill="#e5484d" transform="rotate(45 599 161)"/>
-    <text x="614" y="166" font-size="12.5" fill="#8a8778">in 2026</text>
-    <text x="832" y="166" font-size="13" fill="#ece9df" text-anchor="end">1,089 contribs</text>
-    <line x1="606" y1="176" x2="832" y2="176" stroke="#26282e"/>
+    <rect x="586" y="162" width="7" height="7" fill="#e5484d" transform="rotate(45 589.5 165.5)"/>
+    <text x="605" y="171" font-size="14" fill="#8a8778">in 2026</text>
+    <text x="832" y="172" font-size="15.5" fill="#ece9df" text-anchor="end">1,089 contribs</text>
+    <line x1="596" y1="183" x2="832" y2="183" stroke="#26282e"/>
 
-    <rect x="596" y="182" width="6" height="6" fill="#e5484d" transform="rotate(45 599 185)"/>
-    <text x="614" y="190" font-size="12.5" fill="#8a8778">all time</text>
-    <text x="832" y="190" font-size="13" fill="#ece9df" text-anchor="end">1,227 contribs</text>
+    <rect x="586" y="189" width="7" height="7" fill="#e5484d" transform="rotate(45 589.5 192.5)"/>
+    <text x="605" y="198" font-size="14" fill="#8a8778">all time</text>
+    <text x="832" y="199" font-size="15.5" fill="#ece9df" text-anchor="end">1,227 contribs</text>
   </g>
-
-  <!-- footer -->
-  <line x1="48" y1="206" x2="832" y2="206" stroke="#26282e"/>
-  <text x="48" y="226" font-family="ui-monospace,'Fira Code',monospace" font-size="12" letter-spacing="2" fill="#8a8778">flame height scales with current streak</text>
-  <text x="832" y="226" font-family="ui-monospace,'Fira Code',monospace" font-size="12" letter-spacing="2" fill="#8a8778" text-anchor="end">snapshot · 29/09/2026</text>
 </svg>
