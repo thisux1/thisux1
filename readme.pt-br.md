@@ -1,91 +1,145 @@
 <div align="center">
-  <a href="#root"><img src="./banner.svg?v=13" alt="Thiago Araújo — Engenheiro de Sistemas" width="100%"/></a>
+  <a href="#root">
+    <img src="./banner.svg?v=13" alt="Thiago Araújo — Engenheiro de Software & Builder" width="100%" />
+  </a>
 </div>
 
-<p align="center"><sub>🇺🇸 <a href="readme.md">English version</a></sub></p>
+<p align="center">
+  <sub>🇺🇸 <a href="readme.md">English version</a></sub>
+</p>
 
-<br/>
+<br />
 
-<p>Dev full-stack construindo sistemas de ponta a ponta em TypeScript — fluxos de pagamento (Stripe, Mercado Pago/Pix), auth, filas em background, pipelines de OCR/IA — e indo de Python quando o problema é ML ou tooling. Gosto de ser dono do caminho inteiro: schema → API → UI → deploy.</p>
-<p>No momento: automação agêntica e loops de controle embarcado — bots que sobrevivem a captchas, luvas que voam drones.</p>
+## Sobre mim
 
-```yaml
-# id_card.yml — decoded
-name       Thiago Araújo
-based      São Paulo, BR · UTC-3
-study      B.S. Software Engineering — UNIVESP '31
-speaks     English (fluent) · Português (nativo)
-site       thisux.tech
-focus      agentic automation · embedded control
-stack      typescript · python · react · hono
-currently  captcha-surviving bots · drone gloves
-```
+Sou o Thiago — engenheiro de software, builder e explorador compulsivo de rabbit holes, de São Paulo.
 
-<br/>
+Construo coisas porque quero entender como funcionam. A maioria dos projetos começa com um simples *"e se?"* e de algum jeito termina comigo mexendo no banco de dados, na API, na interface, no deploy — e às vezes num microcontrolador.
+
+Gosto de trabalhar nas fronteiras: **produto e engenharia, software e hardware, sistemas determinísticos e IA**. Me interesso especialmente por sistemas agênticos, automação, ML, workflows distribuídos e interfaces que fazem sistemas complexos parecerem simples.
+
+Me importo com a coisa toda, não só com o código. Arquitetura, comportamento, performance, UX, modos de falha e os detalhes pequenos que fazem algo parecer intencional.
+
+Fora do software, costumo sumir em rabbit holes sobre **física, cosmologia, psicologia, filosofia, fotografia e música**.
+
+> Gosto de construir sistemas que fazem algo real.
+
+**Explorando agora:** infraestrutura agêntica · IA aplicada · automação · sistemas embarcados
+
+**Trabalho geralmente com:** TypeScript · Python · React · Node.js · PostgreSQL · ESP32
+
+**Base:** São Paulo, Brasil 🇧🇷
+**Idiomas:** Português · English
+**Site:** [thisux.tech](https://thisux.tech)
+
+<br />
 
 ## Sistemas
 
 <p align="center">
-  <img src="./systems.svg?v=3" alt="Sistemas — produto, ML & dados, agentes & máquinas" width="100%"/>
+  <img src="./systems.svg?v=3" alt="Sistemas — produto, ML & dados, agentes & máquinas" width="100%" />
 </p>
 
----
+<br />
 
 ## Trabalho selecionado
 
-```text
-correio elegante ─ pagamentos & produto
-  plataforma de cartas digitais — temas, upload de mídia,
-  link público liberado por pagamento
-  stripe + pagbank pix · react 19 · express 5 · prisma · mongodb
+### `agentpay` — infraestrutura de pagamentos agênticos
 
-singular ─ pipeline assíncrono de quiz
-  ingestão de documentos como job distribuído, não request —
-  ocr em python, ollama gerando as questões
-  hono · bullmq · drizzle · postgres · react pwa
+Infraestrutura de autorização para compras feitas por agentes de IA.
 
-oracle ─ automação & ml
-  companheiro por máquina de estados pro epic rpg — cnn local
-  resolve os captchas offline, sem nuvem
-  python · tflite · textual · fastapi · pyinstaller
+Mandatos de compra determinísticos, validação de política em tempo real e fluxos transacionais auditáveis desenhados para um comprador que não é humano.
 
-aeroglove ─ embarcado & firmware
-  luva de drone por gestos — esp32-s3 lê a imu, fusão madgwick
-  a 100hz, comandos via esp-now
-  micropython · esp32-s3 · esp-now · ble · gy-91/mpu9250
-```
+**MCP · TypeScript SDK · APIs REST · infraestrutura de pagamentos**
+
+Vencedor do **NextWave Hackathon 2026 — LATAM**.
+
+→ [Projeto](https://nextwave-hackathon-2026.vercel.app/t/H3MDSM)
 
 ---
 
-## Estatísticas
+### `correio elegante` — pagamentos & produto
 
-<div align="center">
-  <img src="https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&include_all_commits=true&count_private=true&hide=contribs&card_width=495&bg_color=0b0c10&title_color=ece9df&icon_color=e5484d&ring_color=e5484d&text_color=a8a395&border_color=26282e&v=12" alt="GitHub Stats" width="49.5%" />
-  <img src="https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&layout=compact&langs_count=8&card_width=495&bg_color=0b0c10&title_color=ece9df&icon_color=e5484d&text_color=a8a395&border_color=26282e&v=12" alt="Top Languages" width="49.5%" />
-</div>
+Uma plataforma de cartas digitais construída como produto completo, não demo de frontend.
 
-<p align="center">
-  <img src="./streak.svg?v=2" alt="Streak — chama animada, atual 0 dias, maior sequência 12 dias" width="100%" />
-</p>
+Cards temáticos, uploads de mídia, compartilhamento público e entrega liberada por pagamento, com fluxos de pagamento reais.
 
-<p align="center">
-  <img src="https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&bg_color=0b0c10&color=a8a395&line=e5484d&point=ece9df&area=true&area_color=3d1517&hide_border=true&custom_title=contribution%20graph&v=11" alt="Activity Graph" width="100%" />
-</p>
+**React 19 · Express 5 · Prisma · MongoDB · Stripe · PagBank / Pix**
 
 ---
 
-## Contato
+### `singular` — inteligência de documentos
 
-<div align="center">
-  <a href="https://linkedin.com/in/thisux" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0b0c10?style=for-the-badge&logo=linkedin&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="LinkedIn" />
-  </a>
-  &nbsp;
-  <a href="mailto:thisux94@gmail.com">
-    <img src="https://img.shields.io/badge/Email-0b0c10?style=for-the-badge&logo=gmail&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="Email" />
-  </a>
-  &nbsp;
-  <a href="https://thisux.tech" target="_blank">
-    <img src="https://img.shields.io/badge/thisux.tech-0b0c10?style=for-the-badge&logo=firefoxbrowser&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="Portfolio" />
-  </a>
-</div>
+Um pipeline que transforma documentos em quizzes estruturados.
+
+Em vez de tratar a geração como uma única request HTTP, a ingestão roda como workflow assíncrono com parsing de documentos, OCR, geração por IA e jobs em background.
+
+**Python · Hono · BullMQ · PostgreSQL · Drizzle · React PWA**
+
+---
+
+### `oracle` — automação & ML
+
+Um companheiro por máquina de estados pro EPIC RPG que automatiza o gameplay enquanto resolve os desafios de verificação localmente.
+
+A CNN resolve as imagens de captcha offline, sem depender de APIs de visão externas.
+
+**Python · TensorFlow Lite · FastAPI · Textual · PyInstaller**
+
+---
+
+### `aeroglove` — sistemas embarcados
+
+Uma interface de controle por gestos para pilotar um drone custom.
+
+Um ESP32-S3 lê dados da IMU, faz fusão de sensores a 100 Hz e traduz a orientação da mão em comandos de voo sem fio.
+
+**ESP32-S3 · MicroPython · Madgwick · ESP-NOW · BLE · MPU9250**
+
+<br />
+
+## GitHub
+
+<p align="center">
+  <img
+    src="https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&include_all_commits=true&count_private=true&hide=contribs&card_width=495&bg_color=0b0c10&title_color=ece9df&icon_color=e5484d&ring_color=e5484d&text_color=a8a395&border_color=26282e&v=12"
+    alt="Estatísticas do GitHub do Thiago"
+    width="495"
+  />
+</p>
+
+<p align="center">
+  <img
+    src="https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&layout=compact&langs_count=8&card_width=495&bg_color=0b0c10&title_color=ece9df&icon_color=e5484d&text_color=a8a395&border_color=26282e&v=12"
+    alt="Linguagens mais usadas"
+    width="495"
+  />
+</p>
+
+<p align="center">
+  <img
+    src="./streak.svg?v=2"
+    alt="Streak de contribuições do GitHub"
+    width="100%"
+  />
+</p>
+
+<p align="center">
+  <img
+    src="https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&bg_color=0b0c10&color=a8a395&line=e5484d&point=ece9df&area=true&area_color=3d1517&hide_border=true&custom_title=contribution%20graph&v=11"
+    alt="Gráfico de atividade do GitHub"
+    width="100%"
+  />
+</p>
+
+<br />
+
+## Onde me encontrar
+
+<p align="center">
+  <a href="https://thisux.tech">Portfolio</a>
+  &nbsp;·&nbsp;
+  <a href="https://linkedin.com/in/thisux">LinkedIn</a>
+  &nbsp;·&nbsp;
+  <a href="mailto:thisux94@gmail.com">Email</a>
+</p>
