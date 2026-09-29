@@ -14,19 +14,18 @@
 • Frontend : React, Next.js, TypeScript, Tailwind
 • Backend  : Node.js, Hono, Express, FastAPI
 • Data     : PostgreSQL, MongoDB, Redis, Drizzle
-• Infra    : Docker, Vercel, GitHub Actions, CF
-• Payments : Stripe, PagBank (Pix), webhooks
+• Infra    : Docker, Vercel, GitHub Actions
 • Edge     : MCP servers, BullMQ, OCR/LLM pipes</code></pre>
     </td>
     <td width="50%" valign="top">
-      <pre lang="python"><code>class SoftwareEngineer:
-    def __init__(self):
-        self.name = "Thiago Araújo"
-        self.location = "São Paulo, Brazil"
-        self.focus = "product systems · agentic infra"
-        self.study = "B.S. Software Eng. — UNIVESP '31"
-        self.langs = ["Português", "English"]
-        self.rabbit_holes = ["physics", "music"]</code></pre>
+      <pre lang="bash"><code>$ thiago / whoami
+------------------------------------------------
+• name  : Thiago Araújo
+• base  : São Paulo, Brazil
+• focus : product systems · agentic infra
+• study : B.S. Software Eng. — UNIVESP '31
+• langs : Português · English
+• holes : physics · cosmology · music</code></pre>
     </td>
   </tr>
 </table>
@@ -66,7 +65,7 @@ Outside software, I tend to disappear into rabbit holes about **physics, cosmolo
         <li>Winner of the <b>NextWave Hackathon 2026 — LATAM</b>.</li>
         <li>MCP tools, TypeScript SDK, RFC 8785 signed requests.</li>
       </ul>
-      <p><a href="https://github.com/pedroschott/hackatonyuno">→ repo</a> · <a href="https://nextwave-hackathon-2026.vercel.app/t/H3MDSM">→ live</a></p>
+      <p><a href="https://github.com/pedroschott/hackatonyuno">repo</a> · <a href="https://nextwave-hackathon-2026.vercel.app/t/H3MDSM">live</a></p>
       <p>
         <img src="https://img.shields.io/badge/TypeScript-0b0c10?style=flat-square&logo=typescript&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="TypeScript" />
         <img src="https://img.shields.io/badge/Next.js-0b0c10?style=flat-square&logo=nextdotjs&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="Next.js" />
@@ -78,10 +77,10 @@ Outside software, I tend to disappear into rabbit holes about **physics, cosmolo
       <h4>correio elegante — <small>payments & product</small></h4>
       <p>A digital love-letter platform built as a complete product — themed cards, media uploads, public sharing and payment-gated delivery.</p>
       <ul>
-        <li>Stripe (cards/boleto) + PagBank Pix with webhook reconciliation.</li>
+        <li>Stripe (cards/boleto) + PagBank with webhook reconciliation.</li>
         <li>React 19 SPA, Express 5 API, Prisma over MongoDB.</li>
       </ul>
-      <p><a href="https://github.com/thisux1/correioelegante3">→ repo</a></p>
+      <p><a href="https://github.com/thisux1/correioelegante3">repo</a></p>
       <p>
         <img src="https://img.shields.io/badge/React_19-0b0c10?style=flat-square&logo=react&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="React 19" />
         <img src="https://img.shields.io/badge/Express-0b0c10?style=flat-square&logo=express&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="Express" />
@@ -98,7 +97,7 @@ Outside software, I tend to disappear into rabbit holes about **physics, cosmolo
         <li>BullMQ + Redis queues, Python OCR stage, Ollama generation.</li>
         <li>Hono API, PostgreSQL + Drizzle, React PWA front.</li>
       </ul>
-      <p><a href="https://github.com/thisux1/Singular">→ repo</a></p>
+      <p><a href="https://github.com/thisux1/Singular">repo</a></p>
       <p>
         <img src="https://img.shields.io/badge/Hono-0b0c10?style=flat-square&logo=hono&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="Hono" />
         <img src="https://img.shields.io/badge/PostgreSQL-0b0c10?style=flat-square&logo=postgresql&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="PostgreSQL" />
@@ -113,7 +112,7 @@ Outside software, I tend to disappear into rabbit holes about **physics, cosmolo
         <li>CNN solves captcha images offline — no external vision APIs.</li>
         <li>Textual TUI + FastAPI dashboard for live control.</li>
       </ul>
-      <p><a href="https://github.com/thisux1/Oracle">→ repo</a></p>
+      <p><a href="https://github.com/thisux1/Oracle">repo</a></p>
       <p>
         <img src="https://img.shields.io/badge/Python-0b0c10?style=flat-square&logo=python&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="Python" />
         <img src="https://img.shields.io/badge/TensorFlow_Lite-0b0c10?style=flat-square&logo=tensorflow&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="TensorFlow Lite" />
@@ -130,7 +129,7 @@ Outside software, I tend to disappear into rabbit holes about **physics, cosmolo
         <li>ESP32-S3 reads IMU data, Madgwick fusion at 100 Hz.</li>
         <li>ESP-NOW control link, BLE for configuration.</li>
       </ul>
-      <p><a href="https://github.com/thisux1/AeroGlove">→ repo</a></p>
+      <p><a href="https://github.com/thisux1/AeroGlove">repo</a></p>
       <p>
         <img src="https://img.shields.io/badge/MicroPython-0b0c10?style=flat-square&logo=micropython&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="MicroPython" />
         <img src="https://img.shields.io/badge/ESP32--S3-0b0c10?style=flat-square&logo=espressif&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="ESP32-S3" />
@@ -142,10 +141,10 @@ Outside software, I tend to disappear into rabbit holes about **physics, cosmolo
       <h4>realiza.vc — <small>product & ops</small></h4>
       <p>Mentorship program OS — matching board, per-meeting registers, a computed traffic-light of pair health, signature flows.</p>
       <ul>
-        <li>Supabase RLS scopes every row by role — coordinator → mentor.</li>
+        <li>Supabase RLS scopes every row by role — coordinator, supervisor, mentor.</li>
         <li>Next.js 16, 54 migrations, 156 tests, public <code>/demo</code>.</li>
       </ul>
-      <p><a href="https://github.com/thisux1/realiza.vc">→ repo</a></p>
+      <p><a href="https://github.com/thisux1/realiza.vc">repo</a></p>
       <p>
         <img src="https://img.shields.io/badge/Next.js_16-0b0c10?style=flat-square&logo=nextdotjs&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="Next.js 16" />
         <img src="https://img.shields.io/badge/Supabase-0b0c10?style=flat-square&logo=supabase&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="Supabase" />
@@ -165,7 +164,7 @@ Outside software, I tend to disappear into rabbit holes about **physics, cosmolo
 </div>
 
 <p align="center">
-  <img src="./streak.svg?v=2" alt="GitHub contribution streak" width="100%" />
+  <img src="./streak.svg?v=3" alt="GitHub contribution streak" width="100%" />
 </p>
 
 <p align="center">
