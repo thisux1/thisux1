@@ -6,14 +6,11 @@
 
 <br/>
 
-<table width="100%">
-  <tr>
-    <td width="55%" valign="top">
-      <p>Dev full-stack construindo sistemas de ponta a ponta em TypeScript — fluxos de pagamento (Stripe, Mercado Pago/Pix), auth, filas em background, pipelines de OCR/IA — e indo de Python quando o problema é ML ou tooling. Gosto de ser dono do caminho inteiro: schema → API → UI → deploy.</p>
-      <p>No momento: automação agêntica e loops de controle embarcado — bots que sobrevivem a captchas, luvas que voam drones.</p>
-    </td>
-    <td width="45%" valign="top">
-      <pre lang="yaml"><code># id_card.yml — decoded
+<p>Dev full-stack construindo sistemas de ponta a ponta em TypeScript — fluxos de pagamento (Stripe, Mercado Pago/Pix), auth, filas em background, pipelines de OCR/IA — e indo de Python quando o problema é ML ou tooling. Gosto de ser dono do caminho inteiro: schema → API → UI → deploy.</p>
+<p>No momento: automação agêntica e loops de controle embarcado — bots que sobrevivem a captchas, luvas que voam drones.</p>
+
+```yaml
+# id_card.yml — decoded
 name       Thiago Araújo
 based      São Paulo, BR · UTC-3
 study      B.S. Software Engineering — UNIVESP '31
@@ -21,10 +18,8 @@ speaks     English (fluent) · Português (nativo)
 site       thisux.tech
 focus      agentic automation · embedded control
 stack      typescript · python · react · hono
-currently  captcha-surviving bots · drone gloves</code></pre>
-    </td>
-  </tr>
-</table>
+currently  captcha-surviving bots · drone gloves
+```
 
 <br/>
 
@@ -38,64 +33,39 @@ currently  captcha-surviving bots · drone gloves</code></pre>
 
 ## Trabalho selecionado
 
-<table width="100%">
-  <tr>
-    <td width="50%" valign="top">
-      <h4>Correio Elegante — <small>pagamentos & produto</small></h4>
-      <p>Plataforma de cartas digitais com temas, upload de mídia e link público liberado por pagamento.</p>
-      <ul>
-        <li>Stripe (cartão/boleto) + PagBank Pix com reconciliação por webhook.</li>
-        <li>SPA React 19, API Express 5, Prisma sobre MongoDB, Vitest + Supertest.</li>
-      </ul>
-      <p><sub>react 19 · express 5 · prisma · stripe · pagbank</sub></p>
-    </td>
-    <td width="50%" valign="top">
-      <h4>Singular — <small>pipeline assíncrono de quiz</small></h4>
-      <p>Plataforma de quiz onde a ingestão de documentos é um job distribuído, não uma request.</p>
-      <ul>
-        <li>Filas BullMQ + Redis, etapa de OCR em Python, Ollama gerando questões.</li>
-        <li>API Hono, PostgreSQL + Drizzle, front React PWA.</li>
-      </ul>
-      <p><sub>hono · bullmq · drizzle · postgres · ollama</sub></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h4>Oracle — <small>automação & ML</small></h4>
-      <p>Companheiro de automação por máquina de estados para Epic RPG; uma CNN local resolve os captchas offline.</p>
-      <ul>
-        <li>CNNs TensorFlow Lite (gray + cor), sem chamadas de nuvem.</li>
-        <li>TUI Textual + dashboard FastAPI para controle ao vivo.</li>
-      </ul>
-      <p><sub>python · tflite · textual · fastapi · pyinstaller</sub></p>
-    </td>
-    <td width="50%" valign="top">
-      <h4>AeroGlove — <small>embarcado & firmware</small></h4>
-      <p>Luva de controle de drone por gestos: um ESP32-S3 lê a IMU, funde os dados e transmite comandos.</p>
-      <ul>
-        <li>MicroPython, Madgwick AHRS a 100 Hz numa GY-91/MPU9250.</li>
-        <li>Link de controle ESP-NOW, BLE (Nordic UART) pra configuração.</li>
-      </ul>
-      <p><sub>micropython · esp32-s3 · esp-now · ble · madgwick</sub></p>
-    </td>
-  </tr>
-</table>
+```text
+correio elegante ─ pagamentos & produto
+  plataforma de cartas digitais — temas, upload de mídia,
+  link público liberado por pagamento
+  stripe + pagbank pix · react 19 · express 5 · prisma · mongodb
+
+singular ─ pipeline assíncrono de quiz
+  ingestão de documentos como job distribuído, não request —
+  ocr em python, ollama gerando as questões
+  hono · bullmq · drizzle · postgres · react pwa
+
+oracle ─ automação & ml
+  companheiro por máquina de estados pro epic rpg — cnn local
+  resolve os captchas offline, sem nuvem
+  python · tflite · textual · fastapi · pyinstaller
+
+aeroglove ─ embarcado & firmware
+  luva de drone por gestos — esp32-s3 lê a imu, fusão madgwick
+  a 100hz, comandos via esp-now
+  micropython · esp32-s3 · esp-now · ble · gy-91/mpu9250
+```
 
 ---
 
 ## Estatísticas
 
 <div align="center">
-  <img src="https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&include_all_commits=true&count_private=true&card_width=495&bg_color=0b0c10&title_color=ece9df&icon_color=e5484d&ring_color=e5484d&text_color=a8a395&border_color=26282e&v=11" alt="GitHub Stats" width="49.5%" />
-  <img src="https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&layout=compact&langs_count=8&card_width=495&bg_color=0b0c10&title_color=ece9df&text_color=a8a395&border_color=26282e&v=11" alt="Top Languages" width="49.5%" />
+  <img src="https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&include_all_commits=true&count_private=true&hide=contribs&card_width=495&bg_color=0b0c10&title_color=ece9df&icon_color=e5484d&ring_color=e5484d&text_color=a8a395&border_color=26282e&v=12" alt="GitHub Stats" width="49.5%" />
+  <img src="https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&layout=compact&langs_count=8&card_width=495&bg_color=0b0c10&title_color=ece9df&icon_color=e5484d&text_color=a8a395&border_color=26282e&v=12" alt="Top Languages" width="49.5%" />
 </div>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&background=0b0c10&border=26282e&stroke=565b63&ring=e5484d&fire=e5484d&currStreakNum=ece9df&sideNums=ece9df&currStreakLabel=a8a395&sideLabels=a8a395&dates=8a8778&v=11" alt="GitHub Streak" width="100%" />
-</p>
-
-<p align="center">
-  <img src="./streak.svg?v=1" alt="Snapshot de streak — chama animada, maior sequência 12 dias" width="100%" />
+  <img src="./streak.svg?v=2" alt="Streak — chama animada, atual 0 dias, maior sequência 12 dias" width="100%" />
 </p>
 
 <p align="center">
