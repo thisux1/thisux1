@@ -9,8 +9,8 @@
     </clipPath>
     <!-- typewriter window for the sub-line: opens only after the name is done -->
     <clipPath id="subClip">
-      <rect x="56" y="181" width="430" height="22">
-        <animate attributeName="width" calcMode="discrete" values="0;0;24;48;72;96;120;144;168;192;216;240;264;288;312;336;360;384;408;430;430" keyTimes="0;0.583;0.601;0.62;0.639;0.657;0.676;0.695;0.713;0.732;0.75;0.769;0.787;0.806;0.825;0.843;0.862;0.88;0.899;0.918;1" dur="3.6s" begin="0s" repeatCount="1" fill="freeze"/>
+      <rect x="56" y="181" width="560" height="22">
+        <animate attributeName="width" calcMode="discrete" values="0;0;32;64;96;128;160;192;224;256;288;320;352;384;416;448;480;512;544;556;560" keyTimes="0;0.583;0.601;0.62;0.639;0.657;0.676;0.695;0.713;0.732;0.75;0.769;0.787;0.806;0.825;0.843;0.862;0.88;0.899;0.918;1" dur="3.6s" begin="0s" repeatCount="1" fill="freeze"/>
       </rect>
     </clipPath>
   </defs>
@@ -40,7 +40,7 @@
 
   <!-- sub-line: types itself once on load, revealed through the clip window -->
   <g clip-path="url(#subClip)">
-    <text x="56" y="198" font-family="ui-monospace,'Fira Code',monospace" font-size="14.5" fill="#a8a395">end-to-end systems — schema → api → ui → deploy</text>
+    <text x="56" y="198" font-family="ui-monospace,'Fira Code',monospace" font-size="14.5" fill="#a8a395">end-to-end systems · idea → architecture → interface → reality</text>
   </g>
 
   <!-- name caret: tall block rides the name's reveal edge, dies when the name is done -->
@@ -58,7 +58,7 @@
   <g>
     <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.56;0.575;0.95;0.985;1" dur="3.6s" begin="0s" repeatCount="1" fill="freeze"/>
     <g>
-      <animateTransform attributeName="transform" type="translate" calcMode="discrete" values="0 0;0 0;24 0;48 0;72 0;96 0;120 0;144 0;168 0;192 0;216 0;240 0;264 0;288 0;312 0;336 0;360 0;384 0;408 0;420 0;420 0" keyTimes="0;0.583;0.601;0.62;0.639;0.657;0.676;0.695;0.713;0.732;0.75;0.769;0.787;0.806;0.825;0.843;0.862;0.88;0.899;0.918;1" dur="3.6s" begin="0s" repeatCount="1" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" calcMode="discrete" values="0 0;0 0;32 0;64 0;96 0;128 0;160 0;192 0;224 0;256 0;288 0;320 0;352 0;384 0;416 0;448 0;480 0;512 0;544 0;548 0;548 0" keyTimes="0;0.583;0.601;0.62;0.639;0.657;0.676;0.695;0.713;0.732;0.75;0.769;0.787;0.806;0.825;0.843;0.862;0.88;0.899;0.918;1" dur="3.6s" begin="0s" repeatCount="1" fill="freeze"/>
       <rect x="56" y="182" width="9" height="17" fill="#e5484d" opacity="0">
         <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.51;1" calcMode="discrete" dur="0.9s" repeatCount="indefinite"/>
       </rect>
@@ -96,10 +96,10 @@
     <rect x="328" y="243" width="7" height="7" fill="#e5484d" transform="rotate(45 331.5 246.5)">
       <animate attributeName="opacity" values="1;0.15;1" dur="2.2s" begin="2.25s" repeatCount="indefinite"/>
     </rect>
-    <text x="344" y="252">ML &amp; DATA</text>
+    <text x="344" y="252">INTELLIGENT SYSTEMS</text>
     <rect x="560" y="243" width="7" height="7" fill="#e5484d" transform="rotate(45 563.5 246.5)">
       <animate attributeName="opacity" values="1;0.15;1" dur="2.2s" begin="2.9s" repeatCount="indefinite"/>
     </rect>
-    <text x="576" y="252">AGENTS &amp; AUTOMATION</text>
+    <text x="576" y="252">AGENTS &amp; MACHINES</text>
   </g>
 </svg>

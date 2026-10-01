@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="#root"><img src="./banner.svg?v=14" alt="Thiago Araújo — Engenheiro de Software & Builder" width="100%"/></a>
+  <a href="#root"><img src="./banner.svg?v=15" alt="Thiago Araújo — Engenheiro de Software & Builder" width="100%"/></a>
 </div>
 
 <p align="center"><sub>🇺🇸 <a href="readme.md">English version</a></sub></p>
@@ -9,47 +9,45 @@
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
-      <pre lang="bash"><code>$ thiago / perfil_tecnico
+      <pre lang="bash"><code>$ thiago / explorando_agora
 ------------------------------------------------
-• Frontend : React, Next.js, TypeScript, Tailwind
-• Backend  : Node.js, Hono, Express, FastAPI
-• Data     : PostgreSQL, MongoDB, Redis, Drizzle
-• Infra    : Docker, Vercel, GitHub Actions
-• Edge     : MCP servers, BullMQ, OCR/LLM pipes</code></pre>
+• sistemas agênticos  workflows autônomos
+• interfaces          complexo → entendível
+• máquinas            software tocando hardware
+• infraestrutura      sistemas que sobrevivem</code></pre>
     </td>
     <td width="50%" valign="top">
       <pre lang="bash"><code>$ thiago / quem_sou
 ------------------------------------------------
-• nome  : Thiago Araújo
-• base  : São Paulo, Brasil
-• foco  : sistemas de produto · infra agêntica
-• estudo: B.S. Eng. Software — UNIVESP '31
-• idiomas: Português · English
-• holes : física · cosmologia · música</code></pre>
+• builder   Thiago Araújo
+• base      São Paulo, Brasil
+• modo      curiosidade → protótipo → sistema
+• estudo    Eng. de Software, UNIVESP
+• fora      física · cosmologia · música</code></pre>
     </td>
   </tr>
 </table>
 
 ## Sobre mim
 
-Sou o Thiago — engenheiro de software, builder e explorador compulsivo de rabbit holes, de São Paulo.
+Sou o Thiago. Construo coisas principalmente porque quero entender como funcionam.
 
-Construo coisas porque quero entender como funcionam. A maioria dos projetos começa com um simples *"e se?"* e de algum jeito termina comigo mexendo no banco de dados, na API, na interface, no deploy — e às vezes num microcontrolador.
+A maioria dos projetos começa com um *"e se?"* e escala a partir daí. Um web app vira um sistema de pagamentos. Um parser de documentos vira um pipeline assíncrono de IA. Uma luva acaba voando um drone.
 
-Gosto de trabalhar nas fronteiras: **produto e engenharia, software e hardware, sistemas determinísticos e IA**. Me interesso especialmente por sistemas agênticos, automação, ML, workflows distribuídos e interfaces que fazem sistemas complexos parecerem simples.
+Gosto de trabalhar nas fronteiras entre as coisas: produto e engenharia, software e hardware, sistemas determinísticos e IA. Isso geralmente significa seguir o problema até o fim: arquitetura, dados, APIs, interfaces, infraestrutura, modos de falha e o que mais aparecer no caminho.
 
-Me importo com a coisa toda, não só com o código. Arquitetura, comportamento, performance, UX, modos de falha e os detalhes pequenos que fazem algo parecer intencional.
+Me interesso especialmente por agentes, automação, sistemas inteligentes e ferramentas que fazem máquinas complicadas parecerem simples.
 
-Fora do software, costumo sumir em rabbit holes sobre **física, cosmologia, psicologia, filosofia, fotografia e música**.
+Fora do software, geralmente é física, cosmologia, psicologia, filosofia, fotografia e música.
 
-> Gosto de construir sistemas que fazem algo real.
+> No fim das contas, gosto de tornar ideias reais.
 
 ---
 
 ## Sistemas
 
 <p align="center">
-  <img src="./systems.svg?v=3" alt="Sistemas — produto, ML & dados, agentes & máquinas" width="100%"/>
+  <img src="./systems.svg?v=4" alt="Sistemas — produto, ML & dados, agentes & máquinas" width="100%"/>
 </p>
 
 ---
@@ -59,11 +57,11 @@ Fora do software, costumo sumir em rabbit holes sobre **física, cosmologia, psi
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
-      <h4>agentpay — <small>infra de pagamentos agênticos</small></h4>
-      <p>Infraestrutura de autorização para compras feitas por agentes de IA — mandatos determinísticos, validação de política, fluxos auditáveis pra um comprador que não é humano.</p>
+      <h4>agentpay | <small>infra de pagamentos agênticos</small></h4>
+      <p>Infraestrutura de autorização para compras feitas por agentes de IA.</p>
       <ul>
-        <li>Vencedor do <b>NextWave Hackathon 2026 — LATAM</b>.</li>
-        <li>MCP tools, SDK em TypeScript, requests assinadas RFC 8785.</li>
+        <li>Mandatos determinísticos, validação de política e fluxos auditáveis pra um comprador que não é humano.</li>
+        <li>Vencedor do <b>NextWave Hackathon 2026, LATAM</b>.</li>
       </ul>
       <p><a href="https://github.com/pedroschott/hackatonyuno">repo</a> · <a href="https://nextwave-hackathon-2026.vercel.app/t/H3MDSM">live</a></p>
       <p>
@@ -74,11 +72,11 @@ Fora do software, costumo sumir em rabbit holes sobre **física, cosmologia, psi
       </p>
     </td>
     <td width="50%" valign="top">
-      <h4>correio elegante — <small>pagamentos & produto</small></h4>
-      <p>Uma plataforma de cartas digitais construída como produto completo — cards temáticos, uploads de mídia, compartilhamento público e entrega liberada por pagamento.</p>
+      <h4>correio elegante | <small>pagamentos & produto</small></h4>
+      <p>Um produto de cartas digitais que acidentalmente virou um sistema de pagamentos completo.</p>
       <ul>
-        <li>Stripe (cartão/boleto) + PagBank com reconciliação por webhook.</li>
-        <li>SPA React 19, API Express 5, Prisma sobre MongoDB.</li>
+        <li>Cards temáticos, uploads de mídia e links públicos liberados por pagamento.</li>
+        <li>Stripe + PagBank com reconciliação por webhook, Express 5, Prisma.</li>
       </ul>
       <p><a href="https://github.com/thisux1/correioelegante3">repo</a></p>
       <p>
@@ -91,11 +89,11 @@ Fora do software, costumo sumir em rabbit holes sobre **física, cosmologia, psi
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h4>singular — <small>inteligência de documentos</small></h4>
-      <p>Um pipeline que transforma documentos em quizzes estruturados — a ingestão roda como workflow assíncrono, não uma request HTTP.</p>
+      <h4>singular | <small>inteligência de documentos</small></h4>
+      <p>Um parser de documentos que escalou pra um pipeline assíncrono de IA.</p>
       <ul>
-        <li>Filas BullMQ + Redis, etapa de OCR em Python, geração com Ollama.</li>
-        <li>API Hono, PostgreSQL + Drizzle, front React PWA.</li>
+        <li>Sobe um PDF, sai um quiz estruturado. Ingestão é um job, não uma request.</li>
+        <li>Filas BullMQ + Redis, fallback de OCR em Python, geração com Ollama.</li>
       </ul>
       <p><a href="https://github.com/thisux1/Singular">repo</a></p>
       <p>
@@ -106,10 +104,10 @@ Fora do software, costumo sumir em rabbit holes sobre **física, cosmologia, psi
       </p>
     </td>
     <td width="50%" valign="top">
-      <h4>oracle — <small>automação & ML</small></h4>
-      <p>Um companheiro por máquina de estados pro EPIC RPG que automatiza o gameplay resolvendo os desafios de verificação localmente.</p>
+      <h4>oracle | <small>automação & ML</small></h4>
+      <p>Um companheiro por máquina de estados pro EPIC RPG com visão computacional local.</p>
       <ul>
-        <li>CNN resolve imagens de captcha offline — sem APIs de visão externas.</li>
+        <li>Automatiza o gameplay enquanto uma CNN resolve captchas offline. Sem APIs externas.</li>
         <li>TUI Textual + dashboard FastAPI pra controle ao vivo.</li>
       </ul>
       <p><a href="https://github.com/thisux1/Oracle">repo</a></p>
@@ -123,11 +121,11 @@ Fora do software, costumo sumir em rabbit holes sobre **física, cosmologia, psi
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h4>aeroglove — <small>sistemas embarcados</small></h4>
-      <p>Uma interface de controle por gestos pra pilotar um drone custom — a orientação da mão vira comandos de voo sem fio.</p>
+      <h4>aeroglove | <small>sistemas embarcados</small></h4>
+      <p>Uma luva que acabou voando um drone.</p>
       <ul>
-        <li>ESP32-S3 lê dados da IMU, fusão Madgwick a 100 Hz.</li>
-        <li>Link de controle ESP-NOW, BLE pra configuração.</li>
+        <li>ESP32-S3 lê a IMU, fusão Madgwick a 100 Hz.</li>
+        <li>A orientação da mão vira comandos de voo via ESP-NOW, BLE pra config.</li>
       </ul>
       <p><a href="https://github.com/thisux1/AeroGlove">repo</a></p>
       <p>
@@ -138,11 +136,11 @@ Fora do software, costumo sumir em rabbit holes sobre **física, cosmologia, psi
       </p>
     </td>
     <td width="50%" valign="top">
-      <h4>realiza.vc — <small>produto & ops</small></h4>
-      <p>Sistema operacional de programa de mentoria — board de matching, registros por encontro, semáforo computado de saúde da dupla, fluxos de assinatura.</p>
+      <h4>realiza.vc | <small>produto & ops</small></h4>
+      <p>Um sistema operacional pra um programa de mentoria.</p>
       <ul>
-        <li>RLS do Supabase escopa cada linha por papel — coordenação, supervisor, mentor.</li>
-        <li>Next.js 16, 54 migrations, 156 testes, <code>/demo</code> pública.</li>
+        <li>Board de matching, registros por encontro e um semáforo computado da saúde da dupla.</li>
+        <li>RLS do Supabase escopa cada linha por papel. Next.js 16, 54 migrations, <code>/demo</code> pública.</li>
       </ul>
       <p><a href="https://github.com/thisux1/realiza.vc">repo</a></p>
       <p>
