@@ -47,7 +47,7 @@
   <g font-family="ui-monospace,'Fira Code',monospace" font-size="12.5" fill="#a8a395">
     <text x="48" y="180">react 19 · next.js · vite</text>
     <text x="48" y="206">node · express · hono</text>
-    <text x="48" y="232">stripe · mercado pago pix</text>
+    <text x="48" y="232">stripe · pagbank · webhooks</text>
     <text x="48" y="258">postgres · prisma · drizzle</text>
     <text x="48" y="284">tailwind · framer motion</text>
   </g>
@@ -96,7 +96,7 @@
     <animate attributeName="r" values="3.4;8.5" dur="2.4s" begin="1.2s" repeatCount="indefinite"/>
     <animate attributeName="stroke-opacity" values="0.8;0" dur="2.4s" begin="1.2s" repeatCount="indefinite"/>
   </circle>
-  <text x="316" y="136" font-family="Georgia,'Times New Roman',serif" font-size="26" fill="#ece9df">ML &amp; Data</text>
+  <text x="316" y="136" font-family="Georgia,'Times New Roman',serif" font-size="26" fill="#ece9df">Intelligent Systems</text>
   <line x1="316" y1="152" x2="534" y2="152" stroke="#26282e"/>
   <line x1="316" y1="152" x2="378" y2="152" stroke="#e5484d" stroke-width="1.5">
     <animateTransform attributeName="transform" type="translate" values="0 0;156 0;0 0" keyTimes="0;0.5;1" dur="5s" begin="2.8s" repeatCount="indefinite"/>
@@ -141,7 +141,7 @@
     <animateTransform attributeName="transform" type="translate" values="0 0;162 0;0 0" keyTimes="0;0.5;1" dur="5s" begin="4.4s" repeatCount="indefinite"/>
   </line>
   <g font-family="ui-monospace,'Fira Code',monospace" font-size="12.5" fill="#a8a395">
-    <text x="574" y="180">discord.py-self · fastapi</text>
+    <text x="574" y="180">mcp tools · fastapi</text>
     <text x="574" y="206">bullmq · redis workers</text>
     <text x="574" y="232">esp32-s3 · esp-now · ble</text>
     <text x="574" y="258">textual tui · pyinstaller</text>
