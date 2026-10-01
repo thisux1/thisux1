@@ -162,7 +162,7 @@ Fora do software, geralmente é física, cosmologia, psicologia, filosofia, foto
 </div>
 
 <p align="center">
-  <img src="./streak.svg?v=3" alt="Streak de contribuições" width="100%" />
+  <img src="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&theme=ember" alt="Streak de contribuições" width="100%" />
 </p>
 
 <p align="center">
