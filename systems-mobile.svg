@@ -1,0 +1,55 @@
+<svg id="static" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 578" width="360" height="578" role="img" aria-labelledby="title desc">
+  <title id="title">Systems — owned end-to-end</title>
+  <desc id="desc">Product Systems, Intelligent Systems, Agents and Machines. Technologies grouped by domain.</desc>
+  <style>
+    .mono { font-family: monospace; fill: #cbc6ba; font-size: 14px; }
+    .heading { font-family: Georgia,serif; fill: #ece9df; font-size: 27px; }
+    .num { font-family: monospace; fill: #e5484d; font-size: 14px; }
+    @keyframes reveal { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes travel { 0%,15% { transform: translateX(0); opacity: 0; } 25% { opacity: 1; } 75% { opacity: 1; } 90%,100% { transform: translateX(290px); opacity: 0; } }
+    svg:target * { animation: none !important; }
+    @media (prefers-reduced-motion: no-preference) {
+      .section { animation: reveal .55s cubic-bezier(.22,1,.36,1) both; }
+      .second { animation-delay: .09s; }
+      .third { animation-delay: .18s; }
+      .signal { animation: travel 9s ease-in-out infinite; }
+    }
+  </style>
+  <rect width="360" height="578" fill="#0b0c10"/>
+  <text class="mono" x="16" y="26" font-size="12" letter-spacing=".8">SYSTEMS — OWNED END-TO-END</text>
+  <path d="M16 40H344M16 217H344M16 394H344" stroke="#34363e"/>
+  <rect class="signal" x="16" y="39" width="30" height="2" fill="#e5484d"/>
+  <g class="section">
+    <text class="num" x="16" y="75">01</text>
+    <text class="heading" x="50" y="76">Product Systems</text>
+    <g class="mono">
+      <text x="16" y="108">react 19 · next.js · vite</text>
+      <text x="16" y="131">node · express · hono</text>
+      <text x="16" y="154">stripe · pagbank · webhooks</text>
+      <text x="16" y="177">postgres · prisma · drizzle</text>
+      <text x="16" y="200">tailwind · framer motion</text>
+    </g>
+  </g>
+  <g class="section second">
+    <text class="num" x="16" y="252">02</text>
+    <text class="heading" x="50" y="253">Intelligent Systems</text>
+    <g class="mono">
+      <text x="16" y="285">python · tensorflow lite</text>
+      <text x="16" y="308">ocr → structured data</text>
+      <text x="16" y="331">pandas · stats models</text>
+      <text x="16" y="354">supabase · data apis</text>
+      <text x="16" y="377">openai · ollama</text>
+    </g>
+  </g>
+  <g class="section third">
+    <text class="num" x="16" y="429">03</text>
+    <text class="heading" x="50" y="430">Agents &amp; Machines</text>
+    <g class="mono">
+      <text x="16" y="462">mcp tools · fastapi</text>
+      <text x="16" y="485">bullmq · redis workers</text>
+      <text x="16" y="508">esp32-s3 · esp-now · ble</text>
+      <text x="16" y="531">textual tui · pyinstaller</text>
+      <text x="16" y="554">docker · github actions</text>
+    </g>
+  </g>
+</svg>

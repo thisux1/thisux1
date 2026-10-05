@@ -12,7 +12,7 @@
     body {
       background-color: #010409;
       color: #c9d1d9;
-      padding: 2rem;
+      padding: clamp(8px, 2vw, 24px);
       margin: 0;
     }
     .container {
@@ -21,7 +21,8 @@
       border: 1px solid #30363d;
       border-radius: 6px;
       background-color: #0d1117;
-      padding: 32px;
+      padding: clamp(12px, 2vw, 24px);
+      box-sizing: border-box;
     }
     .markdown-body {
       background-color: transparent !important;
