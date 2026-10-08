@@ -15,7 +15,8 @@ const text = (x, y, value, cls = 'mono', extra = '') => `<text x="${x}" y="${y}"
 const line = (x1, y1, x2, y2, color = rule, extra = '') => `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${color}" ${extra}/>`;
 const star = '<path d="M0-22Q5-5 22 0Q5 5 0 22Q-5 5-22 0Q-5-5 0-22Z" fill="var(--accent)"/>';
 const css = `
-    svg { --bg: #0b0c10; --ink: #ece9df; --muted: #cbc6ba; --quiet: #aaa397; --accent: #ff2a5f; --rule: #343039; }
+    svg { --bg: transparent; --ink: #ece9df; --muted: #cbc6ba; --quiet: #aaa397; --accent: #ff2a5f; --rule: #343039; }
+    @media (prefers-color-scheme: light) { svg { --ink: #1b1c1f; --muted: #3e3b36; --quiet: #6b655c; --rule: #d9d5cc; } }
     .mono { font-family: 'Share Tech Mono', 'Courier New', monospace; font-size: 15px; fill: var(--muted); }
     .micro { font-family: 'Share Tech Mono', 'Courier New', monospace; font-size: 12px; letter-spacing: 1.2px; fill: var(--quiet); }
     .display { font-family: Georgia, 'Times New Roman', serif; fill: var(--ink); }
@@ -127,7 +128,6 @@ function wrap(file, width, height, title, description, body) {
     ${cssComments.join('\n    ')}
     ${css}
   ]]></style>
-  <rect width="${width}" height="${height}" fill="var(--bg)"/>
   <path d="M.5 .5H${width - 16}L${width - .5} 16V${height - .5}H.5Z" fill="none" stroke="${rule}"/>
   <path d="M.5 20V.5H20M${width - 20} ${height - .5}H${width - .5}V${height - 20}" fill="none" stroke="${accent}" stroke-opacity=".65"/>
   ${body}

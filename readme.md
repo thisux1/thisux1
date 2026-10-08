@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="#root"><picture><source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="./banner-mobile.svg?v=2#static"/><source media="(prefers-reduced-motion: reduce)" srcset="./banner.svg?v=18#static"/><source media="(max-width: 600px)" srcset="./banner-mobile.svg?v=2"/><img src="./banner.svg?v=18" alt="Thiago Araújo — Software Engineer & Builder" width="100%"/></picture></a>
+  <a href="#root"><picture><source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="./banner-mobile.svg?v=3#static"/><source media="(prefers-reduced-motion: reduce)" srcset="./banner.svg?v=19#static"/><source media="(max-width: 600px)" srcset="./banner-mobile.svg?v=3"/><img src="./banner.svg?v=19" alt="Thiago Araújo — Software Engineer & Builder" width="100%"/></picture></a>
 </div>
 
 <p align="center"><sub>🇧🇷 <a href="readme.pt-br.md">Versão em Português</a></sub></p>
@@ -47,7 +47,7 @@ Outside software, it's usually physics, cosmology, psychology, philosophy, photo
 ## Systems
 
 <p align="center">
-  <picture><source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="./systems-mobile.svg?v=2#static"/><source media="(prefers-reduced-motion: reduce)" srcset="./systems.svg?v=6#static"/><source media="(max-width: 600px)" srcset="./systems-mobile.svg?v=2"/><img src="./systems.svg?v=6" alt="Systems — product, ML & data, agents & machines" width="100%"/></picture>
+  <picture><source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="./systems-mobile.svg?v=3#static"/><source media="(prefers-reduced-motion: reduce)" srcset="./systems.svg?v=7#static"/><source media="(max-width: 600px)" srcset="./systems-mobile.svg?v=3"/><img src="./systems.svg?v=7" alt="Systems — product, ML & data, agents & machines" width="100%"/></picture>
 </p>
 
 ---
@@ -158,30 +158,30 @@ Outside software, it's usually physics, cosmology, psychology, philosophy, photo
 
 <div align="center">
   <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&include_all_commits=true&count_private=true&hide=contribs&card_width=440&theme=editorial_tech&dock=right&v=20#static" />
-    <img src="https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&include_all_commits=true&count_private=true&hide=contribs&card_width=440&theme=editorial_tech&dock=right&v=20" alt="GitHub Stats" width="49%" />
+    <source media="(prefers-reduced-motion: reduce)" srcset="https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&include_all_commits=true&count_private=true&hide=contribs&card_width=440&theme=editorial_tech&dock=right&bg_color=0000&v=21#static" />
+    <img src="https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&include_all_commits=true&count_private=true&hide=contribs&card_width=440&theme=editorial_tech&dock=right&bg_color=0000&v=21" alt="GitHub Stats" width="49%" />
   </picture>
   <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&langs_count=6&card_width=440&theme=editorial_tech&dock=left&v=20#static" />
-    <img src="https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&langs_count=6&card_width=440&theme=editorial_tech&dock=left&v=20" alt="Top Languages" width="49%" />
+    <source media="(prefers-reduced-motion: reduce)" srcset="https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&langs_count=6&card_width=440&theme=editorial_tech&dock=left&bg_color=0000&v=21#static" />
+    <img src="https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&langs_count=6&card_width=440&theme=editorial_tech&dock=left&bg_color=0000&v=21" alt="Top Languages" width="49%" />
   </picture>
 </div>
 
 <p align="center">
   <picture>
-    <source media="(prefers-reduced-motion: reduce) and (max-width: 480px)" srcset="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&hide_total_contributions=true&card_width=350&date_format=M+j&background=0b0c10&border=343039&stroke=343039&ring=ff2a5f&fire=ff2a5f&currStreakNum=ece9df&sideNums=ece9df&currStreakLabel=cbc6ba&sideLabels=cbc6ba&dates=cbc6ba&v=4#static" />
-    <source media="(max-width: 480px)" srcset="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&hide_total_contributions=true&card_width=350&date_format=M+j&background=0b0c10&border=343039&stroke=343039&ring=ff2a5f&fire=ff2a5f&currStreakNum=ece9df&sideNums=ece9df&currStreakLabel=cbc6ba&sideLabels=cbc6ba&dates=cbc6ba&excludeDaysLabel=cbc6ba&v=4" />
-    <source media="(prefers-reduced-motion: reduce)" srcset="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&theme=ember&v=4#static" />
-    <img src="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&theme=ember&v=4" alt="GitHub contribution streak" width="100%" />
+    <source media="(prefers-reduced-motion: reduce) and (max-width: 480px)" srcset="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&hide_total_contributions=true&card_width=350&date_format=M+j&background=0000&border=343039&stroke=343039&ring=ff2a5f&fire=ff2a5f&currStreakNum=ece9df&sideNums=ece9df&currStreakLabel=cbc6ba&sideLabels=cbc6ba&dates=cbc6ba&v=5#static" />
+    <source media="(max-width: 480px)" srcset="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&hide_total_contributions=true&card_width=350&date_format=M+j&background=0000&border=343039&stroke=343039&ring=ff2a5f&fire=ff2a5f&currStreakNum=ece9df&sideNums=ece9df&currStreakLabel=cbc6ba&sideLabels=cbc6ba&dates=cbc6ba&excludeDaysLabel=cbc6ba&v=5" />
+    <source media="(prefers-reduced-motion: reduce)" srcset="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&theme=ember&background=0000&v=5#static" />
+    <img src="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&theme=ember&background=0000&v=5" alt="GitHub contribution streak" width="100%" />
   </picture>
 </p>
 
 <p align="center">
   <picture>
-    <source media="(prefers-reduced-motion: reduce) and (max-width: 480px)" srcset="https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&width=520&height=300&days=15&bg_color=0b0c10&color=cbc6ba&line=ff2a5f&point=ece9df&area=true&area_color=3d1420&hide_border=true&custom_title=contribution%20graph&v=14#static" />
-    <source media="(max-width: 480px)" srcset="https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&width=520&height=300&days=15&bg_color=0b0c10&color=cbc6ba&line=ff2a5f&point=ece9df&area=true&area_color=3d1420&hide_border=true&custom_title=contribution%20graph&v=14" />
-    <source media="(prefers-reduced-motion: reduce)" srcset="https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&width=880&bg_color=0b0c10&color=cbc6ba&line=ff2a5f&point=ece9df&area=true&area_color=3d1420&hide_border=true&custom_title=contribution%20graph&v=14#static" />
-    <img src="https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&width=880&bg_color=0b0c10&color=cbc6ba&line=ff2a5f&point=ece9df&area=true&area_color=3d1420&hide_border=true&custom_title=contribution%20graph&v=14" alt="Activity Graph" width="100%" />
+    <source media="(prefers-reduced-motion: reduce) and (max-width: 480px)" srcset="https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&width=520&height=300&days=15&bg_color=0000&color=cbc6ba&line=ff2a5f&point=ece9df&area=true&area_color=3d1420&hide_border=true&custom_title=contribution%20graph&v=15#static" />
+    <source media="(max-width: 480px)" srcset="https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&width=520&height=300&days=15&bg_color=0000&color=cbc6ba&line=ff2a5f&point=ece9df&area=true&area_color=3d1420&hide_border=true&custom_title=contribution%20graph&v=15" />
+    <source media="(prefers-reduced-motion: reduce)" srcset="https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&width=880&bg_color=0000&color=cbc6ba&line=ff2a5f&point=ece9df&area=true&area_color=3d1420&hide_border=true&custom_title=contribution%20graph&v=15#static" />
+    <img src="https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&width=880&bg_color=0000&color=cbc6ba&line=ff2a5f&point=ece9df&area=true&area_color=3d1420&hide_border=true&custom_title=contribution%20graph&v=15" alt="Activity Graph" width="100%" />
   </picture>
 </p>
 
