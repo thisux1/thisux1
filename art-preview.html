@@ -8,31 +8,35 @@
     :root{color-scheme:dark;font-family:monospace;background:#16181d;color:#ece9df}
     *{box-sizing:border-box}
     body{margin:0;padding:24px 16px}
-    header{max-width:880px;margin:0 auto 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    header{max-width:880px;margin:0 auto 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
     h1{font-size:14px;font-weight:400;margin:0;letter-spacing:.5px}
     .controls{display:flex;gap:6px;flex-wrap:wrap}
-    button{font:inherit;font-size:12px;min-height:44px;padding:0 12px;background:#0b0c10;color:#cbc6ba;border:1px solid #48424a;cursor:pointer}
+    button{font:inherit;font-size:12px;min-height:36px;padding:0 12px;background:#0b0c10;color:#cbc6ba;border:1px solid #48424a;cursor:pointer}
     button[aria-pressed=true]{color:#ece9df;border-color:#ff2a5f}
-    button:focus-visible,a:focus-visible{outline:2px solid #ff2a5f;outline-offset:4px}
-    main{max-width:880px;margin:auto;display:grid;gap:16px}
-    main[data-size=mobile]{max-width:360px}
+    button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid #ff2a5f;outline-offset:2px}
+    main{max-width:880px;margin:auto;display:grid;gap:24px}
+    main[data-size=mobile]{max-width:400px}
     img,.slot svg{display:block;width:100%;height:auto}
     .slot{display:block}
-    .pair{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-    fieldset{border:1px solid #343039;border-left:none;border-right:none;margin:0 0 16px;padding:10px 16px;width:100%;position:sticky;top:0;z-index:10;background:rgba(22,24,29,.94);backdrop-filter:blur(6px)}
-    fieldset>.lab-wrap{max-width:880px;margin:0 auto}
-    legend{font-size:11px;letter-spacing:2.6px;text-transform:uppercase;color:#aaa397;padding:0 6px;margin-left:calc(50% - 440px)}
-    .lab-row{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
-    .lab-group{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-    .lab-group>span{font-size:11px;letter-spacing:2px;color:#928d7f;text-transform:uppercase}
-    label{font-size:12px;color:#cbc6ba;display:inline-flex;gap:5px;align-items:center;min-height:32px;cursor:pointer}
-    input[type=checkbox]{accent-color:#ff2a5f;width:14px;height:14px;margin:0}
-    button[data-preset]{min-height:32px;padding:0 10px}
-    #lab-note{font-size:11px;color:#928d7f;line-height:1.5;margin:8px 0 0}
-    .card-label{font-size:10px;letter-spacing:2px;color:#928d7f;text-transform:uppercase;margin:0 0 4px}
+    .pair{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+    .card-label{font-size:10px;letter-spacing:2px;color:#928d7f;text-transform:uppercase;margin:0 0 6px;display:flex;align-items:center;gap:10px}
+    .card-label button{min-height:24px;padding:0 8px;font-size:10px}
+    /* Per-card frame editor: corner cells carry C (chamfer) + Q (quina)
+       toggles; edge cells carry the accent-border toggle for that side. */
+    .fed{display:grid;grid-template-columns:34px 1fr 34px;grid-template-rows:34px auto 34px;gap:2px}
+    .ctl{display:flex;align-items:center;justify-content:center}
+    .cnr{flex-direction:column;gap:1px}
+    .ctl label{display:flex;align-items:center;gap:2px;cursor:pointer;font-size:8px;letter-spacing:1px;color:#928d7f;text-transform:uppercase;min-height:0;line-height:1}
+    .ctl input[type=checkbox]{accent-color:#ff2a5f;width:12px;height:12px;margin:0;cursor:pointer}
+    .e-top,.e-bottom{flex-direction:row}
+    .e-left,.e-right{flex-direction:column}
+    .globals{max-width:880px;margin:0 auto 20px;padding:10px 14px;border:1px solid #343039;border-left:none;border-right:none;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+    .globals>span{font-size:10px;letter-spacing:2px;color:#928d7f;text-transform:uppercase}
+    .globals button{min-height:30px}
     footer{max-width:880px;margin:24px auto;color:#aaa397;font-size:12px;line-height:1.6}
     a{color:#ece9df}
-    @media(max-width:600px){body{padding:16px 8px}header{gap:12px}main{gap:12px}.pair{gap:4px}}
+    code{color:#cbc6ba}
+    @media(max-width:600px){body{padding:16px 8px}main{gap:20px}.pair{gap:16px}.fed{grid-template-columns:28px 1fr 28px;grid-template-rows:28px auto 28px}}
   </style>
 </head>
 <body>
@@ -46,63 +50,44 @@
     </div>
   </header>
 
-  <fieldset id="frame-lab">
-    <legend>Frame lab</legend>
-    <div class="lab-wrap">
-    <div class="lab-row">
-      <div class="lab-group" role="group" aria-label="Cantos chanfrados">
-        <span>chamfer</span>
-        <label><input type="checkbox" data-chamfer="tl">TL</label>
-        <label><input type="checkbox" data-chamfer="tr" checked>TR</label>
-        <label><input type="checkbox" data-chamfer="br">BR</label>
-        <label><input type="checkbox" data-chamfer="bl">BL</label>
-      </div>
-      <div class="lab-group" role="group" aria-label="Quinas destacadas">
-        <span>quinas</span>
-        <label><input type="checkbox" data-quina="tl" checked>TL</label>
-        <label><input type="checkbox" data-quina="tr">TR</label>
-        <label><input type="checkbox" data-quina="br" checked>BR</label>
-        <label><input type="checkbox" data-quina="bl">BL</label>
-      </div>
-      <div class="lab-group">
-        <label><input type="checkbox" id="accent-border">borda accent</label>
-        <label><input type="checkbox" id="docked" checked>par docked</label>
-      </div>
-      <div class="lab-group">
-        <button type="button" data-preset="art">art</button>
-        <button type="button" data-preset="all-chamfer">4 chamfers</button>
-        <button type="button" data-preset="all-quinas">4 quinas</button>
-        <button type="button" data-preset="clean">clean</button>
-      </div>
-    </div>
-    <p id="lab-note">Remotos (stats · langs · streak · graph) reagem via parâmetros de URL. Locais (banner · systems) só são editáveis servindo a pasta por HTTP, ex.: <code>python3 -m http.server</code>.</p>
-    </div>
-  </fieldset>
+  <div class="globals">
+    <span>todos →</span>
+    <button type="button" data-preset="art">art</button>
+    <button type="button" data-preset="all-chamfer">4 chamfers</button>
+    <button type="button" data-preset="all-quinas">4 quinas</button>
+    <button type="button" data-preset="edges">bordas accent</button>
+    <button type="button" data-preset="clean">limpar</button>
+    <span>C=chanfro · Q=quina · □=borda accent · remotos via URL, locais via HTTP</span>
+  </div>
 
   <main data-size="auto">
-    <div>
-      <p class="card-label">banner</p>
-      <img id="banner" src="./banner.svg" alt="Thiago Araújo — Systems Engineer">
-    </div>
-    <div>
-      <p class="card-label">systems</p>
-      <img id="systems" src="./systems.svg" alt="Product Systems, Intelligent Systems, Agents and Machines">
-    </div>
-    <div>
+    <section>
+      <p class="card-label">banner <button type="button" data-reset>reset</button></p>
+      <div class="fed" data-local="banner" data-def="art"></div>
+    </section>
+    <section>
+      <p class="card-label">systems <button type="button" data-reset>reset</button></p>
+      <div class="fed" data-local="systems" data-def="art"></div>
+    </section>
+    <section>
       <p class="card-label">stats + languages</p>
       <div class="pair">
-        <img id="card-stats" alt="GitHub Stats">
-        <img id="card-langs" alt="Top Languages">
+        <div>
+          <div class="fed" data-remote="stats" data-def="dock-right"></div>
+        </div>
+        <div>
+          <div class="fed" data-remote="langs" data-def="dock-left"></div>
+        </div>
       </div>
-    </div>
-    <div>
-      <p class="card-label">streak (endpoint ember)</p>
-      <img id="card-streak" alt="GitHub contribution streak">
-    </div>
-    <div>
-      <p class="card-label">activity graph</p>
-      <img id="card-graph" alt="contribution graph">
-    </div>
+    </section>
+    <section>
+      <p class="card-label">streak (endpoint ember) <button type="button" data-reset>reset</button></p>
+      <div class="fed" data-remote="streak" data-def="art"></div>
+    </section>
+    <section>
+      <p class="card-label">activity graph <button type="button" data-reset>reset</button></p>
+      <div class="fed" data-remote="graph" data-def="art"></div>
+    </section>
   </main>
   <footer>SVG puro. Fonte embutida. Entrada única + idle de assinatura.<br><a href="https://github.com/thisux1">Perfil no GitHub</a></footer>
 
@@ -111,57 +96,67 @@
     const narrow = matchMedia('(max-width:600px)');
     const reduced = matchMedia('(prefers-reduced-motion:reduce)');
     const motion = document.querySelector('#motion');
-    const dockedToggle = document.querySelector('#docked');
-    const accentToggle = document.querySelector('#accent-border');
     let paused = reduced.matches;
 
-    const STATS_URL = 'https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&include_all_commits=true&count_private=true&hide=contribs&card_width=440&theme=editorial_tech';
-    const LANGS_URL = 'https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&langs_count=6&card_width=440&theme=editorial_tech';
-    const STREAK_URL = 'https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&theme=ember';
-    const GRAPH_URL = 'https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&width=880&bg_color=0b0c10&color=cbc6ba&line=ff2a5f&point=ece9df&area=true&area_color=3d1420&custom_title=contribution%20graph';
+    const BASE = {
+      stats: 'https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&include_all_commits=true&count_private=true&hide=contribs&card_width=440&theme=editorial_tech',
+      langs: 'https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&langs_count=6&card_width=440&theme=editorial_tech',
+      streak: 'https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&theme=ember',
+      graph: 'https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&width=880&bg_color=0b0c10&color=cbc6ba&line=ff2a5f&point=ece9df&area=true&area_color=3d1420&custom_title=contribution%20graph',
+    };
 
-    const list = (attr) => [...document.querySelectorAll(`input[data-${attr}]:checked`)].map((el) => el.dataset[attr]).join(',');
+    const CORNERS = ['tl', 'tr', 'br', 'bl'];
+    const EDGES = ['top', 'right', 'bottom', 'left'];
+    const DEFS = {
+      art: { c: ['tr'], q: ['tl', 'br'], e: [] },
+      'dock-right': { c: [], q: ['tl'], e: [] },
+      'dock-left': { c: ['tr'], q: ['br'], e: [] },
+    };
 
-    function frameParams() {
-      const chamfer = list('chamfer');
-      const quinas = list('quina');
-      const p = new URLSearchParams();
-      p.set('chamfer', chamfer === '' ? 'none' : chamfer);
-      p.set('quinas', quinas === '' ? 'none' : quinas);
-      if (accentToggle.checked) p.set('accent_border', 'true');
-      return p;
+    /* Builds one editor cell set around a card slot. Corner cells stack
+       two toggles (C chamfer / Q quina); edge cells hold the accent toggle. */
+    function buildFed(fed) {
+      const slot = document.createElement('span');
+      slot.className = 'slot';
+      const img = document.createElement('img');
+      img.alt = fed.dataset.remote || fed.dataset.local;
+      slot.appendChild(img);
+      fed._img = img;
+
+      const corner = (name) => `
+        <div class="ctl cnr">
+          <label title="chanfro ${name}"><input type="checkbox" data-c="${name}">C</label>
+          <label title="quina ${name}"><input type="checkbox" data-q="${name}">Q</label>
+        </div>`;
+      const edge = (name) => `
+        <div class="ctl e-${name}" title="borda accent ${name}">
+          <input type="checkbox" data-e="${name}">
+        </div>`;
+
+      // DOM order maps straight onto the 3×3 grid flow: tl top tr / left card
+      // right / bl bottom br.
+      fed.innerHTML =
+        corner('tl') + edge('top') + corner('tr') +
+        edge('left') + '<span class="slot-anchor"></span>' + edge('right') +
+        corner('bl') + edge('bottom') + corner('br');
+      fed.querySelector('.slot-anchor').replaceWith(slot);
+      fed.addEventListener('change', () => applyFed(fed));
     }
 
-    // Order-independent corner sorting so every card receives the same spec.
-    const order = ['tl','tr','br','bl'];
-    const sortCorners = (csv) => csv.split(',').filter(Boolean).sort((a,b)=>order.indexOf(a)-order.indexOf(b)).join(',') || 'none';
+    const csv = (list, order) => order.filter((k) => list.includes(k)).join(',') || 'none';
+    const state = (fed) => ({
+      c: csv([...fed.querySelectorAll('input[data-c]:checked')].map((el) => el.dataset.c), CORNERS),
+      q: csv([...fed.querySelectorAll('input[data-q]:checked')].map((el) => el.dataset.q), CORNERS),
+      e: csv([...fed.querySelectorAll('input[data-e]:checked')].map((el) => el.dataset.e), EDGES),
+    });
 
-    function remoteUrl(base, chamfer, quinas) {
-      const p = frameParams();
-      p.set('chamfer', sortCorners(chamfer));
-      p.set('quinas', sortCorners(quinas));
-      return `${base}&${p.toString()}`;
-    }
+    const setState = (fed, st) => {
+      fed.querySelectorAll('input[data-c]').forEach((el) => { el.checked = st.c.includes(el.dataset.c); });
+      fed.querySelectorAll('input[data-q]').forEach((el) => { el.checked = st.q.includes(el.dataset.q); });
+      fed.querySelectorAll('input[data-e]').forEach((el) => { el.checked = st.e.includes(el.dataset.e); });
+    };
 
-    function applyRemote() {
-      const docked = dockedToggle.checked;
-      const frag = paused ? '#static' : '';
-      const chamfer = sortCorners(list('chamfer'));
-      const quinas = sortCorners(list('quina'));
-
-      // Docked pair: inner edges (stats right / langs left) go straight and
-      // lose their ticks — overrides the generic toggles for those corners.
-      const statsSpec = docked ? { c: 'none', q: 'tl' } : { c: chamfer, q: quinas };
-      const langsSpec = docked ? { c: 'tr', q: 'br' } : { c: chamfer, q: quinas };
-
-      document.getElementById('card-stats').src = remoteUrl(STATS_URL, statsSpec.c, statsSpec.q) + frag;
-      document.getElementById('card-langs').src = remoteUrl(LANGS_URL, langsSpec.c, langsSpec.q) + frag;
-      document.getElementById('card-streak').src = remoteUrl(STREAK_URL, chamfer, quinas) + frag;
-      document.getElementById('card-graph').src = remoteUrl(GRAPH_URL, chamfer, quinas) + frag;
-    }
-
-    // --- Local SVG patching (banner/systems) -------------------------------
-    // Edges use the same corner math the fork applies server-side.
+    /* --- local patch: same corner math the forks apply server-side --- */
     const C = 15.5;
     const framePath = (w, h, set) =>
       (set.has('tl') ? `M${C + 0.5} 0.5` : 'M0.5 0.5') +
@@ -175,109 +170,140 @@
       set.has('br') ? `M${w - 20} ${h - 0.5}H${w - 0.5}V${h - 20}` : '',
       set.has('bl') ? `M0.5 ${h - 20}V${h - 0.5}H20` : '',
     ].filter(Boolean).join('');
+    const edgePath = (w, h, chamfer, set) => {
+      const cut = (k) => chamfer.has(k);
+      const has = (k) => set.has(k);
+      return [
+        has('top') ? `M${cut('tl') ? C + 0.5 : 0.5} 0.5H${cut('tr') ? w - C - 0.5 : w - 0.5}` : '',
+        has('right') ? `M${w - 0.5} ${cut('tr') ? C + 0.5 : 0.5}V${cut('br') ? h - C - 0.5 : h - 0.5}` : '',
+        has('bottom') ? `M${cut('br') ? w - C - 0.5 : w - 0.5} ${h - 0.5}H${cut('bl') ? C + 0.5 : 0.5}` : '',
+        has('left') ? `M0.5 ${cut('bl') ? h - C - 0.5 : h - 0.5}V${cut('tl') ? C + 0.5 : 0.5}` : '',
+      ].filter(Boolean).join('');
+    };
 
-    async function patchLocal(el, file, chamferCsv, quinaCsv) {
+    async function patchLocal(fed, file) {
       try {
         const text = await (await fetch(`./${file}`)).text();
         const doc = new DOMParser().parseFromString(text, 'image/svg+xml');
         const svg = doc.documentElement;
         const [, , w, h] = (svg.getAttribute('viewBox') || '0 0 0 0').split(/\s+/).map(Number);
-        const chamfer = new Set(chamferCsv === 'none' ? [] : chamferCsv.split(','));
-        const quinas = new Set(quinaCsv === 'none' ? [] : quinaCsv.split(','));
-        // Frame = the path hugging the viewBox edge with --rule stroke.
+        const st = state(fed);
+        const chamfer = new Set(st.c === 'none' ? [] : st.c.split(','));
+        const quinas = new Set(st.q === 'none' ? [] : st.q.split(','));
+        const edges = new Set(st.e === 'none' ? [] : st.e.split(','));
+
         const frame = [...svg.querySelectorAll('path')].find((p) => /var\(--rule\)/.test(p.getAttribute('stroke') || '') && /^M\.?5 \.?5H/.test(p.getAttribute('d') || ''));
-        if (frame) {
-          frame.setAttribute('d', framePath(w, h, chamfer));
-          if (accentToggle.checked) frame.setAttribute('stroke', 'var(--accent)');
-        }
-        // Quinas = the accent tick path (d contains the TL L-mark pattern).
+        if (frame) frame.setAttribute('d', framePath(w, h, chamfer));
+
         const tick = [...svg.querySelectorAll('path')].find((p) => /var\(--accent\)/.test(p.getAttribute('stroke') || '') && /M\.5 20V\.5H20/.test(p.getAttribute('d') || ''));
-        const d = quinaPath(w, h, quinas);
+        const qd = quinaPath(w, h, quinas);
         if (tick) {
-          if (d) tick.setAttribute('d', d); else tick.remove();
-        } else if (d && frame) {
+          if (qd) tick.setAttribute('d', qd); else tick.remove();
+        } else if (qd && frame) {
           const q = doc.createElementNS('http://www.w3.org/2000/svg', 'path');
-          q.setAttribute('d', d);
+          q.setAttribute('d', qd);
           q.setAttribute('fill', 'none');
           q.setAttribute('stroke', 'var(--accent)');
           q.setAttribute('stroke-opacity', '.65');
           frame.after(q);
         }
-        const slot = document.createElement('span');
-        slot.className = 'slot';
-        slot.appendChild(svg);
-        if (paused) svg.querySelectorAll('*').forEach((n) => n.style.animation = 'none');
-        el.replaceWith(slot);
-        return slot;
+
+        // Edge accents: overlay path tracked by a data marker.
+        let edge = svg.querySelector('path[data-edge-accent]');
+        const ed = edgePath(w, h, chamfer, edges);
+        if (ed) {
+          if (!edge && frame) {
+            edge = doc.createElementNS('http://www.w3.org/2000/svg', 'path');
+            edge.setAttribute('data-edge-accent', '');
+            edge.setAttribute('fill', 'none');
+            edge.setAttribute('stroke', 'var(--accent)');
+            edge.setAttribute('stroke-opacity', '.85');
+            frame.after(edge);
+          }
+          if (edge) edge.setAttribute('d', ed);
+        } else if (edge) edge.remove();
+
+        if (paused) svg.querySelectorAll('*').forEach((n) => { n.style.animation = 'none'; });
+        const slot = fed.querySelector('.slot');
+        slot.replaceChildren(svg);
+        fed._img = null;
       } catch {
-        // file:// without a local server: keep the plain <img>.
-        return null;
+        // file:// without a local server: keep the plain <img> fallback.
       }
     }
 
-    const localSlots = { banner: null, systems: null };
-    async function applyLocal() {
-      const mobile = main.dataset.size === 'mobile' || (main.dataset.size === 'auto' && narrow.matches);
-      const chamfer = sortCorners(list('chamfer'));
-      const quinas = sortCorners(list('quina'));
-      for (const name of ['banner', 'systems']) {
-        const file = `${name}${mobile ? '-mobile' : ''}.svg`;
-        const anchor = localSlots[name] ?? document.getElementById(name);
-        if (!anchor) continue;
-        const patched = await patchLocal(anchor, file, chamfer, quinas);
-        if (patched) localSlots[name] = patched;
-      }
+    function remoteSrc(name, st) {
+      return `${BASE[name]}&chamfer=${st.c}&quinas=${st.q}&edge_accent=${st.e}${paused ? '#static' : ''}`;
     }
 
-    function render() {
-      const mobile = main.dataset.size === 'mobile' || (main.dataset.size === 'auto' && narrow.matches);
-      const frag = paused ? '#static' : '';
-      if (!localSlots.banner && !localSlots.systems) {
-        for (const name of ['banner', 'systems']) {
-          const el = document.getElementById(name);
-          if (el) el.src = `./${name}${mobile ? '-mobile' : ''}.svg${frag}`;
+    function applyFed(fed) {
+      const st = state(fed);
+      if (fed.dataset.remote) {
+        let img = fed._img;
+        if (!img) {
+          img = document.createElement('img');
+          img.alt = fed.dataset.remote;
+          fed._img = img;
         }
-      } else {
-        applyLocal();
+        img.src = remoteSrc(fed.dataset.remote, st);
+        fed.querySelector('.slot').replaceChildren(img);
+      } else if (fed.dataset.local) {
+        const mobile = main.dataset.size === 'mobile' || (main.dataset.size === 'auto' && narrow.matches);
+        const file = `${fed.dataset.local}${mobile ? '-mobile' : ''}.svg`;
+        // Local patch needs HTTP; fall back to a plain <img> of the file.
+        patchLocal(fed, file).then(() => {
+          if (fed._img) fed._img.src = `./${file}${paused ? '#static' : ''}`;
+        });
       }
-      applyRemote();
+    }
+
+    function renderAll() {
+      document.querySelectorAll('.fed').forEach(applyFed);
       motion.setAttribute('aria-pressed', String(paused));
       motion.textContent = paused ? 'Ativar motion' : 'Pausar motion';
     }
+
+    /* --- bootstrap: build editors, apply per-card defaults, wire controls --- */
+    document.querySelectorAll('.fed').forEach((fed) => {
+      buildFed(fed);
+      setState(fed, DEFS[fed.dataset.def] || DEFS.art);
+    });
 
     document.querySelectorAll('button[data-size]').forEach((button) => {
       button.addEventListener('click', () => {
         main.dataset.size = button.dataset.size;
         document.querySelectorAll('button[data-size]').forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
-        render();
+        renderAll();
       });
     });
-    motion.addEventListener('click', () => { paused = !paused; render(); });
-    narrow.addEventListener('change', render);
-    reduced.addEventListener('change', () => { paused = reduced.matches; render(); });
+    motion.addEventListener('click', () => { paused = !paused; renderAll(); });
+    narrow.addEventListener('change', renderAll);
+    reduced.addEventListener('change', () => { paused = reduced.matches; renderAll(); });
 
     const presets = {
-      art: { chamfer: ['tr'], quinas: ['tl', 'br'], accent: false, docked: false },
-      'all-chamfer': { chamfer: ['tl', 'tr', 'br', 'bl'], quinas: [], accent: false, docked: false },
-      'all-quinas': { chamfer: ['tr'], quinas: ['tl', 'tr', 'br', 'bl'], accent: false, docked: false },
-      clean: { chamfer: [], quinas: [], accent: false, docked: false },
+      art: { c: ['tr'], q: ['tl', 'br'], e: [] },
+      'all-chamfer': { c: CORNERS, q: [], e: [] },
+      'all-quinas': { c: [], q: CORNERS, e: [] },
+      edges: { c: [], q: [], e: EDGES },
+      clean: { c: [], q: [], e: [] },
     };
     document.querySelectorAll('button[data-preset]').forEach((button) => {
       button.addEventListener('click', () => {
-        const p = presets[button.dataset.preset];
-        document.querySelectorAll('input[data-chamfer]').forEach((el) => { el.checked = p.chamfer.includes(el.dataset.chamfer); });
-        document.querySelectorAll('input[data-quina]').forEach((el) => { el.checked = p.quinas.includes(el.dataset.quina); });
-        accentToggle.checked = p.accent;
-        dockedToggle.checked = p.docked;
-        render();
+        document.querySelectorAll('.fed').forEach((fed) => {
+          setState(fed, presets[button.dataset.preset]);
+          applyFed(fed);
+        });
       });
     });
-    document.querySelectorAll('#frame-lab input').forEach((el) => el.addEventListener('change', render));
+    document.querySelectorAll('button[data-reset]').forEach((button) => {
+      button.addEventListener('click', () => {
+        const fed = button.closest('section').querySelector('.fed');
+        setState(fed, DEFS[fed.dataset.def] || DEFS.art);
+        applyFed(fed);
+      });
+    });
 
-    // First paint: imgs load right away; locals upgrade to patched inline
-    // SVGs when the page is served over HTTP.
-    render();
-    applyLocal();
+    renderAll();
   </script>
 </body>
 </html>
