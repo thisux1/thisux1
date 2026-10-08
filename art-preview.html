@@ -19,14 +19,16 @@
     img,.slot svg{display:block;width:100%;height:auto}
     .slot{display:block}
     .pair{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-    fieldset{border:1px solid #343039;margin:0 0 16px;padding:12px 16px;max-width:880px;margin-left:auto;margin-right:auto;width:100%}
-    legend{font-size:11px;letter-spacing:2.6px;text-transform:uppercase;color:#aaa397;padding:0 6px}
-    .lab-row{display:flex;gap:18px;flex-wrap:wrap;align-items:center}
-    .lab-group{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+    fieldset{border:1px solid #343039;border-left:none;border-right:none;margin:0 0 16px;padding:10px 16px;width:100%;position:sticky;top:0;z-index:10;background:rgba(22,24,29,.94);backdrop-filter:blur(6px)}
+    fieldset>.lab-wrap{max-width:880px;margin:0 auto}
+    legend{font-size:11px;letter-spacing:2.6px;text-transform:uppercase;color:#aaa397;padding:0 6px;margin-left:calc(50% - 440px)}
+    .lab-row{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+    .lab-group{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
     .lab-group>span{font-size:11px;letter-spacing:2px;color:#928d7f;text-transform:uppercase}
-    label{font-size:12px;color:#cbc6ba;display:inline-flex;gap:5px;align-items:center;min-height:44px;cursor:pointer}
-    input[type=checkbox]{accent-color:#ff2a5f;width:14px;height:14px}
-    #lab-note{font-size:11px;color:#928d7f;line-height:1.5}
+    label{font-size:12px;color:#cbc6ba;display:inline-flex;gap:5px;align-items:center;min-height:32px;cursor:pointer}
+    input[type=checkbox]{accent-color:#ff2a5f;width:14px;height:14px;margin:0}
+    button[data-preset]{min-height:32px;padding:0 10px}
+    #lab-note{font-size:11px;color:#928d7f;line-height:1.5;margin:8px 0 0}
     .card-label{font-size:10px;letter-spacing:2px;color:#928d7f;text-transform:uppercase;margin:0 0 4px}
     footer{max-width:880px;margin:24px auto;color:#aaa397;font-size:12px;line-height:1.6}
     a{color:#ece9df}
@@ -46,6 +48,7 @@
 
   <fieldset id="frame-lab">
     <legend>Frame lab</legend>
+    <div class="lab-wrap">
     <div class="lab-row">
       <div class="lab-group" role="group" aria-label="Cantos chanfrados">
         <span>chamfer</span>
@@ -63,19 +66,17 @@
       </div>
       <div class="lab-group">
         <label><input type="checkbox" id="accent-border">borda accent</label>
-        <label><input type="checkbox" id="docked" checked>par docked (stats⟷langs)</label>
+        <label><input type="checkbox" id="docked" checked>par docked</label>
       </div>
-    </div>
-    <div class="lab-row" style="margin-top:8px">
       <div class="lab-group">
-        <span>presets</span>
-        <button type="button" data-preset="art">art (TR + TL/BR)</button>
+        <button type="button" data-preset="art">art</button>
         <button type="button" data-preset="all-chamfer">4 chamfers</button>
         <button type="button" data-preset="all-quinas">4 quinas</button>
-        <button type="button" data-preset="clean">sem quinas/chamfer</button>
+        <button type="button" data-preset="clean">clean</button>
       </div>
     </div>
-    <p id="lab-note">Remotos (stats · langs · streak · graph) reagem via parâmetros de URL — o deploy precisa estar no ar. Locais (banner · systems) só são editáveis servindo a pasta por HTTP, ex.: <code>python3 -m http.server</code>.</p>
+    <p id="lab-note">Remotos (stats · langs · streak · graph) reagem via parâmetros de URL. Locais (banner · systems) só são editáveis servindo a pasta por HTTP, ex.: <code>python3 -m http.server</code>.</p>
+    </div>
   </fieldset>
 
   <main data-size="auto">
@@ -180,18 +181,18 @@
         const text = await (await fetch(`./${file}`)).text();
         const doc = new DOMParser().parseFromString(text, 'image/svg+xml');
         const svg = doc.documentElement;
-        const [, w, h] = (svg.getAttribute('viewBox') || '0 0 0 0').split(/\s+/).map(Number);
+        const [, , w, h] = (svg.getAttribute('viewBox') || '0 0 0 0').split(/\s+/).map(Number);
         const chamfer = new Set(chamferCsv === 'none' ? [] : chamferCsv.split(','));
         const quinas = new Set(quinaCsv === 'none' ? [] : quinaCsv.split(','));
         // Frame = the path hugging the viewBox edge with --rule stroke.
         const frame = [...svg.querySelectorAll('path')].find((p) => /var\(--rule\)/.test(p.getAttribute('stroke') || '') && /^M\.?5 \.?5H/.test(p.getAttribute('d') || ''));
         if (frame) {
-          frame.setAttribute('d', framePath(w - 1, h - 1, chamfer));
+          frame.setAttribute('d', framePath(w, h, chamfer));
           if (accentToggle.checked) frame.setAttribute('stroke', 'var(--accent)');
         }
         // Quinas = the accent tick path (d contains the TL L-mark pattern).
         const tick = [...svg.querySelectorAll('path')].find((p) => /var\(--accent\)/.test(p.getAttribute('stroke') || '') && /M\.5 20V\.5H20/.test(p.getAttribute('d') || ''));
-        const d = quinaPath(w - 1, h - 1, quinas);
+        const d = quinaPath(w, h, quinas);
         if (tick) {
           if (d) tick.setAttribute('d', d); else tick.remove();
         } else if (d && frame) {
