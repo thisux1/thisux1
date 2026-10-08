@@ -33,6 +33,11 @@
     .globals{max-width:880px;margin:0 auto 20px;padding:10px 14px;border:1px solid #343039;border-left:none;border-right:none;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
     .globals>span{font-size:10px;letter-spacing:2px;color:#928d7f;text-transform:uppercase}
     .globals button{min-height:30px}
+    #export-panel{position:fixed;right:16px;bottom:16px;z-index:20;width:min(420px,calc(100vw - 32px));background:#0b0c10;border:1px solid #343039;padding:0}
+    #export-panel .export-head{display:flex;gap:8px;align-items:center;padding:8px 10px;border-bottom:1px solid #343039}
+    #export-panel .export-head>span{font-size:10px;letter-spacing:2px;color:#928d7f;text-transform:uppercase;flex:1}
+    #export-panel button{min-height:26px;padding:0 8px;font-size:10px}
+    #export-json{margin:0;padding:10px;max-height:50vh;overflow:auto;font-size:10.5px;line-height:1.5;color:#cbc6ba}
     footer{max-width:880px;margin:24px auto;color:#aaa397;font-size:12px;line-height:1.6}
     a{color:#ece9df}
     code{color:#cbc6ba}
@@ -57,7 +62,18 @@
     <button type="button" data-preset="all-quinas">4 quinas</button>
     <button type="button" data-preset="edges">bordas accent</button>
     <button type="button" data-preset="clean">limpar</button>
+    <button type="button" id="export">exportar JSON</button>
     <span>C=chanfro · Q=quina · □=borda accent · remotos via URL, locais via HTTP</span>
+  </div>
+
+  <div id="export-panel" hidden>
+    <div class="export-head">
+      <span>frame config</span>
+      <button type="button" id="export-copy">copiar</button>
+      <button type="button" id="export-dl">baixar .json</button>
+      <button type="button" id="export-close">fechar</button>
+    </div>
+    <pre id="export-json"></pre>
   </div>
 
   <main data-size="auto">
@@ -301,6 +317,41 @@
         setState(fed, DEFS[fed.dataset.def] || DEFS.art);
         applyFed(fed);
       });
+    });
+
+    /* --- export: dump every card's frame config (and the resolved remote
+       URL) so the chosen combination can be applied to the readme. --- */
+    const panel = document.getElementById('export-panel');
+    const exportJson = document.getElementById('export-json');
+    document.getElementById('export').addEventListener('click', () => {
+      const out = {};
+      document.querySelectorAll('.fed').forEach((fed) => {
+        const key = fed.dataset.remote || fed.dataset.local;
+        const st = state(fed);
+        out[key] = { chamfer: st.c, quinas: st.q, edge_accent: st.e };
+        if (fed.dataset.remote) out[key].url = remoteSrc(fed.dataset.remote, st);
+      });
+      exportJson.textContent = JSON.stringify(out, null, 2);
+      panel.hidden = false;
+    });
+    document.getElementById('export-close').addEventListener('click', () => { panel.hidden = true; });
+    document.getElementById('export-copy').addEventListener('click', async (e) => {
+      try {
+        await navigator.clipboard.writeText(exportJson.textContent);
+        e.target.textContent = 'copiado';
+      } catch {
+        exportJson.ownerDocument.getSelection()?.selectAllChildren(exportJson);
+        e.target.textContent = 'selecionado';
+      }
+      setTimeout(() => { e.target.textContent = 'copiar'; }, 1500);
+    });
+    document.getElementById('export-dl').addEventListener('click', () => {
+      const blob = new Blob([exportJson.textContent], { type: 'application/json' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'frame-config.json';
+      a.click();
+      URL.revokeObjectURL(a.href);
     });
 
     renderAll();
