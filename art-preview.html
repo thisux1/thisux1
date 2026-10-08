@@ -8,18 +8,29 @@
     :root{color-scheme:dark;font-family:monospace;background:#16181d;color:#ece9df}
     *{box-sizing:border-box}
     body{margin:0;padding:24px 16px}
-    header{max-width:832px;margin:0 auto 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    header{max-width:880px;margin:0 auto 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
     h1{font-size:14px;font-weight:400;margin:0;letter-spacing:.5px}
     .controls{display:flex;gap:6px;flex-wrap:wrap}
     button{font:inherit;font-size:12px;min-height:44px;padding:0 12px;background:#0b0c10;color:#cbc6ba;border:1px solid #48424a;cursor:pointer}
     button[aria-pressed=true]{color:#ece9df;border-color:#ff2a5f}
     button:focus-visible,a:focus-visible{outline:2px solid #ff2a5f;outline-offset:4px}
-    main{max-width:832px;margin:auto;display:grid;gap:16px}
+    main{max-width:880px;margin:auto;display:grid;gap:16px}
     main[data-size=mobile]{max-width:360px}
-    img{display:block;width:100%;height:auto}
-    footer{max-width:832px;margin:24px auto;color:#aaa397;font-size:12px;line-height:1.6}
+    img,.slot svg{display:block;width:100%;height:auto}
+    .slot{display:block}
+    .pair{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    fieldset{border:1px solid #343039;margin:0 0 16px;padding:12px 16px;max-width:880px;margin-left:auto;margin-right:auto;width:100%}
+    legend{font-size:11px;letter-spacing:2.6px;text-transform:uppercase;color:#aaa397;padding:0 6px}
+    .lab-row{display:flex;gap:18px;flex-wrap:wrap;align-items:center}
+    .lab-group{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+    .lab-group>span{font-size:11px;letter-spacing:2px;color:#928d7f;text-transform:uppercase}
+    label{font-size:12px;color:#cbc6ba;display:inline-flex;gap:5px;align-items:center;min-height:44px;cursor:pointer}
+    input[type=checkbox]{accent-color:#ff2a5f;width:14px;height:14px}
+    #lab-note{font-size:11px;color:#928d7f;line-height:1.5}
+    .card-label{font-size:10px;letter-spacing:2px;color:#928d7f;text-transform:uppercase;margin:0 0 4px}
+    footer{max-width:880px;margin:24px auto;color:#aaa397;font-size:12px;line-height:1.6}
     a{color:#ece9df}
-    @media(max-width:600px){body{padding:16px 8px}header{gap:12px}main{gap:12px}}
+    @media(max-width:600px){body{padding:16px 8px}header{gap:12px}main{gap:12px}.pair{gap:4px}}
   </style>
 </head>
 <body>
@@ -32,36 +43,240 @@
       <button type="button" id="motion" aria-pressed="false">Pausar motion</button>
     </div>
   </header>
+
+  <fieldset id="frame-lab">
+    <legend>Frame lab</legend>
+    <div class="lab-row">
+      <div class="lab-group" role="group" aria-label="Cantos chanfrados">
+        <span>chamfer</span>
+        <label><input type="checkbox" data-chamfer="tl">TL</label>
+        <label><input type="checkbox" data-chamfer="tr" checked>TR</label>
+        <label><input type="checkbox" data-chamfer="br">BR</label>
+        <label><input type="checkbox" data-chamfer="bl">BL</label>
+      </div>
+      <div class="lab-group" role="group" aria-label="Quinas destacadas">
+        <span>quinas</span>
+        <label><input type="checkbox" data-quina="tl" checked>TL</label>
+        <label><input type="checkbox" data-quina="tr">TR</label>
+        <label><input type="checkbox" data-quina="br" checked>BR</label>
+        <label><input type="checkbox" data-quina="bl">BL</label>
+      </div>
+      <div class="lab-group">
+        <label><input type="checkbox" id="accent-border">borda accent</label>
+        <label><input type="checkbox" id="docked" checked>par docked (stats⟷langs)</label>
+      </div>
+    </div>
+    <div class="lab-row" style="margin-top:8px">
+      <div class="lab-group">
+        <span>presets</span>
+        <button type="button" data-preset="art">art (TR + TL/BR)</button>
+        <button type="button" data-preset="all-chamfer">4 chamfers</button>
+        <button type="button" data-preset="all-quinas">4 quinas</button>
+        <button type="button" data-preset="clean">sem quinas/chamfer</button>
+      </div>
+    </div>
+    <p id="lab-note">Remotos (stats · langs · streak · graph) reagem via parâmetros de URL — o deploy precisa estar no ar. Locais (banner · systems) só são editáveis servindo a pasta por HTTP, ex.: <code>python3 -m http.server</code>.</p>
+  </fieldset>
+
   <main data-size="auto">
-    <img id="banner" src="./banner.svg" alt="Thiago Araújo — Systems Engineer">
-    <img id="systems" src="./systems.svg" alt="Product Systems, Intelligent Systems, Agents and Machines">
+    <div>
+      <p class="card-label">banner</p>
+      <img id="banner" src="./banner.svg" alt="Thiago Araújo — Systems Engineer">
+    </div>
+    <div>
+      <p class="card-label">systems</p>
+      <img id="systems" src="./systems.svg" alt="Product Systems, Intelligent Systems, Agents and Machines">
+    </div>
+    <div>
+      <p class="card-label">stats + languages</p>
+      <div class="pair">
+        <img id="card-stats" alt="GitHub Stats">
+        <img id="card-langs" alt="Top Languages">
+      </div>
+    </div>
+    <div>
+      <p class="card-label">streak (endpoint ember)</p>
+      <img id="card-streak" alt="GitHub contribution streak">
+    </div>
+    <div>
+      <p class="card-label">activity graph</p>
+      <img id="card-graph" alt="contribution graph">
+    </div>
   </main>
   <footer>SVG puro. Fonte embutida. Entrada única + idle de assinatura.<br><a href="https://github.com/thisux1">Perfil no GitHub</a></footer>
+
   <script>
     const main = document.querySelector('main');
     const narrow = matchMedia('(max-width:600px)');
     const reduced = matchMedia('(prefers-reduced-motion:reduce)');
     const motion = document.querySelector('#motion');
+    const dockedToggle = document.querySelector('#docked');
+    const accentToggle = document.querySelector('#accent-border');
     let paused = reduced.matches;
-    function render(){
+
+    const STATS_URL = 'https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&include_all_commits=true&count_private=true&hide=contribs&card_width=440&theme=editorial_tech';
+    const LANGS_URL = 'https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&langs_count=6&card_width=440&theme=editorial_tech';
+    const STREAK_URL = 'https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&theme=ember';
+    const GRAPH_URL = 'https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&width=880&bg_color=0b0c10&color=cbc6ba&line=ff2a5f&point=ece9df&area=true&area_color=3d1420&custom_title=contribution%20graph';
+
+    const list = (attr) => [...document.querySelectorAll(`input[data-${attr}]:checked`)].map((el) => el.dataset[attr]).join(',');
+
+    function frameParams() {
+      const chamfer = list('chamfer');
+      const quinas = list('quina');
+      const p = new URLSearchParams();
+      p.set('chamfer', chamfer === '' ? 'none' : chamfer);
+      p.set('quinas', quinas === '' ? 'none' : quinas);
+      if (accentToggle.checked) p.set('accent_border', 'true');
+      return p;
+    }
+
+    // Order-independent corner sorting so every card receives the same spec.
+    const order = ['tl','tr','br','bl'];
+    const sortCorners = (csv) => csv.split(',').filter(Boolean).sort((a,b)=>order.indexOf(a)-order.indexOf(b)).join(',') || 'none';
+
+    function remoteUrl(base, chamfer, quinas) {
+      const p = frameParams();
+      p.set('chamfer', sortCorners(chamfer));
+      p.set('quinas', sortCorners(quinas));
+      return `${base}&${p.toString()}`;
+    }
+
+    function applyRemote() {
+      const docked = dockedToggle.checked;
+      const frag = paused ? '#static' : '';
+      const chamfer = sortCorners(list('chamfer'));
+      const quinas = sortCorners(list('quina'));
+
+      // Docked pair: inner edges (stats right / langs left) go straight and
+      // lose their ticks — overrides the generic toggles for those corners.
+      const statsSpec = docked ? { c: 'none', q: 'tl' } : { c: chamfer, q: quinas };
+      const langsSpec = docked ? { c: 'tr', q: 'br' } : { c: chamfer, q: quinas };
+
+      document.getElementById('card-stats').src = remoteUrl(STATS_URL, statsSpec.c, statsSpec.q) + frag;
+      document.getElementById('card-langs').src = remoteUrl(LANGS_URL, langsSpec.c, langsSpec.q) + frag;
+      document.getElementById('card-streak').src = remoteUrl(STREAK_URL, chamfer, quinas) + frag;
+      document.getElementById('card-graph').src = remoteUrl(GRAPH_URL, chamfer, quinas) + frag;
+    }
+
+    // --- Local SVG patching (banner/systems) -------------------------------
+    // Edges use the same corner math the fork applies server-side.
+    const C = 15.5;
+    const framePath = (w, h, set) =>
+      (set.has('tl') ? `M${C + 0.5} 0.5` : 'M0.5 0.5') +
+      (set.has('tr') ? `H${w - C - 0.5}L${w - 0.5} ${C + 0.5}` : `H${w - 0.5}`) +
+      (set.has('br') ? `V${h - C - 0.5}L${w - C - 0.5} ${h - 0.5}` : `V${h - 0.5}`) +
+      (set.has('bl') ? `H${C + 0.5}L0.5 ${h - C - 0.5}` : 'H0.5') +
+      (set.has('tl') ? `V${C + 0.5}L${C + 0.5} 0.5Z` : 'V0.5Z');
+    const quinaPath = (w, h, set) => [
+      set.has('tl') ? 'M0.5 20V0.5H20' : '',
+      set.has('tr') ? `M${w - 20} 0.5H${w - 0.5}V20` : '',
+      set.has('br') ? `M${w - 20} ${h - 0.5}H${w - 0.5}V${h - 20}` : '',
+      set.has('bl') ? `M0.5 ${h - 20}V${h - 0.5}H20` : '',
+    ].filter(Boolean).join('');
+
+    async function patchLocal(el, file, chamferCsv, quinaCsv) {
+      try {
+        const text = await (await fetch(`./${file}`)).text();
+        const doc = new DOMParser().parseFromString(text, 'image/svg+xml');
+        const svg = doc.documentElement;
+        const [, w, h] = (svg.getAttribute('viewBox') || '0 0 0 0').split(/\s+/).map(Number);
+        const chamfer = new Set(chamferCsv === 'none' ? [] : chamferCsv.split(','));
+        const quinas = new Set(quinaCsv === 'none' ? [] : quinaCsv.split(','));
+        // Frame = the path hugging the viewBox edge with --rule stroke.
+        const frame = [...svg.querySelectorAll('path')].find((p) => /var\(--rule\)/.test(p.getAttribute('stroke') || '') && /^M\.?5 \.?5H/.test(p.getAttribute('d') || ''));
+        if (frame) {
+          frame.setAttribute('d', framePath(w - 1, h - 1, chamfer));
+          if (accentToggle.checked) frame.setAttribute('stroke', 'var(--accent)');
+        }
+        // Quinas = the accent tick path (d contains the TL L-mark pattern).
+        const tick = [...svg.querySelectorAll('path')].find((p) => /var\(--accent\)/.test(p.getAttribute('stroke') || '') && /M\.5 20V\.5H20/.test(p.getAttribute('d') || ''));
+        const d = quinaPath(w - 1, h - 1, quinas);
+        if (tick) {
+          if (d) tick.setAttribute('d', d); else tick.remove();
+        } else if (d && frame) {
+          const q = doc.createElementNS('http://www.w3.org/2000/svg', 'path');
+          q.setAttribute('d', d);
+          q.setAttribute('fill', 'none');
+          q.setAttribute('stroke', 'var(--accent)');
+          q.setAttribute('stroke-opacity', '.65');
+          frame.after(q);
+        }
+        const slot = document.createElement('span');
+        slot.className = 'slot';
+        slot.appendChild(svg);
+        if (paused) svg.querySelectorAll('*').forEach((n) => n.style.animation = 'none');
+        el.replaceWith(slot);
+        return slot;
+      } catch {
+        // file:// without a local server: keep the plain <img>.
+        return null;
+      }
+    }
+
+    const localSlots = { banner: null, systems: null };
+    async function applyLocal() {
       const mobile = main.dataset.size === 'mobile' || (main.dataset.size === 'auto' && narrow.matches);
-      const fragment = paused ? '#static' : '';
-      for(const name of ['banner','systems']) document.getElementById(name).src = `./${name}${mobile ? '-mobile' : ''}.svg${fragment}`;
+      const chamfer = sortCorners(list('chamfer'));
+      const quinas = sortCorners(list('quina'));
+      for (const name of ['banner', 'systems']) {
+        const file = `${name}${mobile ? '-mobile' : ''}.svg`;
+        const anchor = localSlots[name] ?? document.getElementById(name);
+        if (!anchor) continue;
+        const patched = await patchLocal(anchor, file, chamfer, quinas);
+        if (patched) localSlots[name] = patched;
+      }
+    }
+
+    function render() {
+      const mobile = main.dataset.size === 'mobile' || (main.dataset.size === 'auto' && narrow.matches);
+      const frag = paused ? '#static' : '';
+      if (!localSlots.banner && !localSlots.systems) {
+        for (const name of ['banner', 'systems']) {
+          const el = document.getElementById(name);
+          if (el) el.src = `./${name}${mobile ? '-mobile' : ''}.svg${frag}`;
+        }
+      } else {
+        applyLocal();
+      }
+      applyRemote();
       motion.setAttribute('aria-pressed', String(paused));
       motion.textContent = paused ? 'Ativar motion' : 'Pausar motion';
     }
-    document.querySelectorAll('[data-size]').forEach(button => {
-      if(button.tagName !== 'BUTTON') return;
+
+    document.querySelectorAll('button[data-size]').forEach((button) => {
       button.addEventListener('click', () => {
         main.dataset.size = button.dataset.size;
-        document.querySelectorAll('button[data-size]').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+        document.querySelectorAll('button[data-size]').forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
         render();
       });
     });
-    motion.addEventListener('click', () => {paused = !paused;render();});
+    motion.addEventListener('click', () => { paused = !paused; render(); });
     narrow.addEventListener('change', render);
-    reduced.addEventListener('change', () => {paused = reduced.matches;render();});
+    reduced.addEventListener('change', () => { paused = reduced.matches; render(); });
+
+    const presets = {
+      art: { chamfer: ['tr'], quinas: ['tl', 'br'], accent: false, docked: false },
+      'all-chamfer': { chamfer: ['tl', 'tr', 'br', 'bl'], quinas: [], accent: false, docked: false },
+      'all-quinas': { chamfer: ['tr'], quinas: ['tl', 'tr', 'br', 'bl'], accent: false, docked: false },
+      clean: { chamfer: [], quinas: [], accent: false, docked: false },
+    };
+    document.querySelectorAll('button[data-preset]').forEach((button) => {
+      button.addEventListener('click', () => {
+        const p = presets[button.dataset.preset];
+        document.querySelectorAll('input[data-chamfer]').forEach((el) => { el.checked = p.chamfer.includes(el.dataset.chamfer); });
+        document.querySelectorAll('input[data-quina]').forEach((el) => { el.checked = p.quinas.includes(el.dataset.quina); });
+        accentToggle.checked = p.accent;
+        dockedToggle.checked = p.docked;
+        render();
+      });
+    });
+    document.querySelectorAll('#frame-lab input').forEach((el) => el.addEventListener('change', render));
+
+    // First paint: imgs load right away; locals upgrade to patched inline
+    // SVGs when the page is served over HTTP.
     render();
+    applyLocal();
   </script>
 </body>
 </html>
