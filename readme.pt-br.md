@@ -157,19 +157,22 @@ Fora do software, geralmente é física, cosmologia, psicologia, filosofia, foto
 ## GitHub
 
 <div align="center">
-  <picture>
-    <source media="(prefers-reduced-motion: reduce) and (max-width: 480px)" srcset="https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&include_all_commits=true&hide=contribs&hide_rank=true&card_width=350&theme=editorial_tech&v=16#static" />
-    <source media="(max-width: 480px)" srcset="https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&include_all_commits=true&count_private=true&hide=contribs&hide_rank=true&card_width=350&theme=editorial_tech&v=16" />
-    <source media="(prefers-reduced-motion: reduce)" srcset="https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&include_all_commits=true&hide=contribs&card_width=440&theme=editorial_tech&v=16#static" />
-    <img src="https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&include_all_commits=true&count_private=true&hide=contribs&card_width=440&theme=editorial_tech&v=16" alt="Estatísticas do GitHub" width="440" />
-  </picture>
-  <br/>
-  <picture>
-    <source media="(prefers-reduced-motion: reduce) and (max-width: 480px)" srcset="https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&langs_count=6&card_width=320&theme=editorial_tech&v=16#static" />
-    <source media="(max-width: 480px)" srcset="https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&langs_count=6&card_width=320&theme=editorial_tech&v=16" />
-    <source media="(prefers-reduced-motion: reduce)" srcset="https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&langs_count=8&card_width=440&theme=editorial_tech&v=16#static" />
-    <img src="https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&langs_count=8&card_width=440&theme=editorial_tech&v=16" alt="Linguagens mais usadas" width="440" />
-  </picture>
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <picture>
+        <source media="(prefers-reduced-motion: reduce)" srcset="https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&include_all_commits=true&count_private=true&hide=contribs&card_width=440&theme=editorial_tech&v=18#static" />
+        <img src="https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&include_all_commits=true&count_private=true&hide=contribs&card_width=440&theme=editorial_tech&v=18" alt="Estatísticas do GitHub" width="100%" />
+      </picture>
+    </td>
+    <td width="50%" valign="top">
+      <picture>
+        <source media="(prefers-reduced-motion: reduce)" srcset="https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&langs_count=6&card_width=440&theme=editorial_tech&v=18#static" />
+        <img src="https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&langs_count=6&card_width=440&theme=editorial_tech&v=18" alt="Linguagens mais usadas" width="100%" />
+      </picture>
+    </td>
+  </tr>
+</table>
 </div>
 
 <p align="center">
