@@ -15,7 +15,8 @@
     /* mobile: rendered <img> shrinks the whole card; media queries evaluate
        against the rendered width, so bump the small mono text a notch */
 
-    svg { --bg: #0b0c10; --ink: #ece9df; --muted: #cbc6ba; --quiet: #aaa397; --accent: #ff2a5f; --rule: #343039; }
+    svg { --bg: transparent; --ink: #ece9df; --muted: #cbc6ba; --quiet: #aaa397; --accent: #ff2a5f; --rule: #343039; }
+    @media (prefers-color-scheme: light) { svg { --ink: #1b1c1f; --muted: #3e3b36; --quiet: #6b655c; --rule: #d9d5cc; } }
     .mono { font-family: 'Share Tech Mono', 'Courier New', monospace; font-size: 15px; fill: var(--muted); }
     .micro { font-family: 'Share Tech Mono', 'Courier New', monospace; font-size: 12px; letter-spacing: 1.2px; fill: var(--quiet); }
     .display { font-family: Georgia, 'Times New Roman', serif; fill: var(--ink); }
@@ -55,7 +56,6 @@
     @media (prefers-reduced-motion: reduce) { .intro { animation: arrive .15s ease-out both; } }
 
   ]]></style>
-  <rect width="832" height="334" fill="var(--bg)"/>
   <path d="M.5 .5H816L831.5 16V333.5H.5Z" fill="none" stroke="var(--rule)"/>
   <path d="M.5 20V.5H20M812 333.5H831.5V314" fill="none" stroke="var(--accent)" stroke-opacity=".65"/>
 
