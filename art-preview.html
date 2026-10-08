@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Thiago Araújo — SVG Art Preview</title>
+  <style>
+    :root{color-scheme:dark;font-family:monospace;background:#16181d;color:#ece9df}
+    *{box-sizing:border-box}
+    body{margin:0;padding:24px 16px}
+    header{max-width:832px;margin:0 auto 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    h1{font-size:14px;font-weight:400;margin:0;letter-spacing:.5px}
+    .controls{display:flex;gap:6px;flex-wrap:wrap}
+    button{font:inherit;font-size:12px;min-height:44px;padding:0 12px;background:#0b0c10;color:#cbc6ba;border:1px solid #48424a;cursor:pointer}
+    button[aria-pressed=true]{color:#ece9df;border-color:#ff2a5f}
+    button:focus-visible,a:focus-visible{outline:2px solid #ff2a5f;outline-offset:4px}
+    main{max-width:832px;margin:auto;display:grid;gap:16px}
+    main[data-size=mobile]{max-width:360px}
+    img{display:block;width:100%;height:auto}
+    footer{max-width:832px;margin:24px auto;color:#aaa397;font-size:12px;line-height:1.6}
+    a{color:#ece9df}
+    @media(max-width:600px){body{padding:16px 8px}header{gap:12px}main{gap:12px}}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>THISUX / EDITORIAL × SYSTEMS</h1>
+    <div class="controls" aria-label="Opções da prévia">
+      <button type="button" data-size="auto" aria-pressed="true">Auto</button>
+      <button type="button" data-size="desktop" aria-pressed="false">Desktop</button>
+      <button type="button" data-size="mobile" aria-pressed="false">Mobile</button>
+      <button type="button" id="motion" aria-pressed="false">Pausar motion</button>
+    </div>
+  </header>
+  <main data-size="auto">
+    <img id="banner" src="./banner.svg" alt="Thiago Araújo — Systems Engineer">
+    <img id="systems" src="./systems.svg" alt="Product Systems, Intelligent Systems, Agents and Machines">
+  </main>
+  <footer>SVG puro. Fonte embutida. Entrada única + idle de assinatura.<br><a href="https://github.com/thisux1">Perfil no GitHub</a></footer>
+  <script>
+    const main = document.querySelector('main');
+    const narrow = matchMedia('(max-width:600px)');
+    const reduced = matchMedia('(prefers-reduced-motion:reduce)');
+    const motion = document.querySelector('#motion');
+    let paused = reduced.matches;
+    function render(){
+      const mobile = main.dataset.size === 'mobile' || (main.dataset.size === 'auto' && narrow.matches);
+      const fragment = paused ? '#static' : '';
+      for(const name of ['banner','systems']) document.getElementById(name).src = `./${name}${mobile ? '-mobile' : ''}.svg${fragment}`;
+      motion.setAttribute('aria-pressed', String(paused));
+      motion.textContent = paused ? 'Ativar motion' : 'Pausar motion';
+    }
+    document.querySelectorAll('[data-size]').forEach(button => {
+      if(button.tagName !== 'BUTTON') return;
+      button.addEventListener('click', () => {
+        main.dataset.size = button.dataset.size;
+        document.querySelectorAll('button[data-size]').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+        render();
+      });
+    });
+    motion.addEventListener('click', () => {paused = !paused;render();});
+    narrow.addEventListener('change', render);
+    reduced.addEventListener('change', () => {paused = reduced.matches;render();});
+    render();
+  </script>
+</body>
+</html>

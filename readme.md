@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="#root"><picture><source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="./banner-mobile.svg?v=1#static"/><source media="(prefers-reduced-motion: reduce)" srcset="./banner.svg?v=16#static"/><source media="(max-width: 600px)" srcset="./banner-mobile.svg?v=1"/><img src="./banner.svg?v=16" alt="Thiago Araújo — Software Engineer & Builder" width="100%"/></picture></a>
+  <a href="#root"><picture><source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="./banner-mobile.svg?v=2#static"/><source media="(prefers-reduced-motion: reduce)" srcset="./banner.svg?v=18#static"/><source media="(max-width: 600px)" srcset="./banner-mobile.svg?v=2"/><img src="./banner.svg?v=18" alt="Thiago Araújo — Software Engineer & Builder" width="100%"/></picture></a>
 </div>
 
 <p align="center"><sub>🇧🇷 <a href="readme.pt-br.md">Versão em Português</a></sub></p>
@@ -22,7 +22,7 @@
 • builder   Thiago Araújo
 • based     São Paulo, Brazil
 • mode      curiosity → prototype → system
-• study     Software Engineering, UNIVESP
+• study     Engenharia da Computação, UNIVESP
 • outside   physics · cosmology · music</code></pre>
     </td>
   </tr>
@@ -47,7 +47,7 @@ Outside software, it's usually physics, cosmology, psychology, philosophy, photo
 ## Systems
 
 <p align="center">
-  <picture><source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="./systems-mobile.svg?v=1#static"/><source media="(prefers-reduced-motion: reduce)" srcset="./systems.svg?v=5#static"/><source media="(max-width: 600px)" srcset="./systems-mobile.svg?v=1"/><img src="./systems.svg?v=5" alt="Systems — product, ML & data, agents & machines" width="100%"/></picture>
+  <picture><source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="./systems-mobile.svg?v=2#static"/><source media="(prefers-reduced-motion: reduce)" srcset="./systems.svg?v=6#static"/><source media="(max-width: 600px)" srcset="./systems-mobile.svg?v=2"/><img src="./systems.svg?v=6" alt="Systems — product, ML & data, agents & machines" width="100%"/></picture>
 </p>
 
 ---
@@ -65,10 +65,10 @@ Outside software, it's usually physics, cosmology, psychology, philosophy, photo
       </ul>
       <p><a href="https://github.com/pedroschott/hackatonyuno">repo</a> · <a href="https://nextwave-hackathon-2026.vercel.app/t/H3MDSM">live</a></p>
       <p>
-        <img src="https://img.shields.io/badge/TypeScript-0b0c10?style=flat-square&logo=typescript&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="TypeScript" />
-        <img src="https://img.shields.io/badge/Next.js-0b0c10?style=flat-square&logo=nextdotjs&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="Next.js" />
-        <img src="https://img.shields.io/badge/MCP-0b0c10?style=flat-square&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="MCP" />
-        <img src="https://img.shields.io/badge/Supabase-0b0c10?style=flat-square&logo=supabase&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="Supabase" />
+        <img src="https://img.shields.io/badge/TypeScript-0b0c10?style=flat-square&logo=typescript&logoColor=ff2a5f&labelColor=0b0c10&color=ff2a5f" alt="TypeScript" />
+        <img src="https://img.shields.io/badge/Next.js-0b0c10?style=flat-square&logo=nextdotjs&logoColor=ff2a5f&labelColor=0b0c10&color=ff2a5f" alt="Next.js" />
+        <img src="https://img.shields.io/badge/MCP-0b0c10?style=flat-square&logoColor=ff2a5f&labelColor=0b0c10&color=ff2a5f" alt="MCP" />
+        <img src="https://img.shields.io/badge/Supabase-0b0c10?style=flat-square&logo=supabase&logoColor=ff2a5f&labelColor=0b0c10&color=ff2a5f" alt="Supabase" />
       </p>
     </td>
     <td width="50%" valign="top">
@@ -80,10 +80,10 @@ Outside software, it's usually physics, cosmology, psychology, philosophy, photo
       </ul>
       <p><a href="https://github.com/thisux1/correioelegante3">repo</a></p>
       <p>
-        <img src="https://img.shields.io/badge/React_19-0b0c10?style=flat-square&logo=react&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="React 19" />
-        <img src="https://img.shields.io/badge/Express-0b0c10?style=flat-square&logo=express&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="Express" />
-        <img src="https://img.shields.io/badge/Prisma-0b0c10?style=flat-square&logo=prisma&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="Prisma" />
-        <img src="https://img.shields.io/badge/Stripe-0b0c10?style=flat-square&logo=stripe&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="Stripe" />
+        <img src="https://img.shields.io/badge/React_19-0b0c10?style=flat-square&logo=react&logoColor=ff2a5f&labelColor=0b0c10&color=ff2a5f" alt="React 19" />
+        <img src="https://img.shields.io/badge/Express-0b0c10?style=flat-square&logo=express&logoColor=ff2a5f&labelColor=0b0c10&color=ff2a5f" alt="Express" />
+        <img src="https://img.shields.io/badge/Prisma-0b0c10?style=flat-square&logo=prisma&logoColor=ff2a5f&labelColor=0b0c10&color=ff2a5f" alt="Prisma" />
+        <img src="https://img.shields.io/badge/Stripe-0b0c10?style=flat-square&logo=stripe&logoColor=ff2a5f&labelColor=0b0c10&color=ff2a5f" alt="Stripe" />
       </p>
     </td>
   </tr>
@@ -97,10 +97,10 @@ Outside software, it's usually physics, cosmology, psychology, philosophy, photo
       </ul>
       <p><a href="https://github.com/thisux1/Singular">repo</a></p>
       <p>
-        <img src="https://img.shields.io/badge/Hono-0b0c10?style=flat-square&logo=hono&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="Hono" />
-        <img src="https://img.shields.io/badge/PostgreSQL-0b0c10?style=flat-square&logo=postgresql&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="PostgreSQL" />
-        <img src="https://img.shields.io/badge/Drizzle-0b0c10?style=flat-square&logo=drizzle&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="Drizzle" />
-        <img src="https://img.shields.io/badge/BullMQ-0b0c10?style=flat-square&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="BullMQ" />
+        <img src="https://img.shields.io/badge/Hono-0b0c10?style=flat-square&logo=hono&logoColor=ff2a5f&labelColor=0b0c10&color=ff2a5f" alt="Hono" />
+        <img src="https://img.shields.io/badge/PostgreSQL-0b0c10?style=flat-square&logo=postgresql&logoColor=ff2a5f&labelColor=0b0c10&color=ff2a5f" alt="PostgreSQL" />
+        <img src="https://img.shields.io/badge/Drizzle-0b0c10?style=flat-square&logo=drizzle&logoColor=ff2a5f&labelColor=0b0c10&color=ff2a5f" alt="Drizzle" />
+        <img src="https://img.shields.io/badge/BullMQ-0b0c10?style=flat-square&logoColor=ff2a5f&labelColor=0b0c10&color=ff2a5f" alt="BullMQ" />
       </p>
     </td>
     <td width="50%" valign="top">
@@ -112,10 +112,10 @@ Outside software, it's usually physics, cosmology, psychology, philosophy, photo
       </ul>
       <p><a href="https://github.com/thisux1/Oracle">repo</a></p>
       <p>
-        <img src="https://img.shields.io/badge/Python-0b0c10?style=flat-square&logo=python&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="Python" />
-        <img src="https://img.shields.io/badge/TensorFlow_Lite-0b0c10?style=flat-square&logo=tensorflow&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="TensorFlow Lite" />
-        <img src="https://img.shields.io/badge/FastAPI-0b0c10?style=flat-square&logo=fastapi&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="FastAPI" />
-        <img src="https://img.shields.io/badge/Textual-0b0c10?style=flat-square&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="Textual" />
+        <img src="https://img.shields.io/badge/Python-0b0c10?style=flat-square&logo=python&logoColor=ff2a5f&labelColor=0b0c10&color=ff2a5f" alt="Python" />
+        <img src="https://img.shields.io/badge/TensorFlow_Lite-0b0c10?style=flat-square&logo=tensorflow&logoColor=ff2a5f&labelColor=0b0c10&color=ff2a5f" alt="TensorFlow Lite" />
+        <img src="https://img.shields.io/badge/FastAPI-0b0c10?style=flat-square&logo=fastapi&logoColor=ff2a5f&labelColor=0b0c10&color=ff2a5f" alt="FastAPI" />
+        <img src="https://img.shields.io/badge/Textual-0b0c10?style=flat-square&logoColor=ff2a5f&labelColor=0b0c10&color=ff2a5f" alt="Textual" />
       </p>
     </td>
   </tr>
@@ -129,10 +129,10 @@ Outside software, it's usually physics, cosmology, psychology, philosophy, photo
       </ul>
       <p><a href="https://github.com/thisux1/AeroGlove">repo</a></p>
       <p>
-        <img src="https://img.shields.io/badge/MicroPython-0b0c10?style=flat-square&logo=micropython&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="MicroPython" />
-        <img src="https://img.shields.io/badge/ESP32--S3-0b0c10?style=flat-square&logo=espressif&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="ESP32-S3" />
-        <img src="https://img.shields.io/badge/ESP--NOW-0b0c10?style=flat-square&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="ESP-NOW" />
-        <img src="https://img.shields.io/badge/BLE-0b0c10?style=flat-square&logo=bluetooth&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="BLE" />
+        <img src="https://img.shields.io/badge/MicroPython-0b0c10?style=flat-square&logo=micropython&logoColor=ff2a5f&labelColor=0b0c10&color=ff2a5f" alt="MicroPython" />
+        <img src="https://img.shields.io/badge/ESP32--S3-0b0c10?style=flat-square&logo=espressif&logoColor=ff2a5f&labelColor=0b0c10&color=ff2a5f" alt="ESP32-S3" />
+        <img src="https://img.shields.io/badge/ESP--NOW-0b0c10?style=flat-square&logoColor=ff2a5f&labelColor=0b0c10&color=ff2a5f" alt="ESP-NOW" />
+        <img src="https://img.shields.io/badge/BLE-0b0c10?style=flat-square&logo=bluetooth&logoColor=ff2a5f&labelColor=0b0c10&color=ff2a5f" alt="BLE" />
       </p>
     </td>
     <td width="50%" valign="top">
@@ -144,9 +144,9 @@ Outside software, it's usually physics, cosmology, psychology, philosophy, photo
       </ul>
       <p><a href="https://github.com/thisux1/realiza.vc">repo</a></p>
       <p>
-        <img src="https://img.shields.io/badge/Next.js_16-0b0c10?style=flat-square&logo=nextdotjs&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="Next.js 16" />
-        <img src="https://img.shields.io/badge/Supabase-0b0c10?style=flat-square&logo=supabase&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="Supabase" />
-        <img src="https://img.shields.io/badge/TypeScript-0b0c10?style=flat-square&logo=typescript&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="TypeScript" />
+        <img src="https://img.shields.io/badge/Next.js_16-0b0c10?style=flat-square&logo=nextdotjs&logoColor=ff2a5f&labelColor=0b0c10&color=ff2a5f" alt="Next.js 16" />
+        <img src="https://img.shields.io/badge/Supabase-0b0c10?style=flat-square&logo=supabase&logoColor=ff2a5f&labelColor=0b0c10&color=ff2a5f" alt="Supabase" />
+        <img src="https://img.shields.io/badge/TypeScript-0b0c10?style=flat-square&logo=typescript&logoColor=ff2a5f&labelColor=0b0c10&color=ff2a5f" alt="TypeScript" />
       </p>
     </td>
   </tr>
@@ -158,35 +158,35 @@ Outside software, it's usually physics, cosmology, psychology, philosophy, photo
 
 <div align="center">
   <picture>
-    <source media="(prefers-reduced-motion: reduce) and (max-width: 480px)" srcset="https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&include_all_commits=true&hide=contribs&hide_rank=true&card_width=350&bg_color=0b0c10&title_color=ece9df&icon_color=e5484d&ring_color=e5484d&text_color=cbc6ba&border_color=26282e&v=14#static" />
-    <source media="(max-width: 480px)" srcset="https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&include_all_commits=true&count_private=true&hide=contribs&hide_rank=true&card_width=350&bg_color=0b0c10&title_color=ece9df&icon_color=e5484d&ring_color=e5484d&text_color=cbc6ba&border_color=26282e&v=13" />
-    <source media="(prefers-reduced-motion: reduce)" srcset="https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&include_all_commits=true&hide=contribs&card_width=440&bg_color=0b0c10&title_color=ece9df&icon_color=e5484d&ring_color=e5484d&text_color=cbc6ba&border_color=26282e&v=14#static" />
-    <img src="https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&include_all_commits=true&count_private=true&hide=contribs&card_width=440&bg_color=0b0c10&title_color=ece9df&icon_color=e5484d&ring_color=e5484d&text_color=cbc6ba&border_color=26282e&v=13" alt="GitHub Stats" width="440" />
+    <source media="(prefers-reduced-motion: reduce) and (max-width: 480px)" srcset="https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&include_all_commits=true&hide=contribs&hide_rank=true&card_width=350&theme=editorial_tech&v=15#static" />
+    <source media="(max-width: 480px)" srcset="https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&include_all_commits=true&count_private=true&hide=contribs&hide_rank=true&card_width=350&theme=editorial_tech&v=15" />
+    <source media="(prefers-reduced-motion: reduce)" srcset="https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&include_all_commits=true&hide=contribs&card_width=440&theme=editorial_tech&v=15#static" />
+    <img src="https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&include_all_commits=true&count_private=true&hide=contribs&card_width=440&theme=editorial_tech&v=15" alt="GitHub Stats" width="440" />
   </picture>
   <br/>
   <picture>
-    <source media="(prefers-reduced-motion: reduce) and (max-width: 480px)" srcset="https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&layout=compact&langs_count=6&card_width=320&bg_color=0b0c10&title_color=ece9df&text_color=cbc6ba&border_color=26282e&v=14#static" />
-    <source media="(max-width: 480px)" srcset="https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&layout=compact&langs_count=6&card_width=320&bg_color=0b0c10&title_color=ece9df&icon_color=e5484d&text_color=cbc6ba&border_color=26282e&v=13" />
-    <source media="(prefers-reduced-motion: reduce)" srcset="https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&layout=compact&langs_count=8&card_width=440&bg_color=0b0c10&title_color=ece9df&text_color=cbc6ba&border_color=26282e&v=14#static" />
-    <img src="https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&layout=compact&langs_count=8&card_width=440&bg_color=0b0c10&title_color=ece9df&icon_color=e5484d&text_color=cbc6ba&border_color=26282e&v=13" alt="Top Languages" width="440" />
+    <source media="(prefers-reduced-motion: reduce) and (max-width: 480px)" srcset="https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&layout=compact&langs_count=6&card_width=320&theme=editorial_tech&v=15#static" />
+    <source media="(max-width: 480px)" srcset="https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&layout=compact&langs_count=6&card_width=320&theme=editorial_tech&v=15" />
+    <source media="(prefers-reduced-motion: reduce)" srcset="https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&layout=compact&langs_count=8&card_width=440&theme=editorial_tech&v=15#static" />
+    <img src="https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&layout=compact&langs_count=8&card_width=440&theme=editorial_tech&v=15" alt="Top Languages" width="440" />
   </picture>
 </div>
 
 <p align="center">
   <picture>
-    <source media="(prefers-reduced-motion: reduce) and (max-width: 480px)" srcset="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&hide_total_contributions=true&card_width=350&date_format=M+j&background=0b0c10&border=26282e&stroke=26282e&ring=e5484d&fire=e5484d&currStreakNum=ece9df&sideNums=ece9df&currStreakLabel=cbc6ba&sideLabels=b5b0a3&dates=b5b0a3&v=3#static" />
-    <source media="(max-width: 480px)" srcset="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&hide_total_contributions=true&card_width=350&date_format=M+j&background=0b0c10&border=26282e&stroke=26282e&ring=e5484d&fire=e5484d&currStreakNum=ece9df&sideNums=ece9df&currStreakLabel=a8a395&sideLabels=b5b0a3&dates=b5b0a3&excludeDaysLabel=b5b0a3&v=2" />
-    <source media="(prefers-reduced-motion: reduce)" srcset="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&theme=ember&v=3#static" />
-    <img src="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&theme=ember&v=2" alt="GitHub contribution streak" width="100%" />
+    <source media="(prefers-reduced-motion: reduce) and (max-width: 480px)" srcset="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&hide_total_contributions=true&card_width=350&date_format=M+j&background=0b0c10&border=343039&stroke=343039&ring=ff2a5f&fire=ff2a5f&currStreakNum=ece9df&sideNums=ece9df&currStreakLabel=cbc6ba&sideLabels=cbc6ba&dates=cbc6ba&v=4#static" />
+    <source media="(max-width: 480px)" srcset="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&hide_total_contributions=true&card_width=350&date_format=M+j&background=0b0c10&border=343039&stroke=343039&ring=ff2a5f&fire=ff2a5f&currStreakNum=ece9df&sideNums=ece9df&currStreakLabel=cbc6ba&sideLabels=cbc6ba&dates=cbc6ba&excludeDaysLabel=cbc6ba&v=4" />
+    <source media="(prefers-reduced-motion: reduce)" srcset="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&theme=ember&v=4#static" />
+    <img src="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&theme=ember&v=4" alt="GitHub contribution streak" width="100%" />
   </picture>
 </p>
 
 <p align="center">
   <picture>
-    <source media="(prefers-reduced-motion: reduce) and (max-width: 480px)" srcset="https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&width=520&height=300&days=15&bg_color=0b0c10&color=cbc6ba&line=e5484d&point=ece9df&area=true&area_color=3d1517&hide_border=true&custom_title=contribution%20graph&v=13#static" />
-    <source media="(max-width: 480px)" srcset="https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&width=520&height=300&days=15&bg_color=0b0c10&color=cbc6ba&line=e5484d&point=ece9df&area=true&area_color=3d1517&hide_border=true&custom_title=contribution%20graph&v=12" />
-    <source media="(prefers-reduced-motion: reduce)" srcset="https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&width=880&bg_color=0b0c10&color=cbc6ba&line=e5484d&point=ece9df&area=true&area_color=3d1517&hide_border=true&custom_title=contribution%20graph&v=13#static" />
-    <img src="https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&width=880&bg_color=0b0c10&color=cbc6ba&line=e5484d&point=ece9df&area=true&area_color=3d1517&hide_border=true&custom_title=contribution%20graph&v=12" alt="Activity Graph" width="100%" />
+    <source media="(prefers-reduced-motion: reduce) and (max-width: 480px)" srcset="https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&width=520&height=300&days=15&bg_color=0b0c10&color=cbc6ba&line=ff2a5f&point=ece9df&area=true&area_color=3d1420&hide_border=true&custom_title=contribution%20graph&v=14#static" />
+    <source media="(max-width: 480px)" srcset="https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&width=520&height=300&days=15&bg_color=0b0c10&color=cbc6ba&line=ff2a5f&point=ece9df&area=true&area_color=3d1420&hide_border=true&custom_title=contribution%20graph&v=14" />
+    <source media="(prefers-reduced-motion: reduce)" srcset="https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&width=880&bg_color=0b0c10&color=cbc6ba&line=ff2a5f&point=ece9df&area=true&area_color=3d1420&hide_border=true&custom_title=contribution%20graph&v=14#static" />
+    <img src="https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&width=880&bg_color=0b0c10&color=cbc6ba&line=ff2a5f&point=ece9df&area=true&area_color=3d1420&hide_border=true&custom_title=contribution%20graph&v=14" alt="Activity Graph" width="100%" />
   </picture>
 </p>
 
@@ -196,14 +196,14 @@ Outside software, it's usually physics, cosmology, psychology, philosophy, photo
 
 <div align="center">
   <a href="https://linkedin.com/in/thisux" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0b0c10?style=for-the-badge&logo=linkedin&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="LinkedIn" />
+    <img src="https://img.shields.io/badge/LinkedIn-0b0c10?style=for-the-badge&logo=linkedin&logoColor=ff2a5f&labelColor=0b0c10&color=ff2a5f" alt="LinkedIn" />
   </a>
   &nbsp;
   <a href="mailto:thisux94@gmail.com">
-    <img src="https://img.shields.io/badge/Email-0b0c10?style=for-the-badge&logo=gmail&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="Email" />
+    <img src="https://img.shields.io/badge/Email-0b0c10?style=for-the-badge&logo=gmail&logoColor=ff2a5f&labelColor=0b0c10&color=ff2a5f" alt="Email" />
   </a>
   &nbsp;
   <a href="https://thisux.tech" target="_blank">
-    <img src="https://img.shields.io/badge/thisux.tech-0b0c10?style=for-the-badge&logo=firefoxbrowser&logoColor=e5484d&labelColor=0b0c10&color=e5484d" alt="Portfolio" />
+    <img src="https://img.shields.io/badge/thisux.tech-0b0c10?style=for-the-badge&logo=firefoxbrowser&logoColor=ff2a5f&labelColor=0b0c10&color=ff2a5f" alt="Portfolio" />
   </a>
 </div>
