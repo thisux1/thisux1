@@ -57,8 +57,8 @@
     @media (prefers-reduced-motion: reduce) { .intro { animation: arrive .15s ease-out both; } }
 
   ]]></style>
-  <path d="M.5 .5H816L831.5 16V283.5H.5Z" fill="none" stroke="var(--rule)"/>
-  <path d="M.5 20V.5H20M812 283.5H831.5V264" fill="none" stroke="var(--accent)" stroke-opacity=".65"/>
+  <path d="M.5 .5H816L831.5 16V283.5H16L.5 268V.5Z" fill="none" stroke="var(--rule)"/>
+  <path d="M.5 20V.5H20M807 283.5H816L831.5 268V259" fill="none" stroke="var(--accent)" stroke-opacity=".65"/>
 
   <g class="intro">
     <text x="24" y="30" class="micro" style="font-size:13px;letter-spacing:1px;fill:var(--muted)">SYSTEMS ENGINEER / B.S. ENGENHARIA DA COMPUTAÇÃO</text>

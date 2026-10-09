@@ -106,11 +106,11 @@
     </section>
     <section>
       <p class="card-label">streak (endpoint ember) <button type="button" data-reset>reset</button></p>
-      <div class="fed" data-remote="streak" data-def="art"></div>
+      <div class="fed" data-remote="streak" data-def="sides"></div>
     </section>
     <section>
       <p class="card-label">activity graph <button type="button" data-reset>reset</button></p>
-      <div class="fed" data-remote="graph" data-def="art"></div>
+      <div class="fed" data-remote="graph" data-def="base"></div>
     </section>
   </main>
   <footer>SVG puro. Fonte embutida. Entrada única + idle de assinatura.<br><a href="https://github.com/thisux1">Perfil no GitHub</a></footer>
@@ -132,9 +132,11 @@
     const CORNERS = ['tl', 'tr', 'br', 'bl'];
     const EDGES = ['top', 'right', 'bottom', 'left'];
     const DEFS = {
-      art: { c: ['tr'], q: ['tl', 'br'], e: [] },
-      'dock-right': { c: [], q: ['tl'], e: [] },
-      'dock-left': { c: ['tr'], q: ['br'], e: [] },
+      art: { c: ['tr', 'bl'], q: ['tl', 'br'], e: [] },
+      'dock-right': { c: ['tl'], q: ['tl'], e: ['top', 'left'] },
+      'dock-left': { c: ['tr'], q: ['tr'], e: ['top', 'right'] },
+      sides: { c: [], q: [], e: ['left', 'right'] },
+      base: { c: ['br', 'bl'], q: ['br', 'bl'], e: ['right', 'bottom', 'left'] },
     };
 
     /* Builds one editor cell set around a card slot. Corner cells stack
@@ -312,7 +314,7 @@
     reduced.addEventListener('change', () => { paused = reduced.matches; renderAll(); });
 
     const presets = {
-      art: { c: ['tr'], q: ['tl', 'br'], e: [] },
+      art: { c: ['tr', 'bl'], q: ['tl', 'br'], e: [] },
       'all-chamfer': { c: CORNERS, q: [], e: [] },
       'all-quinas': { c: [], q: CORNERS, e: [] },
       edges: { c: [], q: [], e: EDGES },

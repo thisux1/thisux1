@@ -128,8 +128,8 @@ function wrap(file, width, height, title, description, body) {
     ${cssComments.join('\n    ')}
     ${css}
   ]]></style>
-  <path d="M.5 .5H${width - 16}L${width - .5} 16V${height - .5}H.5Z" fill="none" stroke="${rule}"/>
-  <path d="M.5 20V.5H20M${width - 20} ${height - .5}H${width - .5}V${height - 20}" fill="none" stroke="${accent}" stroke-opacity=".65"/>
+  <path d="M.5 .5H${width - 16}L${width - .5} 16V${height - .5}H16L.5 ${height - 16}V.5Z" fill="none" stroke="${rule}"/>
+  <path d="M.5 20V.5H20M${width - 25} ${height - .5}H${width - 16}L${width - .5} ${height - 16}V${height - 25}" fill="none" stroke="${accent}" stroke-opacity=".65"/>
   ${body}
 </svg>
 `;

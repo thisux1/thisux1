@@ -56,8 +56,8 @@
     @media (prefers-reduced-motion: reduce) { .intro { animation: arrive .15s ease-out both; } }
 
   ]]></style>
-  <path d="M.5 .5H816L831.5 16V333.5H.5Z" fill="none" stroke="var(--rule)"/>
-  <path d="M.5 20V.5H20M812 333.5H831.5V314" fill="none" stroke="var(--accent)" stroke-opacity=".65"/>
+  <path d="M.5 .5H816L831.5 16V333.5H16L.5 318V.5Z" fill="none" stroke="var(--rule)"/>
+  <path d="M.5 20V.5H20M807 333.5H816L831.5 318V309" fill="none" stroke="var(--accent)" stroke-opacity=".65"/>
 
   <g class="intro">
     <text x="24" y="30" class="mono" style="font-size:15px;letter-spacing:1.6px;fill:var(--ink)">SYSTEMS</text>
