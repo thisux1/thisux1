@@ -208,7 +208,7 @@
 
     async function patchLocal(fed, file) {
       try {
-        const text = await (await fetch(`./${file}`)).text();
+        const text = await (await fetch(`./${file}`, { cache: 'no-store' })).text();
         const doc = new DOMParser().parseFromString(text, 'image/svg+xml');
         const svg = doc.documentElement;
         const [, , w, h] = (svg.getAttribute('viewBox') || '0 0 0 0').split(/\s+/).map(Number);
