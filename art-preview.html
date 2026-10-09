@@ -48,10 +48,24 @@
     body[data-preview=true] .globals{display:none}
     body[data-preview=true] main{gap:12px}
     body[data-preview=true] .pair{gap:8px}
-    @media(max-width:600px){body{padding:16px 8px}main{gap:20px}.pair{gap:16px}.fed{grid-template-columns:28px 1fr 28px;grid-template-rows:28px auto 28px}}
+    body[data-view=badges] main,body[data-view=badges] .globals{display:none}
+    body:not([data-view=badges]) #badges{display:none}
+    #badges{max-width:1080px;margin:0 auto}
+    .bgroup{margin-bottom:26px}
+    .bgroup h5{margin:0 0 8px;font:10px/1 'Share Tech Mono',monospace;letter-spacing:3px;color:#928d7f;text-transform:uppercase}
+    .btable{display:grid;grid-template-columns:110px repeat(6,1fr);gap:1px;background:#343039}
+    .bhead,.btech,.bcell{background:#16181d;padding:6px;display:flex;align-items:center;justify-content:center;min-height:38px}
+    .bhead{font:9px 'Share Tech Mono',monospace;letter-spacing:1px;color:#928d7f;text-transform:uppercase}
+    .btech{justify-content:flex-start;font:11px 'Share Tech Mono',monospace;color:#ece9df}
+    .bcell{cursor:pointer;border:none;padding:4px}
+    .bcell img{max-width:100%;height:auto;pointer-events:none}
+    .bcell.na{color:#4a4540;font:10px 'Share Tech Mono',monospace}
+    .bcell.sel{background:#241a20;outline:1px solid #ff2a5f;outline-offset:-1px}
+    .bfoot{display:flex;gap:10px;margin-top:14px}
+    @media(max-width:600px){body{padding:16px 8px}main{gap:20px}.pair{gap:16px}.fed{grid-template-columns:28px 1fr 28px;grid-template-rows:28px auto 28px}.btable{grid-template-columns:70px repeat(6,1fr)}.btech{font-size:9px}}
   </style>
 </head>
-<body>
+<body data-view="frames">
   <header>
     <h1>THISUX / EDITORIAL × SYSTEMS</h1>
     <div class="controls" aria-label="Opções da prévia">
@@ -60,6 +74,8 @@
       <button type="button" data-size="mobile" aria-pressed="false">Mobile</button>
       <button type="button" id="motion" aria-pressed="false">Pausar motion</button>
       <button type="button" id="preview" aria-pressed="false">Preview</button>
+      <button type="button" data-view="frames" aria-pressed="true">frames</button>
+      <button type="button" data-view="badges" aria-pressed="false">badges</button>
     </div>
   </header>
 
@@ -113,6 +129,14 @@
       <div class="fed" data-remote="graph" data-def="base"></div>
     </section>
   </main>
+
+  <section id="badges">
+    <div class="bfoot">
+      <span style="font:10px 'Share Tech Mono',monospace;letter-spacing:2px;color:#928d7f;text-transform:uppercase;align-self:center">clique na célula pra escolher a variante de cada tech</span>
+      <button type="button" id="badges-export">exportar HTML</button>
+    </div>
+  </section>
+
   <footer>SVG puro. Fonte embutida. Entrada única + idle de assinatura.<br><a href="https://github.com/thisux1">Perfil no GitHub</a></footer>
 
   <script>
@@ -372,6 +396,145 @@
     });
 
     renderAll();
+
+    /* ================= badges lab ================= */
+    // si = simple-icons slug (shields logo + cdn.simpleicons.org)
+    // sk = skillicons slug · dev = devicon path · l = shields label
+    const BTECHS = {
+      'TypeScript':       { l:'TypeScript', si:'typescript', sk:'ts', dev:'typescript/typescript-original' },
+      'Next.js':          { l:'Next.js', si:'nextdotjs', sk:'nextjs', dev:'nextjs/nextjs-original' },
+      'Next.js 16':       { l:'Next.js_16', si:'nextdotjs', sk:'nextjs', dev:'nextjs/nextjs-original' },
+      'MCP':              { l:'MCP', si:'modelcontextprotocol', sk:null, dev:null },
+      'Supabase':         { l:'Supabase', si:'supabase', sk:'supabase', dev:'supabase/supabase-original' },
+      'React 19':         { l:'React_19', si:'react', sk:'react', dev:'react/react-original' },
+      'Express':          { l:'Express', si:'express', sk:'express', dev:'express/express-original' },
+      'Prisma':           { l:'Prisma', si:'prisma', sk:'prisma', dev:'prisma/prisma-original' },
+      'Stripe':           { l:'Stripe', si:'stripe', sk:null, dev:'stripe/stripe-original' },
+      'Hono':             { l:'Hono', si:'hono', sk:'hono', dev:'hono/hono-original' },
+      'PostgreSQL':       { l:'PostgreSQL', si:'postgresql', sk:'postgres', dev:'postgresql/postgresql-original' },
+      'Drizzle':          { l:'Drizzle', si:'drizzle', sk:'drizzle', dev:'drizzle/drizzle-original' },
+      'BullMQ':           { l:'BullMQ', si:null, sk:null, dev:null },
+      'Python':           { l:'Python', si:'python', sk:'py', dev:'python/python-original' },
+      'TensorFlow Lite':  { l:'TensorFlow_Lite', si:'tensorflow', sk:'tensorflow', dev:'tensorflow/tensorflow-original' },
+      'FastAPI':          { l:'FastAPI', si:'fastapi', sk:'fastapi', dev:'fastapi/fastapi-original' },
+      'Textual':          { l:'Textual', si:'textual', sk:null, dev:null },
+      'MicroPython':      { l:'MicroPython', si:'micropython', sk:null, dev:'micropython/micropython-original' },
+      'ESP32-S3':         { l:'ESP32--S3', si:'espressif', sk:null, dev:null },
+      'ESP-NOW':          { l:'ESP--NOW', si:null, sk:null, dev:null },
+      'BLE':              { l:'BLE', si:'bluetooth', sk:null, dev:null },
+    };
+
+    const BGROUPS = [
+      ['agentpay', ['TypeScript', 'Next.js', 'MCP', 'Supabase']],
+      ['correio elegante', ['React 19', 'Express', 'Prisma', 'Stripe']],
+      ['singular', ['Hono', 'PostgreSQL', 'Drizzle', 'BullMQ']],
+      ['oracle', ['Python', 'TensorFlow Lite', 'FastAPI', 'Textual']],
+      ['aeroglove', ['MicroPython', 'ESP32-S3', 'ESP-NOW', 'BLE']],
+      ['realiza.vc', ['Next.js 16', 'Supabase', 'TypeScript']],
+    ];
+
+    const PROVIDERS = [
+      { id:'square', name:'shields·square', h:20, url: t => `https://img.shields.io/badge/${t.l}-0b0c10?style=flat-square${t.si ? `&logo=${t.si}` : ''}&logoColor=ff2a5f&labelColor=0b0c10&color=ff2a5f` },
+      { id:'flat',   name:'shields·flat',   h:20, url: t => `https://img.shields.io/badge/${t.l}-0b0c10?style=flat${t.si ? `&logo=${t.si}` : ''}&logoColor=ff2a5f&labelColor=0b0c10&color=ff2a5f` },
+      { id:'badge',  name:'shields·badge',  h:28, url: t => `https://img.shields.io/badge/${t.l}-0b0c10?style=for-the-badge${t.si ? `&logo=${t.si}` : ''}&logoColor=ff2a5f&labelColor=0b0c10&color=ff2a5f` },
+      { id:'skill',  name:'skillicons',     h:34, url: t => t.sk ? `https://skillicons.dev/icons?i=${t.sk}&theme=dark` : null },
+      { id:'si',     name:'simple-icons',   h:22, url: t => t.si ? `https://cdn.simpleicons.org/${t.si}/ff2a5f` : null },
+      { id:'dev',    name:'devicon',        h:26, url: t => t.dev ? `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${t.dev}.svg` : null },
+    ];
+
+    // default = variante atual do readme
+    const bsel = {};
+    Object.keys(BTECHS).forEach(n => { bsel[n] = 'square'; });
+
+    const badgesSection = document.getElementById('badges');
+    const btableWrap = document.createElement('div');
+    badgesSection.insertBefore(btableWrap, badgesSection.firstChild);
+
+    function buildBadges() {
+      BGROUPS.forEach(([project, techs]) => {
+        const g = document.createElement('div');
+        g.className = 'bgroup';
+        const h = document.createElement('h5');
+        h.textContent = project;
+        g.appendChild(h);
+        const table = document.createElement('div');
+        table.className = 'btable';
+        const corner = document.createElement('div');
+        corner.className = 'bhead';
+        table.appendChild(corner);
+        PROVIDERS.forEach(p => {
+          const c = document.createElement('div');
+          c.className = 'bhead';
+          c.textContent = p.name;
+          table.appendChild(c);
+        });
+        techs.forEach(name => {
+          const t = BTECHS[name];
+          const label = document.createElement('div');
+          label.className = 'btech';
+          label.textContent = name;
+          table.appendChild(label);
+          PROVIDERS.forEach(p => {
+            const cell = document.createElement('button');
+            cell.type = 'button';
+            cell.className = 'bcell' + (bsel[name] === p.id ? ' sel' : '');
+            cell.dataset.t = name;
+            cell.dataset.p = p.id;
+            const url = p.url(t);
+            if (!url) {
+              cell.classList.add('na');
+              cell.textContent = '—';
+              cell.disabled = true;
+            } else {
+              const img = document.createElement('img');
+              img.src = url;
+              img.alt = name;
+              img.height = p.h;
+              img.loading = 'lazy';
+              img.onerror = () => { cell.classList.add('na'); cell.textContent = '✕'; cell.disabled = true; };
+              cell.appendChild(img);
+            }
+            cell.addEventListener('click', () => {
+              bsel[name] = p.id;
+              badgesSection.querySelectorAll(`.bcell[data-t="${name}"]`).forEach(c => c.classList.toggle('sel', c.dataset.p === p.id));
+            });
+            table.appendChild(cell);
+          });
+        });
+        g.appendChild(table);
+        btableWrap.appendChild(g);
+      });
+    }
+
+    buildBadges();
+
+    // tab switching
+    document.querySelectorAll('button[data-view]').forEach(b => {
+      b.addEventListener('click', () => {
+        document.body.dataset.view = b.dataset.view;
+        document.querySelectorAll('button[data-view]').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+      });
+    });
+
+    // export: ready-to-paste <img> rows per project, using the chosen variant
+    document.getElementById('badges-export').addEventListener('click', () => {
+      const out = BGROUPS.map(([project, techs]) => {
+        const imgs = techs.map(name => {
+          const t = BTECHS[name];
+          const p = PROVIDERS.find(x => x.id === bsel[name]);
+          const url = p.url(t);
+          if (!url) return `<!-- ${name}: sem ícone -->`;
+          const isShield = url.includes('shields.io');
+          return `<img src="${url}"${isShield ? '' : ` height="${p.h}"`} alt="${name}" />`;
+        }).join('\n        ');
+        return `      <!-- ${project} -->\n      <p>\n        ${imgs}\n      </p>`;
+      }).join('\n\n');
+      const panel = document.getElementById('export-panel');
+      const pre = document.getElementById('export-json');
+      panel.querySelector('.export-head span').textContent = 'badges html';
+      pre.textContent = out;
+      panel.hidden = false;
+    });
   </script>
 </body>
 </html>
