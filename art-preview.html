@@ -16,6 +16,10 @@
     button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid #ff2a5f;outline-offset:2px}
     main{max-width:880px;margin:auto;display:grid;gap:24px}
     main[data-size=mobile]{max-width:400px}
+    /* Fundo atrás dos slots: grade revela o alpha, dark/light simulam o GitHub. */
+    body[data-bg=grade] .slot{background:repeating-conic-gradient(#26282e 0 25%,#33363d 0 50%);background-size:14px 14px}
+    body[data-bg=dark] .slot{background:#0d1117}
+    body[data-bg=light] .slot{background:#ffffff}
     img,.slot svg{display:block;width:100%;height:auto}
     .slot{display:block}
     .pair{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
@@ -44,7 +48,7 @@
     @media(max-width:600px){body{padding:16px 8px}main{gap:20px}.pair{gap:16px}.fed{grid-template-columns:28px 1fr 28px;grid-template-rows:28px auto 28px}}
   </style>
 </head>
-<body>
+<body data-bg="grade">
   <header>
     <h1>THISUX / EDITORIAL × SYSTEMS</h1>
     <div class="controls" aria-label="Opções da prévia">
@@ -63,6 +67,10 @@
     <button type="button" data-preset="edges">bordas accent</button>
     <button type="button" data-preset="clean">limpar</button>
     <button type="button" id="export">exportar JSON</button>
+    <span>fundo →</span>
+    <button type="button" data-bg="grade" aria-pressed="true">grade</button>
+    <button type="button" data-bg="dark" aria-pressed="false">dark</button>
+    <button type="button" data-bg="light" aria-pressed="false">light</button>
     <span>C=chanfro · Q=quina · □=borda accent · remotos via URL, locais via HTTP</span>
   </div>
 
@@ -295,6 +303,13 @@
     });
     motion.addEventListener('click', () => { paused = !paused; renderAll(); });
     narrow.addEventListener('change', renderAll);
+
+    document.querySelectorAll('button[data-bg]').forEach((button) => {
+      button.addEventListener('click', () => {
+        document.body.dataset.bg = button.dataset.bg;
+        document.querySelectorAll('button[data-bg]').forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
+      });
+    });
     reduced.addEventListener('change', () => { paused = reduced.matches; renderAll(); });
 
     const presets = {
