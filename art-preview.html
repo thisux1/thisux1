@@ -41,6 +41,13 @@
     footer{max-width:880px;margin:24px auto;color:#aaa397;font-size:12px;line-height:1.6}
     a{color:#ece9df}
     code{color:#cbc6ba}
+    /* preview: some os editores e encosta os cards como no readme do github */
+    body[data-preview=true] .ctl{display:none}
+    body[data-preview=true] .fed{display:block}
+    body[data-preview=true] .card-label{display:none}
+    body[data-preview=true] .globals{display:none}
+    body[data-preview=true] main{gap:12px}
+    body[data-preview=true] .pair{gap:8px}
     @media(max-width:600px){body{padding:16px 8px}main{gap:20px}.pair{gap:16px}.fed{grid-template-columns:28px 1fr 28px;grid-template-rows:28px auto 28px}}
   </style>
 </head>
@@ -52,6 +59,7 @@
       <button type="button" data-size="desktop" aria-pressed="false">Desktop</button>
       <button type="button" data-size="mobile" aria-pressed="false">Mobile</button>
       <button type="button" id="motion" aria-pressed="false">Pausar motion</button>
+      <button type="button" id="preview" aria-pressed="false">Preview</button>
     </div>
   </header>
 
@@ -294,6 +302,12 @@
       });
     });
     motion.addEventListener('click', () => { paused = !paused; renderAll(); });
+    const preview = document.getElementById('preview');
+    preview.addEventListener('click', () => {
+      const on = document.body.dataset.preview === 'true';
+      document.body.dataset.preview = String(!on);
+      preview.setAttribute('aria-pressed', String(!on));
+    });
     narrow.addEventListener('change', renderAll);
     reduced.addEventListener('change', () => { paused = reduced.matches; renderAll(); });
 
