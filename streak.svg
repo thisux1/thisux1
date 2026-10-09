@@ -101,7 +101,7 @@
   <circle class="packet ember-c" cx="428" cy="100" r="1.7" fill="var(--ink)"/>
 
   <!-- number over the flame core -->
-  <text x="428" y="158" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="64" font-weight="700" fill="#0b0c10">1</text>
+  <text x="428" y="168" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="64" font-weight="700" fill="#0b0c10">1</text>
   <text x="428" y="216" text-anchor="middle" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="12.5" letter-spacing="1.5" fill="var(--quiet)">current streak · days</text>
 
   <!-- ===== zone C: ledger ===== -->
