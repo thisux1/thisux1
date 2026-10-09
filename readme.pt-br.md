@@ -156,14 +156,14 @@ Fora do software, geralmente é física, cosmologia, psicologia, filosofia, foto
 
 ## GitHub
 
-<div align="center">
+<div align="center" style="font-size:0">
   <picture>
     <source media="(prefers-reduced-motion: reduce)" srcset="https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&include_all_commits=true&count_private=true&hide=contribs&card_width=440&theme=editorial_tech&bg_color=0000&chamfer=tl&quinas=tl&edge_accent=top,left&v=22#static" />
-    <img src="https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&include_all_commits=true&count_private=true&hide=contribs&card_width=440&theme=editorial_tech&bg_color=0000&chamfer=tl&quinas=tl&edge_accent=top,left&v=22" alt="Estatísticas do GitHub" width="49%" />
+    <img src="https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&include_all_commits=true&count_private=true&hide=contribs&card_width=440&theme=editorial_tech&bg_color=0000&chamfer=tl&quinas=tl&edge_accent=top,left&v=22" alt="Estatísticas do GitHub" width="50%" />
   </picture>
   <picture>
     <source media="(prefers-reduced-motion: reduce)" srcset="https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&langs_count=6&card_width=440&theme=editorial_tech&bg_color=0000&chamfer=tr&quinas=tr&edge_accent=top,right&v=22#static" />
-    <img src="https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&langs_count=6&card_width=440&theme=editorial_tech&bg_color=0000&chamfer=tr&quinas=tr&edge_accent=top,right&v=22" alt="Linguagens mais usadas" width="49%" />
+    <img src="https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&langs_count=6&card_width=440&theme=editorial_tech&bg_color=0000&chamfer=tr&quinas=tr&edge_accent=top,right&v=22" alt="Linguagens mais usadas" width="50%" />
   </picture>
 </div>
 
