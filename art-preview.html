@@ -180,11 +180,12 @@
       (set.has('br') ? `V${h - C - 0.5}L${w - C - 0.5} ${h - 0.5}` : `V${h - 0.5}`) +
       (set.has('bl') ? `H${C + 0.5}L0.5 ${h - C - 0.5}` : 'H0.5') +
       (set.has('tl') ? `V${C + 0.5}L${C + 0.5} 0.5Z` : 'V0.5Z');
-    const quinaPath = (w, h, set) => [
-      set.has('tl') ? 'M0.5 20V0.5H20' : '',
-      set.has('tr') ? `M${w - 20} 0.5H${w - 0.5}V20` : '',
-      set.has('br') ? `M${w - 20} ${h - 0.5}H${w - 0.5}V${h - 20}` : '',
-      set.has('bl') ? `M0.5 ${h - 20}V${h - 0.5}H20` : '',
+    const S = 9;
+    const quinaPath = (w, h, chamfer, set) => [
+      set.has('tl') ? (chamfer.has('tl') ? `M${C + 0.5 + S} 0.5H${C + 0.5}L0.5 ${C + 0.5}V${C + 0.5 + S}` : 'M0.5 20V0.5H20') : '',
+      set.has('tr') ? (chamfer.has('tr') ? `M${w - C - 0.5 - S} 0.5H${w - C - 0.5}L${w - 0.5} ${C + 0.5}V${C + 0.5 + S}` : `M${w - 20} 0.5H${w - 0.5}V20`) : '',
+      set.has('br') ? (chamfer.has('br') ? `M${w - C - 0.5 - S} ${h - 0.5}H${w - C - 0.5}L${w - 0.5} ${h - C - 0.5}V${h - C - 0.5 - S}` : `M${w - 20} ${h - 0.5}H${w - 0.5}V${h - 20}`) : '',
+      set.has('bl') ? (chamfer.has('bl') ? `M${C + 0.5 + S} ${h - 0.5}H${C + 0.5}L0.5 ${h - C - 0.5}V${h - C - 0.5 - S}` : `M0.5 ${h - 20}V${h - 0.5}H20`) : '',
     ].filter(Boolean).join('');
     const edgePath = (w, h, chamfer, set) => {
       const cut = (k) => chamfer.has(k);
@@ -212,7 +213,7 @@
         if (frame) frame.setAttribute('d', framePath(w, h, chamfer));
 
         const tick = [...svg.querySelectorAll('path')].find((p) => /var\(--accent\)/.test(p.getAttribute('stroke') || '') && /M\.5 20V\.5H20/.test(p.getAttribute('d') || ''));
-        const qd = quinaPath(w, h, quinas);
+        const qd = quinaPath(w, h, chamfer, quinas);
         if (tick) {
           if (qd) tick.setAttribute('d', qd); else tick.remove();
         } else if (qd && frame) {
