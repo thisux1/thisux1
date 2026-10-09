@@ -178,10 +178,10 @@ Outside software, it's usually physics, cosmology, psychology, philosophy, photo
 
 <p align="center">
   <picture>
-    <source media="(prefers-reduced-motion: reduce) and (max-width: 480px)" srcset="https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&width=520&height=300&days=15&bg_color=0000&color=cbc6ba&line=ff2a5f&point=ece9df&area=true&area_color=3d1420&hide_border=true&custom_title=contribution%20graph&v=15#static" />
-    <source media="(max-width: 480px)" srcset="https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&width=520&height=300&days=15&bg_color=0000&color=cbc6ba&line=ff2a5f&point=ece9df&area=true&area_color=3d1420&hide_border=true&custom_title=contribution%20graph&v=15" />
-    <source media="(prefers-reduced-motion: reduce)" srcset="https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&width=880&bg_color=0000&color=cbc6ba&line=ff2a5f&point=ece9df&area=true&area_color=3d1420&hide_border=true&custom_title=contribution%20graph&v=15#static" />
-    <img src="https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&width=880&bg_color=0000&color=cbc6ba&line=ff2a5f&point=ece9df&area=true&area_color=3d1420&hide_border=true&custom_title=contribution%20graph&v=15" alt="Activity Graph" width="100%" />
+    <source media="(prefers-reduced-motion: reduce) and (max-width: 480px)" srcset="https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&width=520&height=300&days=15&bg_color=0000&color=cbc6ba&line=ff2a5f&point=ece9df&area=true&area_color=3d1420&hide_border=false&border_color=343039&chamfer=tr&quinas=tl,br&custom_title=contribution%20graph&v=16#static" />
+    <source media="(max-width: 480px)" srcset="https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&width=520&height=300&days=15&bg_color=0000&color=cbc6ba&line=ff2a5f&point=ece9df&area=true&area_color=3d1420&hide_border=false&border_color=343039&chamfer=tr&quinas=tl,br&custom_title=contribution%20graph&v=16" />
+    <source media="(prefers-reduced-motion: reduce)" srcset="https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&width=880&bg_color=0000&color=cbc6ba&line=ff2a5f&point=ece9df&area=true&area_color=3d1420&hide_border=false&border_color=343039&chamfer=tr&quinas=tl,br&custom_title=contribution%20graph&v=16#static" />
+    <img src="https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&width=880&bg_color=0000&color=cbc6ba&line=ff2a5f&point=ece9df&area=true&area_color=3d1420&hide_border=false&border_color=343039&chamfer=tr&quinas=tl,br&custom_title=contribution%20graph&v=16" alt="Activity Graph" width="100%" />
   </picture>
 </p>
 
