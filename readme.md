@@ -160,10 +160,10 @@ Outside software, it's usually physics, cosmology, psychology, philosophy, photo
 
 <p align="center">
   <picture>
-    <source media="(prefers-reduced-motion: reduce) and (max-width: 480px)" srcset="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&hide_total_contributions=true&card_width=350&date_format=M+j&background=0000&border=343039&stroke=343039&ring=ff2a5f&fire=ff2a5f&currStreakNum=ece9df&sideNums=ece9df&currStreakLabel=cbc6ba&sideLabels=cbc6ba&dates=cbc6ba&chamfer=none&quinas=none&edge_accent=right,left&delay_ms=2000&v=7#static" />
-    <source media="(max-width: 480px)" srcset="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&hide_total_contributions=true&card_width=350&date_format=M+j&background=0000&border=343039&stroke=343039&ring=ff2a5f&fire=ff2a5f&currStreakNum=ece9df&sideNums=ece9df&currStreakLabel=cbc6ba&sideLabels=cbc6ba&dates=cbc6ba&excludeDaysLabel=cbc6ba&chamfer=none&quinas=none&edge_accent=right,left&delay_ms=2000&v=7" />
-    <source media="(prefers-reduced-motion: reduce)" srcset="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&theme=ember&background=0000&chamfer=none&quinas=none&edge_accent=right,left&delay_ms=2000&v=7#static" />
-    <img src="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&theme=ember&background=0000&chamfer=none&quinas=none&edge_accent=right,left&delay_ms=2000&v=7" alt="GitHub contribution streak" width="100%"  loading="lazy" />
+    <source media="(prefers-reduced-motion: reduce) and (max-width: 480px)" srcset="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&hide_total_contributions=true&card_width=350&date_format=M+j&background=0000&border=343039&stroke=343039&ring=ff2a5f&fire=ff2a5f&currStreakNum=ece9df&sideNums=ece9df&currStreakLabel=cbc6ba&sideLabels=cbc6ba&dates=cbc6ba&chamfer=none&quinas=none&edge_accent=right,left&delay_ms=2000&v=8#static" />
+    <source media="(max-width: 480px)" srcset="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&hide_total_contributions=true&card_width=350&date_format=M+j&background=0000&border=343039&stroke=343039&ring=ff2a5f&fire=ff2a5f&currStreakNum=ece9df&sideNums=ece9df&currStreakLabel=cbc6ba&sideLabels=cbc6ba&dates=cbc6ba&excludeDaysLabel=cbc6ba&chamfer=none&quinas=none&edge_accent=right,left&delay_ms=2000&v=8" />
+    <source media="(prefers-reduced-motion: reduce)" srcset="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&theme=ember&background=0000&chamfer=none&quinas=none&edge_accent=right,left&delay_ms=2000&v=8#static" />
+    <img src="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&theme=ember&background=0000&chamfer=none&quinas=none&edge_accent=right,left&delay_ms=2000&v=8" alt="GitHub contribution streak" width="100%"  loading="lazy" />
   </picture>
 </p>
 
