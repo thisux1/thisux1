@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="#root"><picture><source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="./banner-mobile.svg?v=6#static"/><source media="(prefers-reduced-motion: reduce)" srcset="./banner.svg?v=22#static"/><source media="(max-width: 600px)" srcset="./banner-mobile.svg?v=6"/><img src="./banner.svg?v=22" alt="Thiago Araújo — Software Engineer & Builder" width="100%"/></picture></a>
+  <a href="#root"><picture><source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="./banner-mobile.svg?v=7#static"/><source media="(prefers-reduced-motion: reduce)" srcset="./banner.svg?v=23#static"/><source media="(max-width: 600px)" srcset="./banner-mobile.svg?v=7"/><img src="./banner.svg?v=23" alt="Thiago Araújo — Software Engineer & Builder" width="100%"/></picture></a>
 </div>
 
 <p align="center"><sub>🇧🇷 <a href="readme.pt-br.md">Versão em Português</a></sub></p>

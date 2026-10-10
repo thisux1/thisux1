@@ -39,7 +39,7 @@ const css = `
     @keyframes descend { 0%,8% { transform: translateY(0); opacity: 0; } 18%,82% { opacity: 1; } 92%,100% { transform: translateY(var(--distance)); opacity: 0; } }
     @media (prefers-reduced-motion: no-preference) {
       .intro { animation: arrive .5s cubic-bezier(.16,1,.3,1) both; animation-delay: var(--delay, 0s); }
-      .type-name { animation: type 1.15s .12s steps(14,end) both; }
+      .type-name { animation: type 1.15s .12s linear both; }
       .ink-line { animation: ink .55s 1.05s cubic-bezier(.16,1,.3,1) both; }
       .rotor { animation: rotate 12s linear infinite; }
       .counter-rotor { animation: counter 18s linear infinite; }
