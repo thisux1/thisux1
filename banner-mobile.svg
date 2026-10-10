@@ -48,7 +48,7 @@
 
   ]]></style>
   <path d="M.5 .5H344L359.5 16V315.5H16L.5 300V.5Z" fill="none" stroke="var(--rule)"/>
-  <path d="M.5 20V.5H20M335 315.5H344L359.5 300V291" fill="none" stroke="var(--accent)" stroke-opacity=".65"/>
+  <path d="M.5 20V.5H20M340 315.5H359.5V296" fill="none" stroke="var(--accent)" stroke-opacity=".65"/>
 
   <g class="intro">
     <text x="16" y="27" class="micro" style="font-size:13px; letter-spacing:1px; fill:var(--muted)">SYSTEMS ENGINEER</text>
