@@ -47,7 +47,7 @@ Outside software, it's usually physics, cosmology, psychology, philosophy, photo
 ## Systems
 
 <p align="center">
-  <picture><source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="./systems-mobile.svg?v=6#static"/><source media="(prefers-reduced-motion: reduce)" srcset="./systems.svg?v=10#static"/><source media="(max-width: 600px)" srcset="./systems-mobile.svg?v=6"/><img src="./systems.svg?v=10" alt="Systems — product, ML & data, agents & machines" width="100%"/></picture>
+  <picture><source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="./systems-mobile.svg?v=7#static"/><source media="(prefers-reduced-motion: reduce)" srcset="./systems.svg?v=11#static"/><source media="(max-width: 600px)" srcset="./systems-mobile.svg?v=7"/><img src="./systems.svg?v=11" alt="Systems — product, ML & data, agents & machines" width="100%"/></picture>
 </p>
 
 ---
