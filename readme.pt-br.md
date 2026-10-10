@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="#root"><picture><source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="./banner-mobile.svg?v=5#static"/><source media="(prefers-reduced-motion: reduce)" srcset="./banner.svg?v=21#static"/><source media="(max-width: 600px)" srcset="./banner-mobile.svg?v=5"/><img src="./banner.svg?v=21" alt="Thiago Araújo — Engenheiro de Software & Builder" width="100%"/></picture></a>
+  <a href="#root"><picture><source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="./banner-mobile.svg?v=6#static"/><source media="(prefers-reduced-motion: reduce)" srcset="./banner.svg?v=22#static"/><source media="(max-width: 600px)" srcset="./banner-mobile.svg?v=6"/><img src="./banner.svg?v=22" alt="Thiago Araújo — Engenheiro de Software & Builder" width="100%"/></picture></a>
 </div>
 
 <p align="center"><sub>🇺🇸 <a href="readme.md">English version</a></sub></p>
@@ -47,7 +47,7 @@ Fora do software, geralmente é física, cosmologia, psicologia, filosofia, foto
 ## Sistemas
 
 <p align="center">
-  <picture><source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="./systems-mobile.svg?v=5#static"/><source media="(prefers-reduced-motion: reduce)" srcset="./systems.svg?v=9#static"/><source media="(max-width: 600px)" srcset="./systems-mobile.svg?v=5"/><img src="./systems.svg?v=9" alt="Sistemas — produto, ML & dados, agentes & máquinas" width="100%"/></picture>
+  <picture><source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="./systems-mobile.svg?v=6#static"/><source media="(prefers-reduced-motion: reduce)" srcset="./systems.svg?v=10#static"/><source media="(max-width: 600px)" srcset="./systems-mobile.svg?v=6"/><img src="./systems.svg?v=10" alt="Sistemas — produto, ML & dados, agentes & máquinas" width="100%"/></picture>
 </p>
 
 ---

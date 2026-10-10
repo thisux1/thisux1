@@ -48,7 +48,7 @@
 
   ]]></style>
   <path d="M.5 .5H344L359.5 16V705.5H16L.5 690V.5Z" fill="none" stroke="var(--rule)"/>
-  <path d="M.5 20V.5H20M335 705.5H344L359.5 690V681" fill="none" stroke="var(--accent)" stroke-opacity=".65"/>
+  <path d="M.5 20V.5H20M340 705.5H359.5V686" fill="none" stroke="var(--accent)" stroke-opacity=".65"/>
 
   <text x="16" y="29" class="micro" style="font-size:13px;letter-spacing:.8px;fill:var(--muted)">SYSTEMS / OWNED END-TO-END</text>
   <line x1="16" y1="45" x2="344" y2="45" stroke="var(--rule)" />
