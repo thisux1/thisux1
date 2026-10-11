@@ -171,6 +171,15 @@
       base: { c: ['br', 'bl'], q: ['br', 'bl'], e: ['right', 'bottom', 'left'] },
     };
 
+    /* Frame state the readme serves on narrow viewports — applied to
+       remote cards when mobile mode is active. */
+    const MOBILE_DEFS = {
+      stats: { c: ['tl'], q: ['tl'], e: ['top', 'left'] },
+      langs: { c: [], q: [], e: ['left'] },
+      streak: { c: [], q: [], e: ['left'] },
+      graph: { c: ['tl', 'br', 'bl'], q: ['tl', 'br', 'bl'], e: ['right', 'bottom', 'left'] },
+    };
+
     /* Builds one editor cell set around a card slot. Corner cells stack
        two toggles (C chamfer / Q quina); edge cells hold the accent toggle. */
     function buildFed(fed) {
@@ -318,7 +327,19 @@
       }
     }
 
+    /* When the size mode flips, remote cards take the frame state the
+       readme serves at that size (desktop DEFS vs MOBILE_DEFS). */
+    let wasMobile = null;
     function renderAll() {
+      const mob = isMobile();
+      if (mob !== wasMobile) {
+        document.querySelectorAll('.fed').forEach((fed) => {
+          if (fed.dataset.remote) {
+            setState(fed, (mob ? MOBILE_DEFS[fed.dataset.remote] : DEFS[fed.dataset.def]) || DEFS.art);
+          }
+        });
+        wasMobile = mob;
+      }
       document.querySelectorAll('.fed').forEach(applyFed);
       motion.setAttribute('aria-pressed', String(paused));
       motion.textContent = paused ? 'Ativar motion' : 'Pausar motion';
