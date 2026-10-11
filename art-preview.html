@@ -153,6 +153,14 @@
       graph: 'https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&width=880&bg_color=0000&color=cbc6ba&line=ff2a5f&point=ece9df&area=true&area_color=3d1420&border_color=343039&custom_title=contribution%20graph',
     };
 
+    /* Mobile variants mirror the readme <source> picks (compact cards). */
+    const MOBILE = {
+      stats: 'https://github-readme-stats-tau-one-34.vercel.app/api?username=thisux1&show_icons=true&include_all_commits=true&count_private=true&hide=contribs&card_width=350&theme=editorial_tech&bg_color=0000',
+      langs: 'https://github-readme-stats-tau-one-34.vercel.app/api/top-langs/?username=thisux1&langs_count=6&card_width=350&theme=editorial_tech&bg_color=0000',
+      streak: 'https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&theme=ember&background=0000&card_width=350',
+      graph: 'https://github-readme-activity-graph-virid-three.vercel.app/graph?username=thisux1&width=520&height=300&days=15&bg_color=0000&color=cbc6ba&line=ff2a5f&point=ece9df&area=true&area_color=3d1420&border_color=343039&custom_title=contribution%20graph',
+    };
+
     const CORNERS = ['tl', 'tr', 'br', 'bl'];
     const EDGES = ['top', 'right', 'bottom', 'left'];
     const DEFS = {
@@ -283,8 +291,11 @@
       }
     }
 
+    const isMobile = () => main.dataset.size === 'mobile' || (main.dataset.size === 'auto' && narrow.matches);
+
     function remoteSrc(name, st) {
-      return `${BASE[name]}&chamfer=${st.c}&quinas=${st.q}&edge_accent=${st.e}${paused ? '#static' : ''}`;
+      const base = isMobile() && MOBILE[name] ? MOBILE[name] : BASE[name];
+      return `${base}&chamfer=${st.c}&quinas=${st.q}&edge_accent=${st.e}${paused ? '#static' : ''}`;
     }
 
     function applyFed(fed) {
@@ -299,8 +310,7 @@
         img.src = remoteSrc(fed.dataset.remote, st);
         fed.querySelector('.slot').replaceChildren(img);
       } else if (fed.dataset.local) {
-        const mobile = main.dataset.size === 'mobile' || (main.dataset.size === 'auto' && narrow.matches);
-        const file = `${fed.dataset.local}${mobile ? '-mobile' : ''}.svg`;
+        const file = `${fed.dataset.local}${isMobile() ? '-mobile' : ''}.svg`;
         // Local patch needs HTTP; fall back to a plain <img> of the file.
         patchLocal(fed, file).then(() => {
           if (fed._img) fed._img.src = `./${file}${paused ? '#static' : ''}`;
