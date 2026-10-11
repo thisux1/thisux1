@@ -174,10 +174,10 @@
     /* Frame state the readme serves on narrow viewports — applied to
        remote cards when mobile mode is active. */
     const MOBILE_DEFS = {
-      stats: { c: ['tl'], q: ['tl'], e: ['top', 'left'] },
-      langs: { c: [], q: [], e: ['left'] },
-      streak: { c: [], q: [], e: ['left'] },
-      graph: { c: ['tl', 'br', 'bl'], q: ['tl', 'br', 'bl'], e: ['right', 'bottom', 'left'] },
+      stats: { c: ['tl'], q: ['tl'], e: ['top', 'right', 'left'] },
+      langs: { c: [], q: [], e: ['right', 'left'] },
+      streak: { c: [], q: [], e: ['right', 'bottom', 'left'] },
+      graph: { c: ['br', 'bl'], q: ['tl', 'br', 'bl'], e: ['right', 'bottom', 'left'] },
     };
 
     /* Builds one editor cell set around a card slot. Corner cells stack
