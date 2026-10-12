@@ -160,8 +160,8 @@ Fora do software, geralmente é física, cosmologia, psicologia, filosofia, foto
 
 <p align="center">
   <picture>
-    <source media="(prefers-reduced-motion: reduce) and (max-width: 480px)" srcset="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&theme=ember&background=0000&card_width=350&chamfer=br,bl&quinas=br,bl&edge_accent=right,left&delay_ms=2000&v=9#static" />
-    <source media="(max-width: 480px)" srcset="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&theme=ember&background=0000&card_width=350&chamfer=br,bl&quinas=br,bl&edge_accent=right,left&delay_ms=2000&v=9" />
+    <source media="(prefers-reduced-motion: reduce) and (max-width: 480px)" srcset="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&theme=ember&background=0000&card_width=350&chamfer=br,bl&quinas=br,bl&edge_accent=right,bottom,left&delay_ms=2000&v=9#static" />
+    <source media="(max-width: 480px)" srcset="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&theme=ember&background=0000&card_width=350&chamfer=br,bl&quinas=br,bl&edge_accent=right,bottom,left&delay_ms=2000&v=9" />
     <source media="(prefers-reduced-motion: reduce)" srcset="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&theme=ember&background=0000&chamfer=none&quinas=none&edge_accent=right,left&delay_ms=2000&v=8#static" />
     <img src="https://github-readme-streak-stats-wine-eight-44.vercel.app/?user=thisux1&theme=ember&background=0000&chamfer=none&quinas=none&edge_accent=right,left&delay_ms=2000&v=8" alt="Streak de contribuições" width="100%"  loading="lazy" />
   </picture>
