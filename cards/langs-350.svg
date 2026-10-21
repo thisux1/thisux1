@@ -228,12 +228,12 @@
     <g data-testid="composition-bar" class="composition" opacity="0" style="animation: compositionIn .8s cubic-bezier(.2,.7,.2,1) .15s forwards">
       <rect x="0" y="0" width="300" height="4" fill="#343039" opacity="0.55" />
       
-      <rect x="0" y="0" width="100.749" height="4" fill="#e34c26" />
-      <rect x="100.749" y="0" width="100.213" height="4" fill="#3178c6" />
-      <rect x="200.962" y="0" width="38.2545" height="4" fill="#4F5D95" />
-      <rect x="239.216" y="0" width="34.3423" height="4" fill="#f1e05a" />
-      <rect x="273.559" y="0" width="16.3709" height="4" fill="#3572A5" />
-      <rect x="289.929" y="0" width="10.0705" height="4" fill="#663399" />
+      <rect x="0" y="0" width="100.741" height="4" fill="#e34c26" />
+      <rect x="100.741" y="0" width="100.205" height="4" fill="#3178c6" />
+      <rect x="200.946" y="0" width="38.2516" height="4" fill="#4F5D95" />
+      <rect x="239.198" y="0" width="34.3628" height="4" fill="#f1e05a" />
+      <rect x="273.561" y="0" width="16.3697" height="4" fill="#3572A5" />
+      <rect x="289.93" y="0" width="10.0698" height="4" fill="#663399" />
     </g>
     <g transform="translate(0, 17)"><line x1="0" y1="24" x2="300" y2="24" class="editorial-rule" /><line x1="0" y1="60" x2="300" y2="60" class="editorial-rule" /><line x1="0" y1="96" x2="300" y2="96" class="editorial-rule" /><line x1="0" y1="132" x2="300" y2="132" class="editorial-rule" /><line x1="0" y1="168" x2="300" y2="168" class="editorial-rule" /><line x1="0" y1="204" x2="300" y2="204" class="editorial-rule" /><g transform="translate(0, 0)">
     <g class="stagger" style="animation-delay: 450ms">
