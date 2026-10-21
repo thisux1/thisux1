@@ -1,0 +1,27 @@
+name: snapshot-cards
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch card SVGs
+        run: node snapshot-cards.mjs
+      - name: Commit if changed
+        run: |
+          git config user.name "thisux1"
+          git config user.email "125291983+thisux1@users.noreply.github.com"
+          git add cards/
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "chore: refresh stat card snapshots"
+            git push
+          fi
