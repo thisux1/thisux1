@@ -156,14 +156,14 @@ Fora do software, geralmente é física, cosmologia, psicologia, filosofia, foto
 
 ## GitHub
 
-<div align="center"><picture><source media="(prefers-reduced-motion: reduce) and (max-width: 480px)" srcset="./blank.svg?v=1" /><source media="(max-width: 480px)" srcset="./blank.svg?v=1" /><source media="(prefers-reduced-motion: reduce)" srcset="./cards/stats-440.svg#static" /><img align="left" src="./cards/stats-440.svg" alt="GitHub Stats" width="49%" loading="lazy" /></picture><picture><source media="(prefers-reduced-motion: reduce) and (max-width: 480px)" srcset="./blank.svg?v=1" /><source media="(max-width: 480px)" srcset="./blank.svg?v=1" /><source media="(prefers-reduced-motion: reduce)" srcset="./cards/langs-440.svg#static" /><img align="left" src="./cards/langs-440.svg" alt="Top Languages" width="49%" loading="lazy" /></picture><picture><source media="(prefers-reduced-motion: reduce) and (min-width: 481px)" srcset="./blank.svg?v=1" /><source media="(min-width: 481px)" srcset="./blank.svg?v=1" /><source media="(prefers-reduced-motion: reduce)" srcset="./cards/stats-350.svg#static" /><img align="left" src="./cards/stats-350.svg" alt="GitHub Stats" width="100%" loading="lazy" /></picture><picture><source media="(prefers-reduced-motion: reduce) and (min-width: 481px)" srcset="./blank.svg?v=1" /><source media="(min-width: 481px)" srcset="./blank.svg?v=1" /><source media="(prefers-reduced-motion: reduce)" srcset="./cards/langs-350.svg#static" /><img align="left" src="./cards/langs-350.svg" alt="Top Languages" width="100%" loading="lazy" /></picture></div>
+<div align="center"><picture><source media="(prefers-reduced-motion: reduce) and (max-width: 480px)" srcset="./blank.svg?v=1" /><source media="(max-width: 480px)" srcset="./blank.svg?v=1" /><source media="(prefers-reduced-motion: reduce)" srcset="./cards/stats-440.svg#static?v=2" /><img align="left" src="./cards/stats-440.svg?v=2" alt="GitHub Stats" width="49%" loading="lazy" /></picture><picture><source media="(prefers-reduced-motion: reduce) and (max-width: 480px)" srcset="./blank.svg?v=1" /><source media="(max-width: 480px)" srcset="./blank.svg?v=1" /><source media="(prefers-reduced-motion: reduce)" srcset="./cards/langs-440.svg#static?v=2" /><img align="left" src="./cards/langs-440.svg?v=2" alt="Top Languages" width="49%" loading="lazy" /></picture><picture><source media="(prefers-reduced-motion: reduce) and (min-width: 481px)" srcset="./blank.svg?v=1" /><source media="(min-width: 481px)" srcset="./blank.svg?v=1" /><source media="(prefers-reduced-motion: reduce)" srcset="./cards/stats-350.svg#static?v=2" /><img align="left" src="./cards/stats-350.svg?v=2" alt="GitHub Stats" width="100%" loading="lazy" /></picture><picture><source media="(prefers-reduced-motion: reduce) and (min-width: 481px)" srcset="./blank.svg?v=1" /><source media="(min-width: 481px)" srcset="./blank.svg?v=1" /><source media="(prefers-reduced-motion: reduce)" srcset="./cards/langs-350.svg#static?v=2" /><img align="left" src="./cards/langs-350.svg?v=2" alt="Top Languages" width="100%" loading="lazy" /></picture></div>
 
 <p align="center">
   <picture>
     <source media="(prefers-reduced-motion: reduce) and (max-width: 480px)" srcset="./cards/streak-350.svg#static" />
     <source media="(max-width: 480px)" srcset="./cards/streak-350.svg" />
-    <source media="(prefers-reduced-motion: reduce)" srcset="./cards/streak.svg#static" />
-    <img src="./cards/streak.svg" alt="Streak de contribuições" width="100%"  loading="lazy" />
+    <source media="(prefers-reduced-motion: reduce)" srcset="./cards/streak.svg#static?v=2" />
+    <img src="./cards/streak.svg?v=2" alt="Streak de contribuições" width="100%"  loading="lazy" />
   </picture>
 </p>
 
@@ -171,8 +171,8 @@ Fora do software, geralmente é física, cosmologia, psicologia, filosofia, foto
   <picture>
     <source media="(prefers-reduced-motion: reduce) and (max-width: 480px)" srcset="./cards/graph-520.svg#static" />
     <source media="(max-width: 480px)" srcset="./cards/graph-520.svg" />
-    <source media="(prefers-reduced-motion: reduce)" srcset="./cards/graph.svg#static" />
-    <img src="./cards/graph.svg" alt="Gráfico de atividade" width="100%"  loading="lazy" />
+    <source media="(prefers-reduced-motion: reduce)" srcset="./cards/graph.svg#static?v=2" />
+    <img src="./cards/graph.svg?v=2" alt="Gráfico de atividade" width="100%"  loading="lazy" />
   </picture>
 </p>
 
