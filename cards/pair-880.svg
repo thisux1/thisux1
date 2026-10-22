@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="880" height="205" viewBox="0 0 880 205" fill="none"><svg x="0" y="0" width="440" height="205" viewBox="0 0 440 205">
         <title id="titleId">Thisux's GitHub Stats, Rank: B-</title>
-        <desc id="descId">Total Stars Earned: 2, Total Commits  : 1196, Total PRs: 97, Total Issues: 1</desc>
+        <desc id="descId">Total Stars Earned: 2, Total Commits  : 1201, Total PRs: 97, Total Issues: 1</desc>
         <style><![CDATA[
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -50,7 +50,7 @@
     .rank-circle {
       stroke: #ff2a5f;
       stroke-dasharray: 250;
-      stroke-dashoffset: 171.4872157607401;
+      stroke-dashoffset: 171.42396003508395;
       fill: none;
       stroke-width: 6;
       stroke-linecap: round;
@@ -65,7 +65,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 171.4872157607401;
+        stroke-dashoffset: 171.42396003508395;
       }
     }
   
@@ -99,7 +99,7 @@
     }
     @keyframes rankProgress {
       from { stroke-dashoffset: 270.1769682087222; }
-      to { stroke-dashoffset: 184.35; }
+      to { stroke-dashoffset: 184.28; }
     }
     .rank-progress {
       stroke: #ff2a5f;
@@ -109,7 +109,7 @@
       transform: rotate(-90deg);
       transform-origin: -10px 14.5px;
       stroke-dasharray: 270.1769682087222;
-      stroke-dashoffset: 184.35;
+      stroke-dashoffset: 184.28;
       animation: rankProgress 0.9s forwards ease-in-out;
     }
     /* Ambient pulse on the rank arc; the endpoints keep the base
@@ -326,7 +326,7 @@
     <g data-testid="rank-circle"
           transform="translate(368.5, 52.5)">
         <circle class="rank-grounder" cx="-10" cy="14.5" r="47" />
-        <circle class="rank-progress" cx="-10" cy="14.5" r="43" data-progress="32" stroke="#ff2a5f" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="270.18" stroke-dashoffset="184.35" />
+        <circle class="rank-progress" cx="-10" cy="14.5" r="43" data-progress="32" stroke="#ff2a5f" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="270.18" stroke-dashoffset="184.28" />
         <g class="rank-text">
           
         <text x="-10" y="14.5" alignment-baseline="central" dominant-baseline="central" text-anchor="middle" data-testid="level-rank-icon">
@@ -338,7 +338,7 @@
         </g>
       </svg><svg x="440" y="0" width="440" height="205" viewBox="0 0 440 205">
         <title id="titleId">Most Used Languages</title>
-        <desc id="descId">TypeScript: 33.82%, HTML: 33.31%, PHP: 12.65%, JavaScript: 11.48%, Python: 5.41%, CSS: 3.33%</desc>
+        <desc id="descId">TypeScript: 33.85%, HTML: 33.29%, PHP: 12.64%, JavaScript: 11.48%, Python: 5.41%, CSS: 3.33%</desc>
         <style><![CDATA[
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -554,30 +554,30 @@
     <g data-testid="composition-bar" class="composition" opacity="0" style="animation: compositionIn .8s cubic-bezier(.2,.7,.2,1) .15s forwards">
       <rect x="0" y="0" width="390" height="4" fill="#343039" opacity="0.55" />
       
-      <rect x="0" y="0" width="131.904" height="4" fill="#3178c6" />
-      <rect x="131.904" y="0" width="129.91" height="4" fill="#e34c26" />
-      <rect x="261.814" y="0" width="49.327" height="4" fill="#4F5D95" />
-      <rect x="311.141" y="0" width="44.7644" height="4" fill="#f1e05a" />
-      <rect x="355.905" y="0" width="21.1094" height="4" fill="#3572A5" />
-      <rect x="377.015" y="0" width="12.9854" height="4" fill="#663399" />
+      <rect x="0" y="0" width="132.019" height="4" fill="#3178c6" />
+      <rect x="132.019" y="0" width="129.846" height="4" fill="#e34c26" />
+      <rect x="261.866" y="0" width="49.3028" height="4" fill="#4F5D95" />
+      <rect x="311.168" y="0" width="44.7537" height="4" fill="#f1e05a" />
+      <rect x="355.922" y="0" width="21.099" height="4" fill="#3572A5" />
+      <rect x="377.021" y="0" width="12.979" height="4" fill="#663399" />
     </g>
     <g transform="translate(0, 17)"><line x1="0" y1="24" x2="390" y2="24" class="editorial-rule" /><line x1="0" y1="66" x2="390" y2="66" class="editorial-rule" /><line x1="0" y1="108" x2="390" y2="108" class="editorial-rule" /><g transform="translate(0, 0)">
     <g class="stagger" style="animation-delay: 450ms">
       <rect x="0" y="4" width="10" height="10" fill="#3178c6" opacity="0.92" />
       <text data-testid="lang-name" x="19" y="13.5" class="serif" font-size="14" fill="#ece9df">TypeScript</text>
-      <text data-testid="lang-share" x="181" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">33.82%</text>
+      <text data-testid="lang-share" x="181" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">33.85%</text>
     </g>
   </g><g transform="translate(209, 0)">
     <g class="stagger" style="animation-delay: 600ms">
       <rect x="0" y="4" width="10" height="10" fill="#e34c26" opacity="0.92" />
       <text data-testid="lang-name" x="19" y="13.5" class="serif" font-size="14" fill="#ece9df">HTML</text>
-      <text data-testid="lang-share" x="181" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">33.31%</text>
+      <text data-testid="lang-share" x="181" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">33.29%</text>
     </g>
   </g><g transform="translate(0, 42)">
     <g class="stagger" style="animation-delay: 750ms">
       <rect x="0" y="4" width="10" height="10" fill="#4F5D95" opacity="0.92" />
       <text data-testid="lang-name" x="19" y="13.5" class="serif" font-size="14" fill="#ece9df">PHP</text>
-      <text data-testid="lang-share" x="181" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">12.65%</text>
+      <text data-testid="lang-share" x="181" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">12.64%</text>
     </g>
   </g><g transform="translate(209, 42)">
     <g class="stagger" style="animation-delay: 900ms">
