@@ -1,6 +1,6 @@
 // Fetch the live Vercel card endpoints once and freeze them as static SVGs
 // under cards/. Runs hourly via .github/workflows/snapshot-cards.yml.
-import { writeFileSync, mkdirSync, existsSync } from 'node:fs';
+import { writeFileSync, readFileSync, mkdirSync, existsSync } from 'node:fs';
 
 const STATS = 'https://github-readme-stats-tau-one-34.vercel.app';
 const STREAK = 'https://github-readme-streak-stats-wine-eight-44.vercel.app';
@@ -45,6 +45,15 @@ for (const [name, url] of Object.entries(cards)) {
     console.log(`ERR ${file} — kept ${existsSync(file) ? 'previous' : 'nothing'}`);
   }
 }
+
+// Fuse the two 440 cards into one seamless 880 pair (drawn as matching
+// halves: stats chamfer=tl + langs chamfer=tr, outer accents only).
+try {
+  const inner = s => s.replace(/^[\s\S]*?<svg[^>]*>/, '').replace(/<\/svg>\s*$/, '');
+  const pair = `<svg xmlns="http://www.w3.org/2000/svg" width="880" height="205" viewBox="0 0 880 205" fill="none"><svg x="0" y="0" width="440" height="205" viewBox="0 0 440 205">${inner(readFileSync('cards/stats-440.svg','utf8'))}</svg><svg x="440" y="0" width="440" height="205" viewBox="0 0 440 205">${inner(readFileSync('cards/langs-440.svg','utf8'))}</svg></svg>`;
+  writeFileSync('cards/pair-880.svg', pair);
+  console.log(`ok  cards/pair-880.svg (${pair.length}b)`);
+} catch (e) { console.log('ERR pair:', e.message); }
 
 console.log(`\n${ok}/${Object.keys(cards).length} cards refreshed`);
 process.exit(failed.length === Object.keys(cards).length ? 1 : 0);
