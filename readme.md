@@ -156,7 +156,7 @@ Outside software, it's usually physics, cosmology, psychology, philosophy, photo
 
 ## GitHub
 
-<div align="center"><img align="left" src="./cards/stats-440.svg?v=2" alt="GitHub Stats" width="49%" /><img align="right" src="./cards/langs-440.svg?v=2" alt="Top Languages" width="49%" /><br clear="both" /></div>
+<div align="center"><img align="left" src="./cards/stats-440.svg?v=2" alt="GitHub Stats" width="46%" /><img align="right" src="./cards/langs-440.svg?v=2" alt="Top Languages" width="46%" /><br clear="both" /></div>
 
 <p align="center">
   <picture>
