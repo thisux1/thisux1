@@ -78,7 +78,7 @@ Outside software, it's usually physics, cosmology, psychology, philosophy, photo
         <li>Themed cards, media uploads and public links gated by payment.</li>
         <li>Stripe + PagBank with webhook reconciliation, Express 5, Prisma.</li>
       </ul>
-      <p><a href="https://github.com/thisux1/correioelegante3">repo</a></p>
+      <p><a href="https://github.com/thisux1/correioelegante3">repo</a> · <a href="https://correioelegante.studio">live</a></p>
       <p>
         <img src="https://img.shields.io/badge/React_19-0b0c10?style=flat-square&logo=react&logoColor=ff2a5f&labelColor=0b0c10&color=ff2a5f" alt="React 19" />
         <img src="https://img.shields.io/badge/Express-0b0c10?style=flat-square&logo=express&logoColor=ff2a5f&labelColor=0b0c10&color=ff2a5f" alt="Express" />
@@ -142,7 +142,7 @@ Outside software, it's usually physics, cosmology, psychology, philosophy, photo
         <li>Matching board, per-meeting registers and a computed traffic-light of pair health.</li>
         <li>Supabase RLS scopes every row by role. Next.js 16, 54 migrations, public <code>/demo</code>.</li>
       </ul>
-      <p><a href="https://github.com/thisux1/realiza.vc">repo</a></p>
+      <p><a href="https://github.com/thisux1/realiza.vc">repo</a> · <a href="https://metoria.realiza.vc/demo">live</a></p>
       <p>
         <img src="https://img.shields.io/badge/Next.js_16-0b0c10?style=flat-square&logo=nextdotjs&logoColor=ff2a5f&labelColor=0b0c10&color=ff2a5f" alt="Next.js 16" />
         <img src="https://img.shields.io/badge/Supabase-0b0c10?style=flat-square&logo=supabase&logoColor=ff2a5f&labelColor=0b0c10&color=ff2a5f" alt="Supabase" />
@@ -156,7 +156,26 @@ Outside software, it's usually physics, cosmology, psychology, philosophy, photo
 
 ## GitHub
 
-<div align="center"><img src="./cards/pair-880.svg?v=5" alt="GitHub Stats and Top Languages" width="100%" /></div>
+<div align="center">
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 480px)" srcset="./blank.svg?v=1" />
+  <source media="(max-width: 480px)" srcset="./blank.svg?v=1" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="./cards/pair-880.svg?v=5#static" />
+  <img src="./cards/pair-880.svg?v=5" alt="GitHub Stats and Top Languages" width="100%" />
+</picture>
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (min-width: 481px)" srcset="./blank.svg?v=1" />
+  <source media="(min-width: 481px)" srcset="./blank.svg?v=1" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="./cards/stats-350.svg?v=3#static" />
+  <img src="./cards/stats-350.svg?v=3" alt="GitHub Stats" width="100%" />
+</picture>
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (min-width: 481px)" srcset="./blank.svg?v=1" />
+  <source media="(min-width: 481px)" srcset="./blank.svg?v=1" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="./cards/langs-350.svg?v=3#static" />
+  <img src="./cards/langs-350.svg?v=3" alt="Top Languages" width="100%" />
+</picture>
+</div>
 
 <p align="center">
   <picture>
