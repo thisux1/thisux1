@@ -37,6 +37,10 @@ for (const [name, url] of Object.entries(cards)) {
     if (!svg && attempt < 3) await new Promise(r => setTimeout(r, 3000));
   }
   if (svg) {
+    // Accent-color + center the rank letter inside its progress ring.
+    svg = svg
+      .replace(/(\.rank-text\s*{[^}]*?)fill:\s*#[0-9a-fA-F]+/i, '$1fill: #ff2a5f')
+      .replace(/(<text\s+x=")-?[\d.]+"(\s+y=")-?[\d.]+"([^>]*level-rank-icon)/, '$1-10"$214.5"$3');
     writeFileSync(file, svg);
     ok++;
     console.log(`ok  ${file} (${svg.length}b)`);

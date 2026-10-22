@@ -36,7 +36,7 @@
       animation: fadeInAnimation 0.3s ease-in-out forwards;
     }
     .rank-text {
-      font: 800 24px 'Segoe UI', Ubuntu, Sans-Serif; fill: #cbc6ba;
+      font: 800 24px 'Segoe UI', Ubuntu, Sans-Serif; fill: #ff2a5f;
       animation: scaleInAnimation 0.3s ease-in-out forwards;
     }
     .rank-percentile-header {
@@ -341,7 +341,7 @@
         <circle class="rank-progress" cx="-10" cy="14.5" r="43" data-progress="32" stroke="#ff2a5f" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="270.18" stroke-dashoffset="184.35" />
         <g class="rank-text">
           
-        <text x="-5" y="3" alignment-baseline="central" dominant-baseline="central" text-anchor="middle" data-testid="level-rank-icon">
+        <text x="-10" y="14.5" alignment-baseline="central" dominant-baseline="central" text-anchor="middle" data-testid="level-rank-icon">
           B-
         </text>
       
