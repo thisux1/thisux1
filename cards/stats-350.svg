@@ -12,7 +12,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Thisux's GitHub Stats, Rank: B-</title>
-        <desc id="descId">Total Stars Earned: 2, Total Commits  : 1234, Total PRs: 107, Total Issues: 1</desc>
+        <desc id="descId">Total Stars Earned: 2, Total Commits  : 1251, Total PRs: 108, Total Issues: 1</desc>
         <style><![CDATA[
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -62,7 +62,7 @@
     .rank-circle {
       stroke: #ff2a5f;
       stroke-dasharray: 250;
-      stroke-dashoffset: 168.89218932914932;
+      stroke-dashoffset: 168.48732241670828;
       fill: none;
       stroke-width: 6;
       stroke-linecap: round;
@@ -77,7 +77,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 168.89218932914932;
+        stroke-dashoffset: 168.48732241670828;
       }
     }
   
@@ -111,7 +111,7 @@
     }
     @keyframes rankProgress {
       from { stroke-dashoffset: 270.1769682087222; }
-      to { stroke-dashoffset: 181.56; }
+      to { stroke-dashoffset: 181.12; }
     }
     .rank-progress {
       stroke: #ff2a5f;
@@ -121,7 +121,7 @@
       transform: rotate(-90deg);
       transform-origin: -10px 14.5px;
       stroke-dasharray: 270.1769682087222;
-      stroke-dashoffset: 181.56;
+      stroke-dashoffset: 181.12;
       animation: rankProgress 0.9s forwards ease-in-out;
     }
     /* Ambient pulse on the rank arc; the endpoints keep the base
@@ -308,7 +308,7 @@
     </svg>
   
       <svg x="25" y="0" width="199.0" height="18" overflow="hidden"><text class="stat label" x="0" y="12.5">Total Commits:</text></svg>
-      <text class="stat serif" data-testid="commits" x="272" text-anchor="end" y="13.5" font-size="16.5">1.2k</text>
+      <text class="stat serif" data-testid="commits" x="272" text-anchor="end" y="13.5" font-size="16.5">1.3k</text>
       <line x1="0" y1="22" x2="272" y2="22" class="editorial-rule" />
     </g>
   </g><g transform="translate(0, 60)">
@@ -319,7 +319,7 @@
     </svg>
   
       <svg x="25" y="0" width="208.5" height="18" overflow="hidden"><text class="stat label" x="0" y="12.5">Total PRs:</text></svg>
-      <text class="stat serif" data-testid="prs" x="272" text-anchor="end" y="13.5" font-size="16.5">107</text>
+      <text class="stat serif" data-testid="prs" x="272" text-anchor="end" y="13.5" font-size="16.5">108</text>
       <line x1="0" y1="22" x2="272" y2="22" class="editorial-rule" />
     </g>
   </g><g transform="translate(0, 90)">
@@ -338,7 +338,7 @@
     <g data-testid="rank-circle"
           transform="translate(367, 52.5)">
         <circle class="rank-grounder" cx="-10" cy="14.5" r="47" />
-        <circle class="rank-progress" cx="-10" cy="14.5" r="43" data-progress="33" stroke="#ff2a5f" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="270.18" stroke-dashoffset="181.56" />
+        <circle class="rank-progress" cx="-10" cy="14.5" r="43" data-progress="33" stroke="#ff2a5f" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="270.18" stroke-dashoffset="181.12" />
         <g class="rank-text">
           
         <text x="-10" y="14.5" alignment-baseline="central" dominant-baseline="central" text-anchor="middle" data-testid="level-rank-icon">
