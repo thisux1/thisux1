@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="880" height="205" viewBox="0 0 880 205" fill="none"><svg x="0" y="0" width="440" height="205" viewBox="0 0 440 205">
         <title id="titleId">Thisux's GitHub Stats, Rank: B-</title>
-        <desc id="descId">Total Stars Earned: 2, Total Commits  : 1302, Total PRs: 139, Total Issues: 1</desc>
+        <desc id="descId">Total Stars Earned: 2, Total Commits  : 1304, Total PRs: 140, Total Issues: 1</desc>
         <style><![CDATA[
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -50,7 +50,7 @@
     .rank-circle {
       stroke: #ff2a5f;
       stroke-dasharray: 250;
-      stroke-dashoffset: 162.9648150243512;
+      stroke-dashoffset: 162.81534027125565;
       fill: none;
       stroke-width: 6;
       stroke-linecap: round;
@@ -65,7 +65,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 162.9648150243512;
+        stroke-dashoffset: 162.81534027125565;
       }
     }
   
@@ -99,7 +99,7 @@
     }
     @keyframes rankProgress {
       from { stroke-dashoffset: 270.1769682087222; }
-      to { stroke-dashoffset: 175.19; }
+      to { stroke-dashoffset: 175.03; }
     }
     .rank-progress {
       stroke: #ff2a5f;
@@ -109,7 +109,7 @@
       transform: rotate(-90deg);
       transform-origin: -10px 14.5px;
       stroke-dasharray: 270.1769682087222;
-      stroke-dashoffset: 175.19;
+      stroke-dashoffset: 175.03;
       animation: rankProgress 0.9s forwards ease-in-out;
     }
     /* Ambient pulse on the rank arc; the endpoints keep the base
@@ -307,7 +307,7 @@
     </svg>
   
       <svg x="25" y="0" width="210.0" height="18" overflow="hidden"><text class="stat label" x="0" y="12.5">Total PRs:</text></svg>
-      <text class="stat serif" data-testid="prs" x="273.5" text-anchor="end" y="13.5" font-size="16.5">139</text>
+      <text class="stat serif" data-testid="prs" x="273.5" text-anchor="end" y="13.5" font-size="16.5">140</text>
       <line x1="0" y1="22" x2="273.5" y2="22" class="editorial-rule" />
     </g>
   </g><g transform="translate(0, 90)">
@@ -326,7 +326,7 @@
     <g data-testid="rank-circle"
           transform="translate(368.5, 52.5)">
         <circle class="rank-grounder" cx="-10" cy="14.5" r="47" />
-        <circle class="rank-progress" cx="-10" cy="14.5" r="43" data-progress="35" stroke="#ff2a5f" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="270.18" stroke-dashoffset="175.19" />
+        <circle class="rank-progress" cx="-10" cy="14.5" r="43" data-progress="35" stroke="#ff2a5f" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="270.18" stroke-dashoffset="175.03" />
         <g class="rank-text">
           
         <text x="-10" y="14.5" alignment-baseline="central" dominant-baseline="central" text-anchor="middle" data-testid="level-rank-icon">
@@ -338,7 +338,7 @@
         </g>
       </svg><svg x="440" y="0" width="440" height="205" viewBox="0 0 440 205">
         <title id="titleId">Most Used Languages</title>
-        <desc id="descId">TypeScript: 36.18%, HTML: 31.99%, PHP: 12.15%, JavaScript: 11.25%, Python: 5.20%, CSS: 3.22%</desc>
+        <desc id="descId">TypeScript: 36.25%, HTML: 31.96%, PHP: 12.14%, JavaScript: 11.24%, Python: 5.19%, CSS: 3.22%</desc>
         <style><![CDATA[
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -554,42 +554,42 @@
     <g data-testid="composition-bar" class="composition" opacity="0" style="animation: compositionIn .8s cubic-bezier(.2,.7,.2,1) .15s forwards">
       <rect x="0" y="0" width="390" height="4" fill="#343039" opacity="0.55" />
       
-      <rect x="0" y="0" width="141.111" height="4" fill="#3178c6" />
-      <rect x="141.111" y="0" width="124.777" height="4" fill="#e34c26" />
-      <rect x="265.887" y="0" width="47.3778" height="4" fill="#4F5D95" />
-      <rect x="313.265" y="0" width="43.8833" height="4" fill="#f1e05a" />
-      <rect x="357.149" y="0" width="20.2752" height="4" fill="#3572A5" />
-      <rect x="377.424" y="0" width="12.5762" height="4" fill="#663399" />
+      <rect x="0" y="0" width="141.38" height="4" fill="#3178c6" />
+      <rect x="141.38" y="0" width="124.642" height="4" fill="#e34c26" />
+      <rect x="266.022" y="0" width="47.3265" height="4" fill="#4F5D95" />
+      <rect x="313.348" y="0" width="43.8359" height="4" fill="#f1e05a" />
+      <rect x="357.184" y="0" width="20.2533" height="4" fill="#3572A5" />
+      <rect x="377.437" y="0" width="12.5626" height="4" fill="#663399" />
     </g>
     <g transform="translate(0, 17)"><line x1="0" y1="24" x2="390" y2="24" class="editorial-rule" /><line x1="0" y1="66" x2="390" y2="66" class="editorial-rule" /><line x1="0" y1="108" x2="390" y2="108" class="editorial-rule" /><g transform="translate(0, 0)">
     <g class="stagger" style="animation-delay: 450ms">
       <rect x="0" y="4" width="10" height="10" fill="#3178c6" opacity="0.92" />
       <text data-testid="lang-name" x="19" y="13.5" class="serif" font-size="14" fill="#ece9df">TypeScript</text>
-      <text data-testid="lang-share" x="181" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">36.18%</text>
+      <text data-testid="lang-share" x="181" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">36.25%</text>
     </g>
   </g><g transform="translate(209, 0)">
     <g class="stagger" style="animation-delay: 600ms">
       <rect x="0" y="4" width="10" height="10" fill="#e34c26" opacity="0.92" />
       <text data-testid="lang-name" x="19" y="13.5" class="serif" font-size="14" fill="#ece9df">HTML</text>
-      <text data-testid="lang-share" x="181" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">31.99%</text>
+      <text data-testid="lang-share" x="181" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">31.96%</text>
     </g>
   </g><g transform="translate(0, 42)">
     <g class="stagger" style="animation-delay: 750ms">
       <rect x="0" y="4" width="10" height="10" fill="#4F5D95" opacity="0.92" />
       <text data-testid="lang-name" x="19" y="13.5" class="serif" font-size="14" fill="#ece9df">PHP</text>
-      <text data-testid="lang-share" x="181" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">12.15%</text>
+      <text data-testid="lang-share" x="181" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">12.14%</text>
     </g>
   </g><g transform="translate(209, 42)">
     <g class="stagger" style="animation-delay: 900ms">
       <rect x="0" y="4" width="10" height="10" fill="#f1e05a" opacity="0.92" />
       <text data-testid="lang-name" x="19" y="13.5" class="serif" font-size="14" fill="#ece9df">JavaScript</text>
-      <text data-testid="lang-share" x="181" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">11.25%</text>
+      <text data-testid="lang-share" x="181" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">11.24%</text>
     </g>
   </g><g transform="translate(0, 84)">
     <g class="stagger" style="animation-delay: 1050ms">
       <rect x="0" y="4" width="10" height="10" fill="#3572A5" opacity="0.92" />
       <text data-testid="lang-name" x="19" y="13.5" class="serif" font-size="14" fill="#ece9df">Python</text>
-      <text data-testid="lang-share" x="181" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">5.20%</text>
+      <text data-testid="lang-share" x="181" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">5.19%</text>
     </g>
   </g><g transform="translate(209, 84)">
     <g class="stagger" style="animation-delay: 1200ms">
