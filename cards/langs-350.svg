@@ -12,7 +12,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Most Used Languages</title>
-        <desc id="descId">TypeScript: 36.25%, HTML: 31.96%, PHP: 12.14%, JavaScript: 11.24%, Python: 5.19%, CSS: 3.22%</desc>
+        <desc id="descId">TypeScript: 36.35%, HTML: 31.87%, PHP: 12.10%, JavaScript: 11.29%, Python: 5.18%, CSS: 3.21%</desc>
         <style><![CDATA[
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -228,48 +228,48 @@
     <g data-testid="composition-bar" class="composition" opacity="0" style="animation: compositionIn .8s cubic-bezier(.2,.7,.2,1) .15s forwards">
       <rect x="0" y="0" width="300" height="4" fill="#343039" opacity="0.55" />
       
-      <rect x="0" y="0" width="108.754" height="4" fill="#3178c6" />
-      <rect x="108.754" y="0" width="95.8782" height="4" fill="#e34c26" />
-      <rect x="204.632" y="0" width="36.405" height="4" fill="#4F5D95" />
-      <rect x="241.037" y="0" width="33.7199" height="4" fill="#f1e05a" />
-      <rect x="274.757" y="0" width="15.5794" height="4" fill="#3572A5" />
-      <rect x="290.336" y="0" width="9.66357" height="4" fill="#663399" />
+      <rect x="0" y="0" width="109.065" height="4" fill="#3178c6" />
+      <rect x="109.065" y="0" width="95.6037" height="4" fill="#e34c26" />
+      <rect x="204.668" y="0" width="36.3008" height="4" fill="#4F5D95" />
+      <rect x="240.969" y="0" width="33.8602" height="4" fill="#f1e05a" />
+      <rect x="274.829" y="0" width="15.5348" height="4" fill="#3572A5" />
+      <rect x="290.364" y="0" width="9.6359" height="4" fill="#663399" />
     </g>
     <g transform="translate(0, 17)"><line x1="0" y1="24" x2="300" y2="24" class="editorial-rule" /><line x1="0" y1="60" x2="300" y2="60" class="editorial-rule" /><line x1="0" y1="96" x2="300" y2="96" class="editorial-rule" /><line x1="0" y1="132" x2="300" y2="132" class="editorial-rule" /><line x1="0" y1="168" x2="300" y2="168" class="editorial-rule" /><line x1="0" y1="204" x2="300" y2="204" class="editorial-rule" /><g transform="translate(0, 0)">
     <g class="stagger" style="animation-delay: 450ms">
       <rect x="0" y="4" width="10" height="10" fill="#3178c6" opacity="0.92" />
       <text data-testid="lang-name" x="19" y="13.5" class="serif" font-size="14" fill="#ece9df">TypeScript</text>
-      <text data-testid="lang-share" x="300" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">36.25%</text>
+      <text data-testid="lang-share" x="300" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">36.35%</text>
     </g>
   </g><g transform="translate(0, 36)">
     <g class="stagger" style="animation-delay: 600ms">
       <rect x="0" y="4" width="10" height="10" fill="#e34c26" opacity="0.92" />
       <text data-testid="lang-name" x="19" y="13.5" class="serif" font-size="14" fill="#ece9df">HTML</text>
-      <text data-testid="lang-share" x="300" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">31.96%</text>
+      <text data-testid="lang-share" x="300" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">31.87%</text>
     </g>
   </g><g transform="translate(0, 72)">
     <g class="stagger" style="animation-delay: 750ms">
       <rect x="0" y="4" width="10" height="10" fill="#4F5D95" opacity="0.92" />
       <text data-testid="lang-name" x="19" y="13.5" class="serif" font-size="14" fill="#ece9df">PHP</text>
-      <text data-testid="lang-share" x="300" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">12.14%</text>
+      <text data-testid="lang-share" x="300" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">12.10%</text>
     </g>
   </g><g transform="translate(0, 108)">
     <g class="stagger" style="animation-delay: 900ms">
       <rect x="0" y="4" width="10" height="10" fill="#f1e05a" opacity="0.92" />
       <text data-testid="lang-name" x="19" y="13.5" class="serif" font-size="14" fill="#ece9df">JavaScript</text>
-      <text data-testid="lang-share" x="300" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">11.24%</text>
+      <text data-testid="lang-share" x="300" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">11.29%</text>
     </g>
   </g><g transform="translate(0, 144)">
     <g class="stagger" style="animation-delay: 1050ms">
       <rect x="0" y="4" width="10" height="10" fill="#3572A5" opacity="0.92" />
       <text data-testid="lang-name" x="19" y="13.5" class="serif" font-size="14" fill="#ece9df">Python</text>
-      <text data-testid="lang-share" x="300" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">5.19%</text>
+      <text data-testid="lang-share" x="300" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">5.18%</text>
     </g>
   </g><g transform="translate(0, 180)">
     <g class="stagger" style="animation-delay: 1200ms">
       <rect x="0" y="4" width="10" height="10" fill="#663399" opacity="0.92" />
       <text data-testid="lang-name" x="19" y="13.5" class="serif" font-size="14" fill="#ece9df">CSS</text>
-      <text data-testid="lang-share" x="300" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">3.22%</text>
+      <text data-testid="lang-share" x="300" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">3.21%</text>
     </g>
   </g></g>
   
