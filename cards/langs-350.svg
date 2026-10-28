@@ -12,7 +12,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Most Used Languages</title>
-        <desc id="descId">TypeScript: 36.39%, HTML: 31.85%, PHP: 12.09%, JavaScript: 11.28%, Python: 5.18%, CSS: 3.21%</desc>
+        <desc id="descId">HTML: 39.57%, TypeScript: 22.21%, PHP: 15.04%, JavaScript: 12.94%, Python: 6.33%, CSS: 3.91%</desc>
         <style><![CDATA[
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -228,48 +228,48 @@
     <g data-testid="composition-bar" class="composition" opacity="0" style="animation: compositionIn .8s cubic-bezier(.2,.7,.2,1) .15s forwards">
       <rect x="0" y="0" width="300" height="4" fill="#343039" opacity="0.55" />
       
-      <rect x="0" y="0" width="109.168" height="4" fill="#3178c6" />
-      <rect x="109.168" y="0" width="95.5518" height="4" fill="#e34c26" />
-      <rect x="204.72" y="0" width="36.2811" height="4" fill="#4F5D95" />
-      <rect x="241.001" y="0" width="33.8418" height="4" fill="#f1e05a" />
-      <rect x="274.843" y="0" width="15.5264" height="4" fill="#3572A5" />
-      <rect x="290.369" y="0" width="9.63067" height="4" fill="#663399" />
+      <rect x="0" y="0" width="118.722" height="4" fill="#e34c26" />
+      <rect x="118.722" y="0" width="66.6173" height="4" fill="#3178c6" />
+      <rect x="185.339" y="0" width="45.1123" height="4" fill="#4F5D95" />
+      <rect x="230.451" y="0" width="38.8236" height="4" fill="#f1e05a" />
+      <rect x="269.275" y="0" width="18.9901" height="4" fill="#3572A5" />
+      <rect x="288.265" y="0" width="11.7351" height="4" fill="#663399" />
     </g>
     <g transform="translate(0, 17)"><line x1="0" y1="24" x2="300" y2="24" class="editorial-rule" /><line x1="0" y1="60" x2="300" y2="60" class="editorial-rule" /><line x1="0" y1="96" x2="300" y2="96" class="editorial-rule" /><line x1="0" y1="132" x2="300" y2="132" class="editorial-rule" /><line x1="0" y1="168" x2="300" y2="168" class="editorial-rule" /><line x1="0" y1="204" x2="300" y2="204" class="editorial-rule" /><g transform="translate(0, 0)">
     <g class="stagger" style="animation-delay: 450ms">
-      <rect x="0" y="4" width="10" height="10" fill="#3178c6" opacity="0.92" />
-      <text data-testid="lang-name" x="19" y="13.5" class="serif" font-size="14" fill="#ece9df">TypeScript</text>
-      <text data-testid="lang-share" x="300" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">36.39%</text>
+      <rect x="0" y="4" width="10" height="10" fill="#e34c26" opacity="0.92" />
+      <text data-testid="lang-name" x="19" y="13.5" class="serif" font-size="14" fill="#ece9df">HTML</text>
+      <text data-testid="lang-share" x="300" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">39.57%</text>
     </g>
   </g><g transform="translate(0, 36)">
     <g class="stagger" style="animation-delay: 600ms">
-      <rect x="0" y="4" width="10" height="10" fill="#e34c26" opacity="0.92" />
-      <text data-testid="lang-name" x="19" y="13.5" class="serif" font-size="14" fill="#ece9df">HTML</text>
-      <text data-testid="lang-share" x="300" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">31.85%</text>
+      <rect x="0" y="4" width="10" height="10" fill="#3178c6" opacity="0.92" />
+      <text data-testid="lang-name" x="19" y="13.5" class="serif" font-size="14" fill="#ece9df">TypeScript</text>
+      <text data-testid="lang-share" x="300" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">22.21%</text>
     </g>
   </g><g transform="translate(0, 72)">
     <g class="stagger" style="animation-delay: 750ms">
       <rect x="0" y="4" width="10" height="10" fill="#4F5D95" opacity="0.92" />
       <text data-testid="lang-name" x="19" y="13.5" class="serif" font-size="14" fill="#ece9df">PHP</text>
-      <text data-testid="lang-share" x="300" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">12.09%</text>
+      <text data-testid="lang-share" x="300" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">15.04%</text>
     </g>
   </g><g transform="translate(0, 108)">
     <g class="stagger" style="animation-delay: 900ms">
       <rect x="0" y="4" width="10" height="10" fill="#f1e05a" opacity="0.92" />
       <text data-testid="lang-name" x="19" y="13.5" class="serif" font-size="14" fill="#ece9df">JavaScript</text>
-      <text data-testid="lang-share" x="300" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">11.28%</text>
+      <text data-testid="lang-share" x="300" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">12.94%</text>
     </g>
   </g><g transform="translate(0, 144)">
     <g class="stagger" style="animation-delay: 1050ms">
       <rect x="0" y="4" width="10" height="10" fill="#3572A5" opacity="0.92" />
       <text data-testid="lang-name" x="19" y="13.5" class="serif" font-size="14" fill="#ece9df">Python</text>
-      <text data-testid="lang-share" x="300" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">5.18%</text>
+      <text data-testid="lang-share" x="300" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">6.33%</text>
     </g>
   </g><g transform="translate(0, 180)">
     <g class="stagger" style="animation-delay: 1200ms">
       <rect x="0" y="4" width="10" height="10" fill="#663399" opacity="0.92" />
       <text data-testid="lang-name" x="19" y="13.5" class="serif" font-size="14" fill="#ece9df">CSS</text>
-      <text data-testid="lang-share" x="300" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">3.21%</text>
+      <text data-testid="lang-share" x="300" y="13" text-anchor="end" font-family="'Share Tech Mono',ui-monospace,'Fira Code',monospace" font-size="13.5" fill="#cbc6ba">3.91%</text>
     </g>
   </g></g>
   
